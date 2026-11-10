@@ -922,22 +922,22 @@ export default function Programme({ onSelectProgram }) {
           <span className="font-explore-en font-bold not-italic">Programme</span>　活動日程
         </h2>
 
-        {/* 兩日書展主區塊：左欄為小地圖＋Where/When 選擇器（手機版自然流暢排列無滾動頓挫；電腦版隨滾動吸附左側） */}
-        <div className="grid items-start gap-8 lg:grid-cols-[20.5rem_1fr] lg:gap-12 xl:grid-cols-[22.5rem_1fr]">
+        {/* 兩日書展主區塊：左欄為小地圖＋Where/When 選擇器（嚴格設定 min-w-0 與 max-w-full，防止手機版橫向撐爆） */}
+        <div className="grid min-w-0 max-w-full items-start gap-8 lg:grid-cols-[20.5rem_1fr] lg:gap-12 xl:grid-cols-[22.5rem_1fr]">
           {/* 小地圖 ＋ Where / When 篩選面板（手機版自然流暢排列隨滾動滑移，不浮動遮擋；電腦版隨滾動吸附左側） */}
           <aside
             aria-label="位置與時段篩選"
-            className="relative z-20 mb-8 border-b border-ink/15 pb-6 lg:sticky lg:top-20 lg:mb-0 lg:border-b-0 lg:pb-0"
+            className="relative z-20 mb-8 min-w-0 max-w-full overflow-hidden border-b border-ink/15 pb-6 lg:sticky lg:top-20 lg:mb-0 lg:border-b-0 lg:pb-0"
           >
-            {/* 手機版配置：地圖寬度佔滿，下方單列橫向滑動從 Where 到選項到 When 到選項 */}
-            <div className="block lg:hidden">
-              {/* 1. 地圖寬度佔滿 */}
-              <div className="mb-2.5 w-full">
+            {/* 手機版配置：地圖適度居中呈現，下方單列橫向滑動從 Where 到選項到 When 到選項（嚴格限制在手機螢幕寬度內） */}
+            <div className="block lg:hidden min-w-0 max-w-full overflow-hidden">
+              {/* 1. 地圖寬度適度收斂，避免手機螢幕過度縱向撐開 */}
+              <div className="mx-auto mb-2.5 w-full max-w-[22rem]">
                 <VenueMiniMap whereId={whereId} activeVenueKeys={activeVenueKeys} />
               </div>
 
               {/* 2. 下面一長列可以往右滑看到從 where 到選項到 when 到選項 */}
-              <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none py-1 text-cap">
+              <div className="flex w-full min-w-0 max-w-full items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none py-1 text-cap">
                 <span className="shrink-0 text-[0.78rem] font-bold text-ink">
                   Where <span className="font-normal text-ink/70">你到哪了？</span>
                 </span>

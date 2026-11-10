@@ -67,7 +67,10 @@ function getVendorDropMappings(vendor) {
     jerrys: [{ title: '學學齋', intro: '學學齋' }],
     aaa: [{ title: '亞洲藝術文獻庫', intro: '亞洲藝術文獻庫' }],
     prndl: [{ title: 'PRNDL.art', intro: 'PRNDL.art' }],
-    thingbooks: [{ title: 'Singapore Art Book Fair', intro: 'Singapore Art Book Fair' }],
+    thingbooks: [
+      { title: 'Thing Books', intro: 'Thing Books' },
+      { title: 'Singapore Art Book Fair', intro: 'Singapore Art Book Fair' },
+    ],
     thumbbooks: [{ title: 'Thumb Books', intro: 'Thumb Books' }],
     papaya: [{ title: '遊牧木瓜出版', intro: '遊牧木瓜出版' }],
     zitdim: [{ title: '節點', intro: '節點' }],
@@ -553,6 +556,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
             ? { title: it }
             : {
                 title: it.name,
+                subtitle: it.subtitle || '',
                 by: it.by,
                 author: it.author,
                 publisher: it.publisher,
@@ -570,6 +574,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
       })
     : [0, 1, 2].map((idx) => ({
         title: isFood ? `精選餐點 0${idx + 1}` : `精選書目 0${idx + 1}`,
+        subtitle: '',
         author: '',
         publisher: vendor.name.replace(/（.*?）|\(.*?\)/g, '').trim(),
         bio: '選書與作品介紹整理中。',
@@ -586,12 +591,20 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
   }
 
   return (
-    <aside
-      role="dialog"
-      aria-label={vendor.name}
-      ref={scrollRef}
-      className="drawer-in fixed inset-y-0 right-0 left-0 z-[60] overflow-x-hidden overflow-y-auto scroll-smooth border-l border-ink/15 bg-white font-sans text-ink md:left-[calc(max(1.5rem,(100vw-1280px)/2)+16.5rem)] md:snap-y md:snap-mandatory"
-    >
+    <>
+      {/* 點擊旁邊（未被視窗蓋住的首頁區域）回到原畫面 */}
+      <div
+        aria-hidden="true"
+        onClick={onClose}
+        className="fixed inset-0 z-[58] cursor-pointer bg-black/15 transition-opacity md:bg-transparent"
+      />
+
+      <aside
+        role="dialog"
+        aria-label={vendor.name}
+        ref={scrollRef}
+        className="drawer-in fixed inset-y-0 right-0 left-0 z-[60] overflow-x-hidden overflow-y-auto scroll-smooth border-l border-ink/15 bg-white font-sans text-ink md:left-[calc(max(1.5rem,(100vw-1280px)/2)+16.5rem)] md:snap-y md:snap-mandatory"
+      >
       {/* 頂部常駐列：Spot 區塊透明無底色；關閉按鈕無遮罩僅保留叉叉 */}
       <div className="pointer-events-none sticky top-0 z-50 flex items-center justify-between px-6 py-4 sm:px-10">
         <div className="pointer-events-auto flex items-center gap-3 bg-transparent md:invisible">
@@ -999,7 +1012,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                           {it.publisher && (
                             <div style={{ marginLeft: '32%' }} className="flex items-start gap-1.5">
                               <span className="shrink-0 font-normal text-ink/75">Published by</span>
-                              <span className="lime-stroke font-bold leading-normal">{it.publisher}</span>
+                              <span className="lime-stroke font-bold leading-normal whitespace-pre-line">{it.publisher}</span>
                             </div>
                           )}
                         </div>
@@ -1009,6 +1022,11 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                       <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight">
                         {it.title}
                       </h3>
+                      {it.subtitle && (
+                        <p className="mt-1.5 font-sans text-cap font-medium text-teal leading-normal">
+                          {it.subtitle}
+                        </p>
+                      )}
                     </div>
 
                     {/* 手機版 (md:hidden)：維持現有版面 */}
@@ -1017,6 +1035,11 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                       <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight">
                         {it.title}
                       </h3>
+                      {it.subtitle && (
+                        <p className="mt-1.5 font-sans text-cap font-medium text-teal leading-normal">
+                          {it.subtitle}
+                        </p>
+                      )}
 
                       {(it.author || it.publisher) && (
                         <div className="mt-3 space-y-1.5 font-sans text-cap">
@@ -1028,7 +1051,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                           {it.publisher && (
                             <div className="flex items-baseline gap-1.5">
                               <span className="font-normal text-ink/75">Published by</span>
-                              <span className="lime-stroke font-bold">{it.publisher}</span>
+                              <span className="lime-stroke font-bold whitespace-pre-line">{it.publisher}</span>
                             </div>
                           )}
                         </div>
@@ -1088,5 +1111,6 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
         )}
       </div>
     </aside>
+    </>
   )
 }

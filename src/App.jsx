@@ -58,7 +58,15 @@ export default function App() {
   const vendor = exhibitorList.find((e) => e.id === openId) || null
 
   // 1. 初次載入與前進/後退（popstate / hashchange）雙向同步 URL 與狀態
+  // 關閉瀏覽器預設的滾動記憶，確保未帶 hash 的外部連結一律由最頂端扉頁開啟
   useEffect(() => {
+    if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+    if (!window.location.hash) {
+      window.scrollTo(0, 0)
+    }
+
     const syncFromUrl = () => {
       const route = parseCurrentRoute()
       if (route.type === 'vendor') {
@@ -91,42 +99,6 @@ export default function App() {
       window.removeEventListener('hashchange', syncFromUrl)
     }
   }, [])
-
-  // 2. 頁面滾動時若無開啟彈窗，自動更新區段 Hash (#programme / #exhibitor / #info)
-  useEffect(() => {
-    if (openId || selectedProgramId) return
-
-    const sections = ['info', 'exhibitor', 'programme']
-    const handleScroll = () => {
-      if (isNavigatingRef.current) return
-      if (openId || selectedProgramId) return
-
-      const scrollY = window.scrollY
-      if (scrollY < window.innerHeight * 0.4) {
-        if (window.location.hash && window.location.hash !== '#map') {
-          window.history.replaceState(null, '', window.location.pathname)
-        }
-        return
-      }
-
-      for (const sId of sections) {
-        const el = document.getElementById(sId)
-        if (el) {
-          const rect = el.getBoundingClientRect()
-          if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.2) {
-            const targetHash = `#${sId}`
-            if (window.location.hash !== targetHash) {
-              window.history.replaceState(null, '', targetHash)
-            }
-            break
-          }
-        }
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [openId, selectedProgramId])
 
   // 3. 全站圖片防下載、防拖曳與防長按選單
   useEffect(() => {

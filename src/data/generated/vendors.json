@@ -22,12 +22,12 @@
   "introEn": "Located beside the Liuchuan Canal in Taichung, Glitch is a three-story arts and cultural space that brings together creative energy through exhibitions, publishing, and events. Guided by a spirit of versatility—balancing strength with flexibility—Glitch continually opens connections across disciplines, sparking emotional responses and dialogue.\nThis selection features works by independent comic artists from across Asia, gathered by the “Asian Comics Vault.” Showcasing diverse visual narratives and inventive book design, it invites visitors to explore the rich landscape of publishing across Asia—a feast for the eyes with every turn of the page.",
   "books": [
    {
-    "name": "《如果不在意的話》",
+    "name": "如果不在意的話",
     "by": "刻刻慢話",
     "bio": "這部漫畫讓鬼怪走進熟悉的台灣日常，穿梭於便利商店、老舊公寓與家族記憶之間。靈異不只是驚嚇的來源，更成為理解生命的另一種視角。透過幽默而溫暖的台語對白，人與鬼跨越生死界線，聊起牽掛、遺憾，以及那些來不及說出口的心事。\n當死亡不代表痛苦的終點，成為鬼魂也未必能擺脫生前的煩惱，故事便打開了對鬼怪的另類想像：祂們同樣困惑、孤單，也渴望被理解。作品將超自然情節融入細膩的生活觀察，在荒謬與溫情之間，重新叩問活著的意義，也讓我們看見，所謂的「鬼故事」，或許始終都是人的事。"
    },
    {
-    "name": "《殺人椅子》",
+    "name": "殺人椅子",
     "by": "張道",
     "bio": "殺吧！殺掉紅色的夢！\n糸奇在夢中夢見另一個自己在公車、簽書會等等地方到處殺人，它稱自己為工奇，然而這場夢逐漸外溢到現實，爭奪主權的椅子染紅了一切….\n\n張道將夢中經驗轉化為漫畫，讓尋常物件與奇異生物打亂現實的規則。主角在難以辨認的處境裡追索自己的身分，試圖返回熟悉的生活，卻也一步步陷入與自身的衝突。\n畫面以密集躁動的線條、強烈的黑白反差與不斷變換的視角，將心理上的壓迫推到讀者眼前。驚悚之中又穿插突如其來的笑點，使故事始終帶著一股莽撞的活力。《殺人椅子》也可以被讀作一則關於逃離的寓言：當眼前的世界令人難以忍受，想像或許能提供暫時的容身之處，卻未必能讓人擺脫心中的糾葛。"
    },
@@ -49,12 +49,12 @@
   "introEn": "Located beside the Liuchuan Canal in Taichung, Glitch is a three-story arts and cultural space that brings together creative energy through exhibitions, publishing, and events. Guided by a spirit of versatility—balancing strength with flexibility—Glitch continually opens connections across disciplines, sparking emotional responses and dialogue.\nThis selection features works by independent comic artists from across Asia, gathered by the “Asian Comics Vault.” Showcasing diverse visual narratives and inventive book design, it invites visitors to explore the rich landscape of publishing across Asia—a feast for the eyes with every turn of the page.",
   "books": [
    {
-    "name": "《如果不在意的話》",
+    "name": "如果不在意的話",
     "by": "刻刻慢話",
     "bio": "這部漫畫讓鬼怪走進熟悉的台灣日常，穿梭於便利商店、老舊公寓與家族記憶之間。靈異不只是驚嚇的來源，更成為理解生命的另一種視角。透過幽默而溫暖的台語對白，人與鬼跨越生死界線，聊起牽掛、遺憾，以及那些來不及說出口的心事。\n當死亡不代表痛苦的終點，成為鬼魂也未必能擺脫生前的煩惱，故事便打開了對鬼怪的另類想像：祂們同樣困惑、孤單，也渴望被理解。作品將超自然情節融入細膩的生活觀察，在荒謬與溫情之間，重新叩問活著的意義，也讓我們看見，所謂的「鬼故事」，或許始終都是人的事。"
    },
    {
-    "name": "《殺人椅子》",
+    "name": "殺人椅子",
     "by": "張道",
     "bio": "殺吧！殺掉紅色的夢！\n糸奇在夢中夢見另一個自己在公車、簽書會等等地方到處殺人，它稱自己為工奇，然而這場夢逐漸外溢到現實，爭奪主權的椅子染紅了一切….\n\n張道將夢中經驗轉化為漫畫，讓尋常物件與奇異生物打亂現實的規則。主角在難以辨認的處境裡追索自己的身分，試圖返回熟悉的生活，卻也一步步陷入與自身的衝突。\n畫面以密集躁動的線條、強烈的黑白反差與不斷變換的視角，將心理上的壓迫推到讀者眼前。驚悚之中又穿插突如其來的笑點，使故事始終帶著一股莽撞的活力。《殺人椅子》也可以被讀作一則關於逃離的寓言：當眼前的世界令人難以忍受，想像或許能提供暫時的容身之處，卻未必能讓人擺脫心中的糾葛。"
    },
@@ -305,8 +305,10 @@
    },
    {
     "name": "水土不服 tsuí two book",
-    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊Carp Gallery、窯座替代空間YÁO Alternative space",
-    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。"
+    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊 Carp Gallery、\n窯座替代空間 YÁO Alternative space",
+    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。",
+    "author": "「水」作者群、「土」作者群",
+    "publisher": "鯉魚藝廊 Carp Gallery、\n窯座替代空間 YÁO Alternative space"
    },
    {
     "name": "Journal of Wear",
@@ -333,8 +335,10 @@
    },
    {
     "name": "水土不服 tsuí two book",
-    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊Carp Gallery、窯座替代空間YÁO Alternative space",
-    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。"
+    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊 Carp Gallery、\n窯座替代空間 YÁO Alternative space",
+    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。",
+    "author": "「水」作者群、「土」作者群",
+    "publisher": "鯉魚藝廊 Carp Gallery、\n窯座替代空間 YÁO Alternative space"
    },
    {
     "name": "Journal of Wear",
@@ -638,19 +642,22 @@
   "introEn": "Jerry’s Rare Books & Autographs specializes in Western and East Asian rare books, letters, manuscripts, and historical documents. Through research and catalogues, we explore personal histories, historical backgrounds and cultural encounters preserved on paper. At this fair, our thematic catalogue, Multilingual Learning under the Japanese Empire, is presented alongside artists’ manuscripts, signed books, and Edo-period prints, etc. inviting visitors to discover how people read, learned, and created across different eras.",
   "books": [
    {
-    "name": "《廣東語辭典 Kantongo Jiten》｜日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan",
+    "name": "《廣東語辭典 Kantongo Jiten》",
     "by": null,
-    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities."
+    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities.",
+    "subtitle": "日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan"
    },
    {
-    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》｜從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees",
+    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》",
     "by": null,
-    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages."
+    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages.",
+    "subtitle": "從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees"
    },
    {
-    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book",
+    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book",
     "by": null,
-    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy."
+    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy.",
+    "subtitle": "An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book"
    }
   ]
  },
@@ -665,19 +672,22 @@
   "introEn": "Jerry’s Rare Books & Autographs specializes in Western and East Asian rare books, letters, manuscripts, and historical documents. Through research and catalogues, we explore personal histories, historical backgrounds and cultural encounters preserved on paper. At this fair, our thematic catalogue, Multilingual Learning under the Japanese Empire, is presented alongside artists’ manuscripts, signed books, and Edo-period prints, etc. inviting visitors to discover how people read, learned, and created across different eras.",
   "books": [
    {
-    "name": "《廣東語辭典 Kantongo Jiten》｜日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan",
+    "name": "《廣東語辭典 Kantongo Jiten》",
     "by": null,
-    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities."
+    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities.",
+    "subtitle": "日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan"
    },
    {
-    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》｜從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees",
+    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》",
     "by": null,
-    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages."
+    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages.",
+    "subtitle": "從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees"
    },
    {
-    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book",
+    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book",
     "by": null,
-    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy."
+    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy.",
+    "subtitle": "An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book"
    }
   ]
  },
