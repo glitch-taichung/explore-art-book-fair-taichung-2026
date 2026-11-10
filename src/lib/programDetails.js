@@ -11,11 +11,14 @@ export function getProgramDetails(programId) {
   const s = schedule.find((item) => item.id === programId) || null
   if (!s) return null
 
-  // 1. 簡化日期時間 (例如: 12/13 SUN 11:00-11:30)
+  // 1. 簡化日期時間 (例如: 12/13 SUN 11:00 - 11:30，書展兩日則分行呈現)
   const isD1 = s.date.includes('12-12')
   const dateFormatted = isD1 ? '12/12' : '12/13'
   const dayName = isD1 ? 'SAT' : 'SUN'
-  const timeSimple = `${dateFormatted} ${dayName} ${s.start}-${s.end}`
+  let timeSimple = `${dateFormatted} ${dayName}  ${s.start} - ${s.end}`
+  if (s.id.startsWith('fair')) {
+    timeSimple = '12/12 SAT  13:00 - 21:00\n12/13 SUN  10:00 - 17:30'
+  }
 
   // 2. 比對 programs.json 抓取完整富文本活動簡介
   const matchedP = programsData.find(
@@ -51,7 +54,6 @@ export function getProgramDetails(programId) {
     topImage = 'programs/forum/hero'
     richIntro =
       '從出版社群、藝術書展到小誌典藏，探討 Zine 的創作、流通與保存，以及獨立出版如何維持自主性。現場提供中英文逐步口譯。\n\n' +
-      '從自主製作的 Zine、出版者集結的書展，到藝術文獻庫的收藏，獨立出版不只是傳遞內容的方式，也是一種創作實踐，更是建立社群、交換觀點與延續文化記憶的途徑。\n\n' +
       '本次論壇邀請來自首爾、新加坡與香港的三位講者，從出版社群、藝術書展與文獻典藏三個面向，分享亞洲不同城市的獨立出版實踐。由臺灣當代文化實驗場 C-LAB 的黃羿瑄主持，從臺灣出版現場的觀察出發，串聯不同城市的經驗與思考。'
     statement = richIntro
     hosts = [

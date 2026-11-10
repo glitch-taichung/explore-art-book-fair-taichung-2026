@@ -94,24 +94,20 @@ function optimizeImage(filePath) {
       hMatch ? parseInt(hMatch[1], 10) : 0
     )
 
-    if (currentMax > maxDim || statBefore.size > 250 * 1024) {
-      const args = []
-      if (currentMax > maxDim) {
-        args.push('-Z', String(maxDim))
-      }
+    // 只有尺寸超過目標上限才縮圖，避免每次 build 重複對已符合尺寸的圖片進行破壞性重壓縮（會造成網點線條眩光 / ringing / 破圖）
+    if (currentMax > maxDim) {
+      const args = ['-Z', String(maxDim)]
       if (ext === '.jpg' || ext === '.jpeg') {
-        args.push('-s', 'formatOptions', '82')
+        args.push('-s', 'formatOptions', '90')
       }
-      if (args.length > 0) {
-        execFileSync('sips', [...args, filePath], { stdio: 'ignore' })
-        const statAfter = statSync(filePath)
-        const saved = ((statBefore.size - statAfter.size) / 1024).toFixed(1)
-        const rel = filePath.replace(ROOT + '/', '')
-        if (statBefore.size > statAfter.size) {
-          console.log(
-            `✔ 最佳化 ${rel}：${(statBefore.size / 1024).toFixed(1)} KB → ${(statAfter.size / 1024).toFixed(1)} KB (-${saved} KB)`
-          )
-        }
+      execFileSync('sips', [...args, filePath], { stdio: 'ignore' })
+      const statAfter = statSync(filePath)
+      const saved = ((statBefore.size - statAfter.size) / 1024).toFixed(1)
+      const rel = filePath.replace(ROOT + '/', '')
+      if (statBefore.size > statAfter.size) {
+        console.log(
+          `✔ 最佳化 ${rel}：${(statBefore.size / 1024).toFixed(1)} KB → ${(statAfter.size / 1024).toFixed(1)} KB (-${saved} KB)`
+        )
       }
     }
   } catch (err) {

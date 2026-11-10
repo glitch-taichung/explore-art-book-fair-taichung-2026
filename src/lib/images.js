@@ -50,7 +50,11 @@ function buildCandidatePaths(path) {
       candidates.push('programs/tour-1/cover')
     }
     if (path.includes('tour-1/cover') || path.includes('tour-2/cover')) {
-      candidates.push('programs/tour-1/(IG)第二篇貼文_05', 'programs/tour-1/LSZ_1935')
+      candidates.push(
+        'programs/tour-1/(FB)第二篇貼文_05',
+        'programs/tour-1/(IG)第二篇貼文_05',
+        'programs/tour-1/LSZ_1935'
+      )
     }
     if (path.includes('woodbook-2/cover')) {
       candidates.push('programs/woodbook-1/cover')

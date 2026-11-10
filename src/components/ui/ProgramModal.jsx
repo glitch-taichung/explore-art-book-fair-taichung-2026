@@ -204,7 +204,7 @@ function ProgramMarquee({ details }) {
 
   const marqueeItem = (
     <span className="inline-flex items-center gap-x-6 text-body font-normal text-ink whitespace-nowrap">
-      <span>{details.timeSimple}</span>
+      <span>{details.timeSimple.replace(/\n/g, ' ｜ ')}</span>
       <span>{details.venue}</span>
       {regNode}
     </span>
@@ -579,8 +579,8 @@ export default function ProgramModal({ programId, onClose }) {
 
                 {/* 5. 電腦版專屬：時間地點與報名連結（只有電腦版在左欄） */}
                 <div className="hidden md:block">
-                  <div className="mt-6 space-y-1 text-body font-bold text-ink">
-                    <p>{details.timeSimple}</p>
+                  <div className="mt-6 space-y-1.5 text-body font-bold text-ink">
+                    <p className="whitespace-pre-line leading-relaxed">{details.timeSimple}</p>
                     <p>{details.venue}</p>
                   </div>
 
@@ -615,28 +615,28 @@ export default function ProgramModal({ programId, onClose }) {
                ================================================================= */}
             <div className="w-full md:w-[38%] md:max-w-[390px] lg:max-w-[410px] md:ml-auto flex flex-col justify-between min-h-[440px]">
               <div>
-                {/* 1. 標題區塊 */}
+                {/* 1. 標題區塊：與下方段落相同字級 (text-body)，用字重 (font-bold) 分層級，靠左對齊 */}
                 {isForum && activeForumSpeaker ? (
                   /* 論壇講者切換模式：人名後面接單位，用｜ */
-                  <div className="mb-6 font-sans">
-                    <p className="text-title font-medium text-ink leading-snug">
+                  <div className="mb-6 font-sans text-left">
+                    <p className="text-body font-bold text-ink leading-snug">
                       {activeForumSpeaker.name}
                       {activeForumSpeaker.org ? ` ｜ ${activeForumSpeaker.org}` : ''}
                     </p>
                   </div>
                 ) : isSalon ? (
                   /* 沙龍標題格式：Blablabla＞＞＞有話想說 與講者名相同層級 */
-                  <div className="mb-6">
-                    <p className="text-title font-medium text-ink leading-snug">
+                  <div className="mb-6 text-left">
+                    <p className="text-body font-bold text-ink leading-snug">
                       Blablabla＞＞＞有話想說
                     </p>
-                    <h1 className="text-title font-medium text-ink leading-snug">
+                    <h1 className="text-body font-bold text-ink leading-snug">
                       {getSalonHeader(details)}
                     </h1>
                   </div>
                 ) : (
                   /* 一般活動標題（林君燁導讀不加 Explore Art Book Fair 前綴） */
-                  <h1 className="mb-6 text-title font-medium text-ink leading-snug">
+                  <h1 className="mb-6 text-body font-bold text-ink leading-snug text-left">
                     {details.id.startsWith('tour')
                       ? 'Hi～傻瓜書日的藝術書導讀'
                       : details.title}

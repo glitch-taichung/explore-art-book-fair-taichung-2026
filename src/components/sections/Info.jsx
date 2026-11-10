@@ -156,14 +156,16 @@ export default function Info({ event }) {
             </dd>
 
             <dt className="text-cap text-white/70">DATES</dt>
-            <dd className="space-y-1">
+            <dd className="space-y-3">
               {event.days.map((d) => (
-                <p key={d.day}>
-                  <span className="font-bold">
+                <div key={d.day} className="flex flex-wrap items-baseline gap-x-4">
+                  <span className="font-bold tracking-wide">
                     {d.label.replace('.', '/')} {d.weekday}
                   </span>
-                  　{d.open} - {d.close}
-                </p>
+                  <span className="text-white/90">
+                    {d.open} - {d.close}
+                  </span>
+                </div>
               ))}
             </dd>
 

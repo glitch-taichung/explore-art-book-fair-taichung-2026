@@ -10,8 +10,8 @@ const LINKS = [
 
 /**
  * 頂部導覽列：
- * - 在扉頁 (#top) 與首頁主畫面 (#map) 時隱藏（因為首頁下方已有大型 Programme / Exhibitors 雙入口）
- * - 一旦往下滑動進入子區段（或點擊入口跳轉至 #programme / #exhibitors），即以半透明毛玻璃浮現於頂部
+ * - 在首頁、扉頁與活動日程區段（#programme）隱藏，確保節目日程閱讀視野乾淨無遮擋
+ * - 一旦往下滑動到達書展夥伴（#exhibitor）及其後續活動資訊（#info）區段，即以半透明毛玻璃浮現於頂部
  * - 英文字體採用 EXPLORE ABF_Logotype_20261105.ai 的粗斜體字型與原檔向量標準字
  */
 export default function Navbar() {
@@ -19,13 +19,13 @@ export default function Navbar() {
 
   useEffect(() => {
     const checkScroll = () => {
-      const progEl = document.getElementById('programme')
-      if (progEl) {
-        const rect = progEl.getBoundingClientRect()
-        // 當下個區段 (#programme) 進入畫面頂端附近（或已滑過首頁）時自然浮現
-        setVisible(rect.top <= window.innerHeight * 0.35)
+      const exhibEl = document.getElementById('exhibitor')
+      if (exhibEl) {
+        const rect = exhibEl.getBoundingClientRect()
+        // 在 programme 區段（以及首頁主畫面）不顯示 navbar；滑入 exhibitor 及其後續區段才浮現
+        setVisible(rect.top <= 80)
       } else {
-        setVisible(window.scrollY > window.innerHeight * 1.5)
+        setVisible(window.scrollY > window.innerHeight * 1.8)
       }
     }
     checkScroll()
