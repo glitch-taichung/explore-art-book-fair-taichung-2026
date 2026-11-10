@@ -26,13 +26,13 @@ export const exhibitors = [
   b('nowhere', '飛地書店 Nowhere Bookstore', 'Spot 3', ['Taipei', 'Hongkong']),
   b('nodate', '野点 nodate', 'Spot 3', ['Taipei']),
   b('childreneyes', '不標準圖書 children eyes x 慢工文化 slowork publishing', 'Spot 3', ['Taipei']),
-  b('storage', 'Storage Book & Film', 'Spot 3', ['Seoul']),
+  b('storage', 'Seoul Publishers Table / 서울 퍼블리셔스 테이블', 'Spot 3', ['Seoul']),
   b('jerrys', '學學齋古書店 Jerry’s Rare Books & Autographs', 'Spot 3', ['Hsinchu', 'Hamburg']),
   b('aaa', '亞洲藝術文獻庫 Asia Art Archive', 'Spot 3', ['Hongkong']),
 
   // Spot 4（4 組）
   b('prndl', '品度藝術 PRNDL.art', 'Spot 4', ['Taipei']),
-  b('booksociety', 'The Book Society', 'Spot 4', ['Seoul']),
+  b('booksociety', 'The Book Society / Mediabus', 'Spot 4', ['Seoul']),
   b('thingbooks', 'Thing Books / Singapore Art Book Fair', 'Spot 4', ['Singapore']),
   b('thumbbooks', '拇指书 Thumb Books', 'Spot 4', ['Singapore']),
 

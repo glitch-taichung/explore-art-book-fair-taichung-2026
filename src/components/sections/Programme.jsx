@@ -589,11 +589,11 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                     onClick={(e) => e.stopPropagation()}
                     className="shrink-0 text-cap font-bold underline underline-offset-4 hover:opacity-75 md:mt-1.5"
                   >
-                    報名連結 ↗
+                    報名連結 ↗︎
                   </a>
                 ) : (
                   <span className="shrink-0 text-cap text-ink/75 md:mt-1.5">
-                    報名連結 ↗
+                    報名連結 ↗︎
                   </span>
                 )
               )}
@@ -622,11 +622,11 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                 onClick={(e) => e.stopPropagation()}
                 className="shrink-0 self-center text-cap font-bold text-ink underline underline-offset-4 hover:opacity-75"
               >
-                報名連結 ↗
+                報名連結 ↗︎
               </a>
             ) : (
               <span className="shrink-0 self-center text-cap text-ink/75">
-                報名連結 ↗
+                報名連結 ↗︎
               </span>
             )
           ) : (
@@ -745,7 +745,7 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                       rel="noreferrer"
                       className="font-bold underline underline-offset-4 text-ink hover:opacity-70"
                     >
-                      報名連結 ↗
+                      報名連結 ↗︎
                     </a>
                   )}
 
@@ -936,61 +936,65 @@ export default function Programme({ onSelectProgram }) {
                 <VenueMiniMap whereId={whereId} activeVenueKeys={activeVenueKeys} />
               </div>
 
-              {/* 2. 下面一長列可以往右滑看到從 where 到選項到 when 到選項 */}
-              <div className="flex w-full min-w-0 max-w-full items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none py-1 text-cap">
-                <span className="shrink-0 text-[0.78rem] font-bold text-ink">
-                  Where <span className="font-normal text-ink/70">你到哪了？</span>
-                </span>
-                {WHERE_OPTIONS.map((w) => {
-                  const active = whereId === w.id
-                  return (
-                    <button
-                      key={w.id}
-                      type="button"
-                      aria-pressed={active}
-                      onClick={() => toggleWhere(w.id)}
-                      className={`shrink-0 cursor-pointer border px-2.5 py-0.5 text-left whitespace-nowrap transition-colors ${
-                        active
-                          ? 'border-ink bg-peri font-bold text-white'
-                          : 'border-ink/35 bg-transparent text-ink hover:border-ink'
-                      }`}
-                    >
-                      {w.label}
-                    </button>
-                  )
-                })}
+              {/* 2. 手機版兩排：一排 Where、一排 When */}
+              <div className="space-y-2 text-cap">
+                {/* 第一排：Where 你到哪了？ */}
+                <div className="flex w-full min-w-0 max-w-full items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                  <span className="shrink-0 text-[0.78rem] font-bold text-ink">
+                    Where <span className="font-normal text-ink/70">你到哪了？</span>
+                  </span>
+                  {WHERE_OPTIONS.map((w) => {
+                    const active = whereId === w.id
+                    return (
+                      <button
+                        key={w.id}
+                        type="button"
+                        aria-pressed={active}
+                        onClick={() => toggleWhere(w.id)}
+                        className={`shrink-0 cursor-pointer border px-2.5 py-0.5 text-left whitespace-nowrap transition-colors ${
+                          active
+                            ? 'border-ink bg-peri font-bold text-white'
+                            : 'border-ink/35 bg-transparent text-ink hover:border-ink'
+                        }`}
+                      >
+                        {w.label}
+                      </button>
+                    )
+                  })}
+                </div>
 
-                <span className="mx-1 h-4 w-px shrink-0 bg-ink/25" />
+                {/* 第二排：When 你幾點到？ */}
+                <div className="flex w-full min-w-0 max-w-full items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                  <span className="shrink-0 text-[0.78rem] font-bold text-ink">
+                    When <span className="font-normal text-ink/70">你幾點到？</span>
+                  </span>
 
-                <span className="shrink-0 text-[0.78rem] font-bold text-ink">
-                  When <span className="font-normal text-ink/70">你幾點到？</span>
-                </span>
-
-                {WHEN_DAYS.map((day) => (
-                  <div key={day.date} className="flex items-center gap-1.5 shrink-0">
-                    <span className="font-latin text-[0.72rem] font-bold tracking-wider text-ink/65 shrink-0">
-                      {day.label}
-                    </span>
-                    {day.slots.map((slot) => {
-                      const active = selectedWhenIds.includes(slot.id)
-                      return (
-                        <button
-                          key={slot.id}
-                          type="button"
-                          aria-pressed={active}
-                          onClick={() => toggleWhen(slot.id)}
-                          className={`shrink-0 font-latin cursor-pointer border px-2 py-0.5 text-[0.78rem] whitespace-nowrap transition-colors ${
-                            active
-                              ? 'border-ink bg-ink font-bold text-white'
-                              : 'border-ink/35 bg-transparent text-ink hover:border-ink'
-                          }`}
-                        >
-                          {slot.label}
-                        </button>
-                      )
-                    })}
-                  </div>
-                ))}
+                  {WHEN_DAYS.map((day) => (
+                    <div key={day.date} className="flex items-center gap-1.5 shrink-0">
+                      <span className="font-latin text-[0.72rem] font-bold tracking-wider text-ink/65 shrink-0">
+                        {day.label}
+                      </span>
+                      {day.slots.map((slot) => {
+                        const active = selectedWhenIds.includes(slot.id)
+                        return (
+                          <button
+                            key={slot.id}
+                            type="button"
+                            aria-pressed={active}
+                            onClick={() => toggleWhen(slot.id)}
+                            className={`shrink-0 font-latin cursor-pointer border px-2 py-0.5 text-[0.78rem] whitespace-nowrap transition-colors ${
+                              active
+                                ? 'border-ink bg-ink font-bold text-white'
+                                : 'border-ink/35 bg-transparent text-ink hover:border-ink'
+                            }`}
+                          >
+                            {slot.label}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 

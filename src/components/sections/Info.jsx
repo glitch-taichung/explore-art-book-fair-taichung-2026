@@ -10,6 +10,9 @@ const IG_SLIDES = [
   { id: '06', caption: '啪！不紙這樣〜 Riso 孔版印刷體驗工作坊' },
   { id: '07', caption: 'Ta-da！手工書製作工作坊——做一本木頭書' },
   { id: '08', caption: 'Ya＃聽我放音樂 台語金曲之夜 Silent Party' },
+  { id: '09', caption: 'Ya＃聽我放音樂 台語金曲之夜 Silent Party' },
+  { id: '10', caption: 'Ya＃聽我放音樂 台語金曲之夜 Silent Party' },
+  { id: '11', caption: 'Ya＃聽我放音樂 台語金曲之夜 Silent Party' }
 ]
 
 /**

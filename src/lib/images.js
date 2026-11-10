@@ -210,6 +210,21 @@ function buildCandidatePaths(path) {
     if (path.includes('glitch/logo')) {
       candidates.push('exhibitors/glitch/Logo+文字_RGB', 'exhibitors/glitch/logo')
     }
+    if (path.includes('storage/logo')) {
+      candidates.push('exhibitors/storage/spt-logono-bgblack', 'exhibitors/storage/logo')
+    }
+    if (/exhibitors\/storage\/books\/0?1$/.test(path)) {
+      candidates.push('exhibitors/storage/books/book01', 'exhibitors/storage/books/extraordinary')
+    }
+    if (/exhibitors\/storage\/books\/0?2$/.test(path)) {
+      candidates.push('exhibitors/storage/books/book02', 'exhibitors/storage/books/ROCKXXURY')
+    }
+    if (/exhibitors\/storage\/books\/0?3$/.test(path)) {
+      candidates.push('exhibitors/storage/books/book03', 'exhibitors/storage/books/Moments of Bookdamas')
+    }
+    if (path.includes('booksociety/logo')) {
+      candidates.push('exhibitors/booksociety/logo', 'exhibitors/booksociety/TBS_logo_black')
+    }
   }
 
   // 若為 books/01 或 books/01-1 格式，自動支援 book01、01_1、book01-1 等常見命名

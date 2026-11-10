@@ -193,10 +193,10 @@ function ProgramMarquee({ details }) {
           rel="noreferrer"
           className="font-normal underline underline-offset-4 text-ink hover:opacity-65"
         >
-          報名連結 ↗
+          報名連結 ↗︎
         </a>
       ) : (
-        <span className="font-normal text-ink">報名連結 ↗</span>
+        <span className="font-normal text-ink">報名連結 ↗︎</span>
       )
     ) : (
       <span className="font-normal text-ink/80">免報名，現場自由參與</span>
@@ -592,7 +592,7 @@ export default function ProgramModal({ programId, onClose }) {
                         rel="noreferrer"
                         className="text-cap font-bold underline underline-offset-4 text-ink hover:opacity-65"
                       >
-                        報名連結 ↗
+                        報名連結 ↗︎
                       </a>
                     ) : (
                       <p className="text-cap font-bold text-ink/75">

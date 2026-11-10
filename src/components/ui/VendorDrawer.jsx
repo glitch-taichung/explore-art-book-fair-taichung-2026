@@ -65,6 +65,11 @@ function getVendorDropMappings(vendor) {
       { title: 'nodate', intro: 'nodate' },
     ],
     jerrys: [{ title: '學學齋', intro: '學學齋' }],
+    storage: [{ title: 'Seoul Publishers Table', intro: 'Seoul Publishers Table' }],
+    booksociety: [
+      { title: 'The Book Society', intro: 'The Book Society' },
+      { title: 'Mediabus', intro: 'Mediabus' },
+    ],
     aaa: [{ title: '亞洲藝術文獻庫', intro: '亞洲藝術文獻庫' }],
     prndl: [{ title: 'PRNDL.art', intro: 'PRNDL.art' }],
     thingbooks: [
@@ -121,7 +126,7 @@ function prepareVendorDrawerData(vendor) {
     }
   }
 
-  const isDeletedSectionVendor = ['library', 'jilongli', 'storage', 'booksociety', 'ssspace'].includes(vendor.id)
+  const isDeletedSectionVendor = ['library', 'jilongli', 'ssspace'].includes(vendor.id)
 
   let mappings = getVendorDropMappings(vendor)
   let text =
@@ -326,8 +331,8 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
   const titleLines = drawerData.titleLines
   const introParagraph = drawerData.introParagraph
 
-  // 圖書館、吉龍里麵包計劃、Storage Book & Film、The Book Society、ss space 先只到第二區段（selected 按鈕先灰掉）
-  const hasSelected = !['library', 'jilongli', 'storage', 'booksociety', 'ssspace'].includes(vendor?.id)
+  // 圖書館、吉龍里麵包計劃、ss space 先只到第二區段（selected 按鈕先灰掉）
+  const hasSelected = !['library', 'jilongli', 'ssspace'].includes(vendor?.id)
 
   useEffect(() => {
     if (!vendor) return
@@ -673,7 +678,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                   rel="noreferrer"
                   className="underline underline-offset-4 transition-colors hover:text-ink/65"
                 >
-                  Website ↗
+                  Website ↗︎
                 </a>
               )}
             </div>
@@ -873,7 +878,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                       rel="noreferrer"
                       className="underline underline-offset-4"
                     >
-                      Website ↗
+                      Website ↗︎
                     </a>
                   )}
                 </div>
@@ -1023,7 +1028,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                         {it.title}
                       </h3>
                       {it.subtitle && (
-                        <p className="mt-1.5 font-sans text-cap font-medium text-teal leading-normal">
+                        <p className="lime-stroke mt-1.5 font-sans text-cap font-bold leading-normal">
                           {it.subtitle}
                         </p>
                       )}
@@ -1036,7 +1041,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                         {it.title}
                       </h3>
                       {it.subtitle && (
-                        <p className="mt-1.5 font-sans text-cap font-medium text-teal leading-normal">
+                        <p className="lime-stroke mt-1.5 font-sans text-cap font-bold leading-normal">
                           {it.subtitle}
                         </p>
                       )}
