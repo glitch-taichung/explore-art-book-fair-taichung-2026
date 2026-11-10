@@ -1,0 +1,1 @@
+論壇講者備用肖像資料夾（各節目展開圖請優先放入 programs/<節目id>/speaker.jpg）。

@@ -1,0 +1,1366 @@
+{
+ "Spot1-1": {
+  "no": "Spot1-1",
+  "name": "臺中市立圖書館總館",
+  "ready": false,
+  "website": "https://www.library.taichung.gov.tw/"
+ },
+ "library": {
+  "no": "Spot1-1",
+  "name": "臺中市立圖書館總館",
+  "ready": false,
+  "website": "https://www.library.taichung.gov.tw/"
+ },
+ "Spot1-2": {
+  "no": "Spot1-2",
+  "name": "毛刺 Glitch",
+  "ready": false,
+  "ig": [
+   "@glitch.home"
+  ],
+  "introZh": "毛刺 Glitch 坐落於台中柳川旁，是一棟三層樓的藝文空間，透過展覽、出版與活動匯聚創意能量。秉持「軟硬兼施、能屈能伸」的品牌精神，持續打開不同領域之間的介面，觸發感受與對話。\n本次選書以「亞洲漫畫倉庫」蒐羅的亞洲各地獨立漫畫家作品為主，呈現多元的圖像敘事與別具巧思的裝幀設計，邀請觀眾在翻閱之間，探索亞際出版的豐富面貌，一飽眼福。",
+  "introEn": "Located beside the Liuchuan Canal in Taichung, Glitch is a three-story arts and cultural space that brings together creative energy through exhibitions, publishing, and events. Guided by a spirit of versatility—balancing strength with flexibility—Glitch continually opens connections across disciplines, sparking emotional responses and dialogue.\nThis selection features works by independent comic artists from across Asia, gathered by the “Asian Comics Vault.” Showcasing diverse visual narratives and inventive book design, it invites visitors to explore the rich landscape of publishing across Asia—a feast for the eyes with every turn of the page.",
+  "books": [
+   {
+    "name": "《如果不在意的話》",
+    "by": "刻刻慢話",
+    "bio": "這部漫畫讓鬼怪走進熟悉的台灣日常，穿梭於便利商店、老舊公寓與家族記憶之間。靈異不只是驚嚇的來源，更成為理解生命的另一種視角。透過幽默而溫暖的台語對白，人與鬼跨越生死界線，聊起牽掛、遺憾，以及那些來不及說出口的心事。\n當死亡不代表痛苦的終點，成為鬼魂也未必能擺脫生前的煩惱，故事便打開了對鬼怪的另類想像：祂們同樣困惑、孤單，也渴望被理解。作品將超自然情節融入細膩的生活觀察，在荒謬與溫情之間，重新叩問活著的意義，也讓我們看見，所謂的「鬼故事」，或許始終都是人的事。"
+   },
+   {
+    "name": "《殺人椅子》",
+    "by": "張道",
+    "bio": "殺吧！殺掉紅色的夢！\n糸奇在夢中夢見另一個自己在公車、簽書會等等地方到處殺人，它稱自己為工奇，然而這場夢逐漸外溢到現實，爭奪主權的椅子染紅了一切….\n\n張道將夢中經驗轉化為漫畫，讓尋常物件與奇異生物打亂現實的規則。主角在難以辨認的處境裡追索自己的身分，試圖返回熟悉的生活，卻也一步步陷入與自身的衝突。\n畫面以密集躁動的線條、強烈的黑白反差與不斷變換的視角，將心理上的壓迫推到讀者眼前。驚悚之中又穿插突如其來的笑點，使故事始終帶著一股莽撞的活力。《殺人椅子》也可以被讀作一則關於逃離的寓言：當眼前的世界令人難以忍受，想像或許能提供暫時的容身之處，卻未必能讓人擺脫心中的糾葛。"
+   },
+   {
+    "name": "CONTINUE ?",
+    "by": "Sonepo",
+    "bio": "這是一本簡單卻耐人尋味的無聲漫畫，透過分鏡的節奏與時間的推移，展開寧靜而有力的敘事。平淡生活中的喜與悲，在日復一日的往返之間，構成我們細微而真實的情感。讀來輕盈，卻令人難以忘懷。\n作者在書末透露，創作源於對無聊生活的不甘。然而，無聊也是每個人日常的一部分。透過創作重新咀嚼這些看似乏味的時刻，情緒似乎也找到了出口，讓平凡生活中難以言說的感受，逐漸顯現。"
+   }
+  ]
+ },
+ "glitch": {
+  "no": "Spot1-2",
+  "name": "毛刺 Glitch",
+  "ready": false,
+  "ig": [
+   "@glitch.home"
+  ],
+  "introZh": "毛刺 Glitch 坐落於台中柳川旁，是一棟三層樓的藝文空間，透過展覽、出版與活動匯聚創意能量。秉持「軟硬兼施、能屈能伸」的品牌精神，持續打開不同領域之間的介面，觸發感受與對話。\n本次選書以「亞洲漫畫倉庫」蒐羅的亞洲各地獨立漫畫家作品為主，呈現多元的圖像敘事與別具巧思的裝幀設計，邀請觀眾在翻閱之間，探索亞際出版的豐富面貌，一飽眼福。",
+  "introEn": "Located beside the Liuchuan Canal in Taichung, Glitch is a three-story arts and cultural space that brings together creative energy through exhibitions, publishing, and events. Guided by a spirit of versatility—balancing strength with flexibility—Glitch continually opens connections across disciplines, sparking emotional responses and dialogue.\nThis selection features works by independent comic artists from across Asia, gathered by the “Asian Comics Vault.” Showcasing diverse visual narratives and inventive book design, it invites visitors to explore the rich landscape of publishing across Asia—a feast for the eyes with every turn of the page.",
+  "books": [
+   {
+    "name": "《如果不在意的話》",
+    "by": "刻刻慢話",
+    "bio": "這部漫畫讓鬼怪走進熟悉的台灣日常，穿梭於便利商店、老舊公寓與家族記憶之間。靈異不只是驚嚇的來源，更成為理解生命的另一種視角。透過幽默而溫暖的台語對白，人與鬼跨越生死界線，聊起牽掛、遺憾，以及那些來不及說出口的心事。\n當死亡不代表痛苦的終點，成為鬼魂也未必能擺脫生前的煩惱，故事便打開了對鬼怪的另類想像：祂們同樣困惑、孤單，也渴望被理解。作品將超自然情節融入細膩的生活觀察，在荒謬與溫情之間，重新叩問活著的意義，也讓我們看見，所謂的「鬼故事」，或許始終都是人的事。"
+   },
+   {
+    "name": "《殺人椅子》",
+    "by": "張道",
+    "bio": "殺吧！殺掉紅色的夢！\n糸奇在夢中夢見另一個自己在公車、簽書會等等地方到處殺人，它稱自己為工奇，然而這場夢逐漸外溢到現實，爭奪主權的椅子染紅了一切….\n\n張道將夢中經驗轉化為漫畫，讓尋常物件與奇異生物打亂現實的規則。主角在難以辨認的處境裡追索自己的身分，試圖返回熟悉的生活，卻也一步步陷入與自身的衝突。\n畫面以密集躁動的線條、強烈的黑白反差與不斷變換的視角，將心理上的壓迫推到讀者眼前。驚悚之中又穿插突如其來的笑點，使故事始終帶著一股莽撞的活力。《殺人椅子》也可以被讀作一則關於逃離的寓言：當眼前的世界令人難以忍受，想像或許能提供暫時的容身之處，卻未必能讓人擺脫心中的糾葛。"
+   },
+   {
+    "name": "CONTINUE ?",
+    "by": "Sonepo",
+    "bio": "這是一本簡單卻耐人尋味的無聲漫畫，透過分鏡的節奏與時間的推移，展開寧靜而有力的敘事。平淡生活中的喜與悲，在日復一日的往返之間，構成我們細微而真實的情感。讀來輕盈，卻令人難以忘懷。\n作者在書末透露，創作源於對無聊生活的不甘。然而，無聊也是每個人日常的一部分。透過創作重新咀嚼這些看似乏味的時刻，情緒似乎也找到了出口，讓平凡生活中難以言說的感受，逐漸顯現。"
+   }
+  ]
+ },
+ "Spot1-3": {
+  "no": "Spot1-3",
+  "name": "dmp editions",
+  "ready": true,
+  "ig": [
+   "@dmp.editions"
+  ],
+  "introEn": "dmp editions is a practicing field based in Taipei, Taiwan that involves a multidisciplinary approach to publishing, content editing, archiving and all things related to book-making. We work mainly with Taiwanese artists, writers, editors, and curators to offer new ways of seeing and thinking as well as developing alternative narratives portrayed through the pages of a book.",
+  "books": [
+   {
+    "name": "礦",
+    "by": "林仁達",
+    "bio": "《礦》為藝術家林仁達的首部出版小說，講述關於一塊岩石「離群之旅」。脫離了地殼、大陸、國家，村民B將從政府機構偷來的「岩心」運至位於島嶼邊陲的村落一火燒庄，𨍭贈予摯友村民A。圍繞著這塊岩石，村民們展開了闊別多年的對話，尋找「理論」核心的石油工程師、為木魚聲所擾的幼兒園教師、身兼詩人外送員、拒絕與鯨鯊同游外商公司主管⋯⋯亮如白畫的夜晚，火燒庄村民輪流闡述，關於命運，關於偶然，關於個體與群體之間，那些欲拒還迎的連結。2020年，林仁達和余政哲在台灣彰化成立「火燒庄地質博物館」，從廣袤的地質景觀往前推近，聚焦孤立的個體，及其對於整體世界的描述。這塊岩石是館內的藏品之一，編號 M-PRE0001，而這本書擁有與這塊岩石相近的體積。"
+   },
+   {
+    "name": "哀悼練習",
+    "by": "許哲瑜、陳琬尹",
+    "bio": "《A Few Exercises in Mourning》是許哲瑜與陳琬尹共同創作，由dmp editions操刀編排的藝術家書。書中的視覺材料聚焦三件關於死亡、紀念與身體幻覺的影像作品：炸彈客重演其兄之死的〈空白相片〉、VR帶領觀眾走進雙視症患者童年記憶的〈白屋〉，以及二戰時動物行跪儀式重構的〈動物園假說〉。透過不同的3D掃描工具，許哲瑜和陳琬尹在一片褪去色彩的灰白數位模型中，探索穿越災難感知與神經殘影的「哀悼技術」。書中亦收錄兩篇文字創作：一篇為許哲瑜、陳琬尹與戲劇構作陳佾均合作，於2023年發表於德國世界劇場藝術節的講述表演講稿。一篇為許哲瑜、陳琬尹針對近年創作概念延伸書寫的〈幾次哀悼練習與災變論筆記〉。"
+   },
+   {
+    "name": "四樓天堂",
+    "by": "黃博志",
+    "bio": "「四樓天堂」（Heaven on Fourth）為藝術家黃博志在 2019 年紐約Performa 雙年展發表的藝術計畫，透過裝置、表演與文本，探討了發生在紐約法拉盛，一位非法移民身分的性工作者宋揚（Song Yang）的社會案件。這個文輯重新整理了藝術家的想法、受邀創作者對於這個事件的回應，以及關於創作轉譯與社會倡議之間緊張關係的討論，設計概念以「證據袋」、「觀光地圖」、卡牌、資料夾等不同形式展現文本，讓讀者在散落的線索之間自行探索。"
+   }
+  ]
+ },
+ "dmp": {
+  "no": "Spot1-3",
+  "name": "dmp editions",
+  "ready": true,
+  "ig": [
+   "@dmp.editions"
+  ],
+  "introEn": "dmp editions is a practicing field based in Taipei, Taiwan that involves a multidisciplinary approach to publishing, content editing, archiving and all things related to book-making. We work mainly with Taiwanese artists, writers, editors, and curators to offer new ways of seeing and thinking as well as developing alternative narratives portrayed through the pages of a book.",
+  "books": [
+   {
+    "name": "礦",
+    "by": "林仁達",
+    "bio": "《礦》為藝術家林仁達的首部出版小說，講述關於一塊岩石「離群之旅」。脫離了地殼、大陸、國家，村民B將從政府機構偷來的「岩心」運至位於島嶼邊陲的村落一火燒庄，𨍭贈予摯友村民A。圍繞著這塊岩石，村民們展開了闊別多年的對話，尋找「理論」核心的石油工程師、為木魚聲所擾的幼兒園教師、身兼詩人外送員、拒絕與鯨鯊同游外商公司主管⋯⋯亮如白畫的夜晚，火燒庄村民輪流闡述，關於命運，關於偶然，關於個體與群體之間，那些欲拒還迎的連結。2020年，林仁達和余政哲在台灣彰化成立「火燒庄地質博物館」，從廣袤的地質景觀往前推近，聚焦孤立的個體，及其對於整體世界的描述。這塊岩石是館內的藏品之一，編號 M-PRE0001，而這本書擁有與這塊岩石相近的體積。"
+   },
+   {
+    "name": "哀悼練習",
+    "by": "許哲瑜、陳琬尹",
+    "bio": "《A Few Exercises in Mourning》是許哲瑜與陳琬尹共同創作，由dmp editions操刀編排的藝術家書。書中的視覺材料聚焦三件關於死亡、紀念與身體幻覺的影像作品：炸彈客重演其兄之死的〈空白相片〉、VR帶領觀眾走進雙視症患者童年記憶的〈白屋〉，以及二戰時動物行跪儀式重構的〈動物園假說〉。透過不同的3D掃描工具，許哲瑜和陳琬尹在一片褪去色彩的灰白數位模型中，探索穿越災難感知與神經殘影的「哀悼技術」。書中亦收錄兩篇文字創作：一篇為許哲瑜、陳琬尹與戲劇構作陳佾均合作，於2023年發表於德國世界劇場藝術節的講述表演講稿。一篇為許哲瑜、陳琬尹針對近年創作概念延伸書寫的〈幾次哀悼練習與災變論筆記〉。"
+   },
+   {
+    "name": "四樓天堂",
+    "by": "黃博志",
+    "bio": "「四樓天堂」（Heaven on Fourth）為藝術家黃博志在 2019 年紐約Performa 雙年展發表的藝術計畫，透過裝置、表演與文本，探討了發生在紐約法拉盛，一位非法移民身分的性工作者宋揚（Song Yang）的社會案件。這個文輯重新整理了藝術家的想法、受邀創作者對於這個事件的回應，以及關於創作轉譯與社會倡議之間緊張關係的討論，設計概念以「證據袋」、「觀光地圖」、卡牌、資料夾等不同形式展現文本，讓讀者在散落的線索之間自行探索。"
+   }
+  ]
+ },
+ "Spot1-4": {
+  "no": "Spot1-4",
+  "name": "草地房 meadowroom",
+  "ready": true,
+  "ig": [
+   "@meadowandroom"
+  ],
+  "introZh": "meadowroom 草地房是位於台中的 Riso 印刷工作室與小型出版社，於 2024 年創立。靈感多來自生活中的觀察與日常物件，再以草地房的視覺語言與 Riso 詮釋。目前專注於 Riso 書籍，包括與創作者共同出版的作品，以及每月一封的草地信計畫，用 Riso 印刷的實體信件記錄工作室的日常。",
+  "introEn": "meadowroom is a Riso studio and small press based in Taichung, Taiwan, founded in 2024. The studio draws on everyday observations, objects, and lived experience, and translates them through its own visual language and the Riso process. Its current focus is Riso books, including titles published together with artists, and meadow mail, a monthly Riso-printed letter that records daily life at the studio.",
+  "books": [
+   {
+    "name": "Papillon",
+    "by": "Ya Wen Li / meadowroom",
+    "bio": "Papillon 是法文的蝴蝶，也是 Ya Wen Li 旅居法國時最早學會的字之一。書中收錄她測試噴槍時留下的試印紙，保留了噴槍的霧氣、顏色的偏移與邊緣的印痕。蝴蝶在書中延伸成緞帶，串起關於工作與母親的記憶。本書為 meadowroom 合作出版系列 Branch 第一冊。"
+   },
+   {
+    "name": "A Book of Traces",
+    "by": "Studio Bubee / meadowroom",
+    "bio": "A Book of Traces 收錄首飾工作室 Studio Bubee 在 2019 至 2025 年間留下的痕跡，包括完成的首飾、樣品與實驗、工具材料，以及製作中的雙手。書中可以看見一個形體如何從戒指長成另一件物件，再長進另一個想法裡。本書為 meadowroom 合作出版系列 Branch 第二冊。"
+   },
+   {
+    "name": "What the World Needs Now?",
+    "by": "Lian Lai / meadowroom",
+    "bio": "What the World Needs Now? 以同名歌曲為起點，Lian Lai 自 2023 年開始在城市的日常裡尋找愛的痕跡。影像大多來自偶然的轉角與路過的瞬間，愛以未經安排的形狀出現在街道之間。這本書也把問題交還給讀者：現在的世界需要什麼？本書為 meadowroom 合作出版系列 Branch 第三冊。"
+   }
+  ],
+  "website": "https://meadowroom.com"
+ },
+ "meadowroom": {
+  "no": "Spot1-4",
+  "name": "草地房 meadowroom",
+  "ready": true,
+  "ig": [
+   "@meadowandroom"
+  ],
+  "introZh": "meadowroom 草地房是位於台中的 Riso 印刷工作室與小型出版社，於 2024 年創立。靈感多來自生活中的觀察與日常物件，再以草地房的視覺語言與 Riso 詮釋。目前專注於 Riso 書籍，包括與創作者共同出版的作品，以及每月一封的草地信計畫，用 Riso 印刷的實體信件記錄工作室的日常。",
+  "introEn": "meadowroom is a Riso studio and small press based in Taichung, Taiwan, founded in 2024. The studio draws on everyday observations, objects, and lived experience, and translates them through its own visual language and the Riso process. Its current focus is Riso books, including titles published together with artists, and meadow mail, a monthly Riso-printed letter that records daily life at the studio.",
+  "books": [
+   {
+    "name": "Papillon",
+    "by": "Ya Wen Li / meadowroom",
+    "bio": "Papillon 是法文的蝴蝶，也是 Ya Wen Li 旅居法國時最早學會的字之一。書中收錄她測試噴槍時留下的試印紙，保留了噴槍的霧氣、顏色的偏移與邊緣的印痕。蝴蝶在書中延伸成緞帶，串起關於工作與母親的記憶。本書為 meadowroom 合作出版系列 Branch 第一冊。"
+   },
+   {
+    "name": "A Book of Traces",
+    "by": "Studio Bubee / meadowroom",
+    "bio": "A Book of Traces 收錄首飾工作室 Studio Bubee 在 2019 至 2025 年間留下的痕跡，包括完成的首飾、樣品與實驗、工具材料，以及製作中的雙手。書中可以看見一個形體如何從戒指長成另一件物件，再長進另一個想法裡。本書為 meadowroom 合作出版系列 Branch 第二冊。"
+   },
+   {
+    "name": "What the World Needs Now?",
+    "by": "Lian Lai / meadowroom",
+    "bio": "What the World Needs Now? 以同名歌曲為起點，Lian Lai 自 2023 年開始在城市的日常裡尋找愛的痕跡。影像大多來自偶然的轉角與路過的瞬間，愛以未經安排的形狀出現在街道之間。這本書也把問題交還給讀者：現在的世界需要什麼？本書為 meadowroom 合作出版系列 Branch 第三冊。"
+   }
+  ],
+  "website": "https://meadowroom.com"
+ },
+ "Spot2-1": {
+  "no": "Spot2-1",
+  "name": "SPEC MAGAZINE",
+  "ready": true,
+  "ig": [
+   "@supekkumag",
+   "@naked_chujun"
+  ],
+  "introZh": "SPEC MAGAZINE是以視覺藝術作為一個核心環境駐足遊蕩的獨立雜誌 我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n漫畫：我們會訂立一個主題 形成一種共思的行為 題目通常會是我們對當下的思考的總合直覺 統整出可推敲的路徑。\n出版與企劃－蛆；菌",
+  "introEn": "SPEC MAGAZINE is an independent magazine that wanders and pauses within an environment centred on visual art.\nWe focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\nComics: We establish a theme as a way of thinking collectively. The theme usually comes from the combined intuitions and reflections we have about the present moment, which we bring together and organise into a line of thought that can be examined more closely.\nPublishing & Projects :蛆;菌CHU；JUN",
+  "books": [
+   {
+    "name": "SPEC MAGAZINE ISSUE 3",
+    "by": null,
+    "bio": "✷思想轉換期的精神危機\n✷無人機光纖糞便\n✷有毒城市\n✷數位荒原的現代考古\n✷同時代性－提問．紀錄\n✷漫畫：巴別塔林立\n✷我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌\n\n✷A Crisis of Thought Amid an Ideological Shift\n✷Drone Fiber-Optic Shit\n✷Toxic cities\n✷Modern archaeology of the digital wasteland.\n✷Existing at the same period- inquiry, record.\n✷COMICS: Tower of Babels\n✷We focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\n\n✷Planning / Execution:\nI CHUN CHEN\nLIAOYEN-WEI\n✷ Publishing by蛆;菌CHU；JUN"
+   },
+   {
+    "name": "SPEC MAGAZINE ISSUE 2",
+    "by": null,
+    "bio": "✷光明與黑暗直面交疊\n✷全球化退潮的另闢蹊徑\n✷不確定是唯一的確定\n✷數位荒原的現代考古\n✷同時代性－提問．紀錄\n✷漫畫：科技封建主義-專注力盜賊\n✷我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌\n\n✷Light and darkness in direct confrontation and overlap.\n✷An alternative path amid the ebb of globalization.\n✷Uncertainty as the only certainty.\n✷Modern archaeology of the digital wasteland.\n✷COMICS：Topic: ✷Technological Feudalism – The Attention Thief\n✷We focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\n✷\nNo longer a hive\nA single cable\nhomologated\nPierces my membranes\nArriving there where before,\nOnly bullets or surgeons\nCould have reached.\n\nAnd I laugh\nAnd I laugh\nAnd I weep.\n\nA river of tears\nOf Microplastic\nSimultaneously\nArid and flooding\nAnd I weep.\"\n✷\n✷Planning / Execution:\nI CHUN CHEN\nLIAOYEN-WEI\n✷ Publishing by蛆;菌CHU；JUN"
+   },
+   {
+    "name": "TRACK",
+    "by": null,
+    "bio": "✷收錄kriss.pi 2023-2025的作品 包含刺青．繪畫．草稿\n✷kriss.pi深受粗獷主義建築和重型工業機械的粗獷景象影響 線條充滿快速道路與車內視角景象 出生於波蘭造船廠區的創作者kriss.pi 刺青已成為他的主要表達方式和全職工作 但仍在探索其他媒介 例如古典繪畫、雕塑、素描和服裝設計。\n專注於大型的刺青創作項目 喜歡玩視角、交通工具和節奏將 自己的作品視為數學方程式。\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌/SPEC MAGAZINE\n\n✷A collection of KRISS.PI works from 2023–2025, including tattoos, paintings, and sketches.\n✷Deeply influenced by the raw aesthetics of Brutalist architecture and heavy industrial machinery, Kris lines are filled with images of highways and interior car perspectives.\nGrowing up in a Polish shipyard area, tattooing gradually became his main language of expression and full-time practice.\nAt the same time, Kriss.pi continue to explore other mediums, including classical painting, sculpting , drawing, fashion and product design.\nKris currently focus on large-scale tattoo projects. He obsessively plays with perspective, vehicles, and rhythm, treating his works like mathematical equation.\n\n✷EDITOR\nI CHUN CHEN\nLIAO YEN- WEI\n✷Published by\n蛆；菌(CHU;JUN)/SPEC MAGAZINE"
+   }
+  ],
+  "website": "https://chu-jun.com/"
+ },
+ "spec": {
+  "no": "Spot2-1",
+  "name": "SPEC MAGAZINE",
+  "ready": true,
+  "ig": [
+   "@supekkumag",
+   "@naked_chujun"
+  ],
+  "introZh": "SPEC MAGAZINE是以視覺藝術作為一個核心環境駐足遊蕩的獨立雜誌 我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n漫畫：我們會訂立一個主題 形成一種共思的行為 題目通常會是我們對當下的思考的總合直覺 統整出可推敲的路徑。\n出版與企劃－蛆；菌",
+  "introEn": "SPEC MAGAZINE is an independent magazine that wanders and pauses within an environment centred on visual art.\nWe focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\nComics: We establish a theme as a way of thinking collectively. The theme usually comes from the combined intuitions and reflections we have about the present moment, which we bring together and organise into a line of thought that can be examined more closely.\nPublishing & Projects :蛆;菌CHU；JUN",
+  "books": [
+   {
+    "name": "SPEC MAGAZINE ISSUE 3",
+    "by": null,
+    "bio": "✷思想轉換期的精神危機\n✷無人機光纖糞便\n✷有毒城市\n✷數位荒原的現代考古\n✷同時代性－提問．紀錄\n✷漫畫：巴別塔林立\n✷我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌\n\n✷A Crisis of Thought Amid an Ideological Shift\n✷Drone Fiber-Optic Shit\n✷Toxic cities\n✷Modern archaeology of the digital wasteland.\n✷Existing at the same period- inquiry, record.\n✷COMICS: Tower of Babels\n✷We focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\n\n✷Planning / Execution:\nI CHUN CHEN\nLIAOYEN-WEI\n✷ Publishing by蛆;菌CHU；JUN"
+   },
+   {
+    "name": "SPEC MAGAZINE ISSUE 2",
+    "by": null,
+    "bio": "✷光明與黑暗直面交疊\n✷全球化退潮的另闢蹊徑\n✷不確定是唯一的確定\n✷數位荒原的現代考古\n✷同時代性－提問．紀錄\n✷漫畫：科技封建主義-專注力盜賊\n✷我們著眼於個人的微觀歷史 聚焦於當代視覺創作者的個人思考軌跡與生活樣態和所處的社群，進行具時效性且有機又充滿個人經驗與社會反應的提問與紀錄。\n\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌\n\n✷Light and darkness in direct confrontation and overlap.\n✷An alternative path amid the ebb of globalization.\n✷Uncertainty as the only certainty.\n✷Modern archaeology of the digital wasteland.\n✷COMICS：Topic: ✷Technological Feudalism – The Attention Thief\n✷We focus on personal micro-histories, tracing the thought processes, everyday lives, and communities of contemporary visual creators. Through timely, organic questions and documentation, we explore individual experiences and their responses to the world around them.\n✷\nNo longer a hive\nA single cable\nhomologated\nPierces my membranes\nArriving there where before,\nOnly bullets or surgeons\nCould have reached.\n\nAnd I laugh\nAnd I laugh\nAnd I weep.\n\nA river of tears\nOf Microplastic\nSimultaneously\nArid and flooding\nAnd I weep.\"\n✷\n✷Planning / Execution:\nI CHUN CHEN\nLIAOYEN-WEI\n✷ Publishing by蛆;菌CHU；JUN"
+   },
+   {
+    "name": "TRACK",
+    "by": null,
+    "bio": "✷收錄kriss.pi 2023-2025的作品 包含刺青．繪畫．草稿\n✷kriss.pi深受粗獷主義建築和重型工業機械的粗獷景象影響 線條充滿快速道路與車內視角景象 出生於波蘭造船廠區的創作者kriss.pi 刺青已成為他的主要表達方式和全職工作 但仍在探索其他媒介 例如古典繪畫、雕塑、素描和服裝設計。\n專注於大型的刺青創作項目 喜歡玩視角、交通工具和節奏將 自己的作品視為數學方程式。\n✷企劃執行：\nI CHUN CHEN\nLIAOYEN-WEI\n✷出版：蛆；菌/SPEC MAGAZINE\n\n✷A collection of KRISS.PI works from 2023–2025, including tattoos, paintings, and sketches.\n✷Deeply influenced by the raw aesthetics of Brutalist architecture and heavy industrial machinery, Kris lines are filled with images of highways and interior car perspectives.\nGrowing up in a Polish shipyard area, tattooing gradually became his main language of expression and full-time practice.\nAt the same time, Kriss.pi continue to explore other mediums, including classical painting, sculpting , drawing, fashion and product design.\nKris currently focus on large-scale tattoo projects. He obsessively plays with perspective, vehicles, and rhythm, treating his works like mathematical equation.\n\n✷EDITOR\nI CHUN CHEN\nLIAO YEN- WEI\n✷Published by\n蛆；菌(CHU;JUN)/SPEC MAGAZINE"
+   }
+  ],
+  "website": "https://chu-jun.com/"
+ },
+ "Spot2-2": {
+  "no": "Spot2-2",
+  "name": "窯座 YÁO",
+  "ready": false,
+  "note": "選書還是暫定",
+  "ig": [
+   "@mynameis_yao"
+  ],
+  "introZh": "窯座替代空間 YÁO Alternative Space 位於台中一棟老公寓裡。這裡同時是展覽空間，也是大家生活的地方。我們透過展覽、駐村與居住計畫，邀請不同背景的創作者進入空間，在日常裡創作、交流，也讓創作的過程持續對外開放。\n一樓「書店 SHU DIAN」是一間無人循環書店，書架上的二手書持續流動，隨著不同人的帶來、帶走而不斷改變。平時採無人管理方式營運，讀者可於營業時間自由入內閱讀、選購書籍。",
+  "books": [
+   {
+    "name": "水土不服 tsuí two book",
+    "by": "窯座&鯉魚 / 窯座鯉魚聯合獨立出版",
+    "bio": "《水土不服》（tsuí two book）由鯉魚藝廊與窯座替代空間共同出版，以「水」與「土」呼應兩個空間的不同個性。刊物採中英雙語、雙向翻閱設計，邀請33位藝術家於紙上創作，由兩個空間各自策展，形成一場跨越空間的「紙上展覽」。"
+   },
+   {
+    "name": "Breathless 缺氧地圖",
+    "by": "陳瑋萱 / 個人獨立出版",
+    "bio": "攝影看似保存了當下，卻不一定保存了當時的感受。\n《Breathless》從一次西藏旅行的影像出發，探索觀看、經驗與記憶之間的落差。透過照片的重新選擇與編排，讓影像脫離原本的時間與情境，在彼此的關係中產生新的意義。\n這是一場關於攝影如何記錄經驗，又如何重新創造經驗的編輯實驗。"
+   },
+   {
+    "name": "soupa kit 03 藏風納氣：空間的隱形秩序",
+    "by": "soupasoupa marketX謝榕蔚 / 個人獨立出版",
+    "bio": "「體驗藝術創作，只需要打開一個盒子。」\nsoupasoupa market 的第三款材料包延續藝術家謝榕蔚對空間與感知的探索，從日常環境出發，透過結構組裝、光線實驗與觀察練習，探索色彩、形狀及物件配置如何影響空間感受。引導參與者重新觀看熟悉的生活場域，發現那些看不見，卻持續影響我們的空間關係。"
+   }
+  ],
+  "website": "https://www.yaoalternativespace.com/"
+ },
+ "yao": {
+  "no": "Spot2-2",
+  "name": "窯座 YÁO",
+  "ready": false,
+  "note": "選書還是暫定",
+  "ig": [
+   "@mynameis_yao"
+  ],
+  "introZh": "窯座替代空間 YÁO Alternative Space 位於台中一棟老公寓裡。這裡同時是展覽空間，也是大家生活的地方。我們透過展覽、駐村與居住計畫，邀請不同背景的創作者進入空間，在日常裡創作、交流，也讓創作的過程持續對外開放。\n一樓「書店 SHU DIAN」是一間無人循環書店，書架上的二手書持續流動，隨著不同人的帶來、帶走而不斷改變。平時採無人管理方式營運，讀者可於營業時間自由入內閱讀、選購書籍。",
+  "books": [
+   {
+    "name": "水土不服 tsuí two book",
+    "by": "窯座&鯉魚 / 窯座鯉魚聯合獨立出版",
+    "bio": "《水土不服》（tsuí two book）由鯉魚藝廊與窯座替代空間共同出版，以「水」與「土」呼應兩個空間的不同個性。刊物採中英雙語、雙向翻閱設計，邀請33位藝術家於紙上創作，由兩個空間各自策展，形成一場跨越空間的「紙上展覽」。"
+   },
+   {
+    "name": "Breathless 缺氧地圖",
+    "by": "陳瑋萱 / 個人獨立出版",
+    "bio": "攝影看似保存了當下，卻不一定保存了當時的感受。\n《Breathless》從一次西藏旅行的影像出發，探索觀看、經驗與記憶之間的落差。透過照片的重新選擇與編排，讓影像脫離原本的時間與情境，在彼此的關係中產生新的意義。\n這是一場關於攝影如何記錄經驗，又如何重新創造經驗的編輯實驗。"
+   },
+   {
+    "name": "soupa kit 03 藏風納氣：空間的隱形秩序",
+    "by": "soupasoupa marketX謝榕蔚 / 個人獨立出版",
+    "bio": "「體驗藝術創作，只需要打開一個盒子。」\nsoupasoupa market 的第三款材料包延續藝術家謝榕蔚對空間與感知的探索，從日常環境出發，透過結構組裝、光線實驗與觀察練習，探索色彩、形狀及物件配置如何影響空間感受。引導參與者重新觀看熟悉的生活場域，發現那些看不見，卻持續影響我們的空間關係。"
+   }
+  ],
+  "website": "https://www.yaoalternativespace.com/"
+ },
+ "Spot2-3": {
+  "no": "Spot2-3",
+  "name": "鯉魚藝廊 Carp Gallery",
+  "ready": true,
+  "note": "編輯署名有點多 待確認",
+  "ig": [
+   "@carp__gallery"
+  ],
+  "introZh": "「由於能力弱得可悲，根本無法正常戰鬥，曾被稱為是世界最弱的寶可夢，甚至會隨著水流被沖走。但近年來研究發現，牠擁有在無論多麼骯髒的水中都能生存的頑強生命力，其評價已發生轉變。總是胡亂蹦跳著，據說長壽的鯉魚王跳躍過一次能翻越過一座山...」（擷取自維基百科「鯉魚王」）\n\n鯉魚藝廊是一間位於台中的獨立藝術空間，營運項目包含當代藝術展演及駐村計畫（Carp Gallery）、選書店（Carp Books）及兒童創作工作坊（Carp Play）。",
+  "introEn": "Due to its pitifully weak abilities, it is unable to engage in proper battles and was once considered the weakest Pokémon in the world, even drifting with water currents. However, recent studies have discovered its remarkable resilience, capable of surviving in even the filthiest of waters, leading to a reevaluation of its worth. Always flopping about, it is said that a long-lived Magikarp can leap high enough to cross a mountain in a single bound...” (excerpt from Wikipedia entry on Magikarp)\n\nCarp Gallery is an independent art space based in Taichung, Taiwan. Its programs include contemporary art exhibitions and artist residencies (Carp Gallery), a bookshop (Carp Books), and creative workshops for children (Carp Play).",
+  "books": [
+   {
+    "name": "Letterspace #50",
+    "by": "George Sinclair / De Buitenkant",
+    "bio": "自 2018 年初以來，letterspace.amsterdam 一直是阿姆斯特丹在地字體設計社群的交流平台。自創立之初，這項計畫便致力於拓展人們對字形運用的理解，重新探索我們如何透過字形進行溝通、設計與遊戲。Letterspace 由三位字體設計師共同創立，他們希望將視野延伸至自身的創作實踐之外，與其他同樣樂於以字體作為媒介進行創作的人們建立連結。\n\n透過定期舉辦的講座，以及對阿姆斯特丹在地字體設計社群的關注，主辦團隊不斷尋找新的聲音與創作方法。在這本書中，Letterspace 邀請了前 50 場活動的講者，分享全新作品、撰寫文章，或展示他們的實體與數位草圖本，同時回望自當年演講以來所經歷的時間與變化。\n\n《Letterspace 50》如同其講座本身，呈現出豐富多元的面貌。這是一本匯集各種觀念、方法與創作者的選集，展現出字體設計並非一門狹隘的專業領域，而是一片充滿活力、持續演變的創作風景。本書由兩位曾是 Arnhem 530 Type Club 成員的設計師共同操刀，以精美的設計呈現；而 530 Type Club 同樣以社群之間共同享受字體創作的樂趣為精神。"
+   },
+   {
+    "name": "水土不服 tsuí two book",
+    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊Carp Gallery、窯座替代空間YÁO Alternative space",
+    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。"
+   },
+   {
+    "name": "Journal of Wear",
+    "by": "Xingyun Shen / Clothes Press",
+    "bio": "《The Journal of Wear》 是一本文集，關注我們在感受、思考、遊玩、工作與生活中所穿的衣物，探討服裝如何以及為何被融入日常生活中。\n\n這本書以敘事風格的訪談為特色，從穿著者與撰寫者的視角共同捕捉穿著者獨特的聲音與故事。透過進入個人的衣櫃這個親密而私人的空間，讀者被邀請一同走進真實的人類生活經驗，感受衣著所帶來的喜悅與困擾。這些故事既描繪了穿衣這件事的日常與平凡，也展現了所謂「平凡」服裝所蘊含與激發的驚奇與奇觀，邀請讀者反思自己所接觸的日常服飾，將它們視為不僅是工具與自我表達的物件，更是承載更大故事的媒介。"
+   }
+  ]
+ },
+ "carp": {
+  "no": "Spot2-3",
+  "name": "鯉魚藝廊 Carp Gallery",
+  "ready": true,
+  "note": "編輯署名有點多 待確認",
+  "ig": [
+   "@carp__gallery"
+  ],
+  "introZh": "「由於能力弱得可悲，根本無法正常戰鬥，曾被稱為是世界最弱的寶可夢，甚至會隨著水流被沖走。但近年來研究發現，牠擁有在無論多麼骯髒的水中都能生存的頑強生命力，其評價已發生轉變。總是胡亂蹦跳著，據說長壽的鯉魚王跳躍過一次能翻越過一座山...」（擷取自維基百科「鯉魚王」）\n\n鯉魚藝廊是一間位於台中的獨立藝術空間，營運項目包含當代藝術展演及駐村計畫（Carp Gallery）、選書店（Carp Books）及兒童創作工作坊（Carp Play）。",
+  "introEn": "Due to its pitifully weak abilities, it is unable to engage in proper battles and was once considered the weakest Pokémon in the world, even drifting with water currents. However, recent studies have discovered its remarkable resilience, capable of surviving in even the filthiest of waters, leading to a reevaluation of its worth. Always flopping about, it is said that a long-lived Magikarp can leap high enough to cross a mountain in a single bound...” (excerpt from Wikipedia entry on Magikarp)\n\nCarp Gallery is an independent art space based in Taichung, Taiwan. Its programs include contemporary art exhibitions and artist residencies (Carp Gallery), a bookshop (Carp Books), and creative workshops for children (Carp Play).",
+  "books": [
+   {
+    "name": "Letterspace #50",
+    "by": "George Sinclair / De Buitenkant",
+    "bio": "自 2018 年初以來，letterspace.amsterdam 一直是阿姆斯特丹在地字體設計社群的交流平台。自創立之初，這項計畫便致力於拓展人們對字形運用的理解，重新探索我們如何透過字形進行溝通、設計與遊戲。Letterspace 由三位字體設計師共同創立，他們希望將視野延伸至自身的創作實踐之外，與其他同樣樂於以字體作為媒介進行創作的人們建立連結。\n\n透過定期舉辦的講座，以及對阿姆斯特丹在地字體設計社群的關注，主辦團隊不斷尋找新的聲音與創作方法。在這本書中，Letterspace 邀請了前 50 場活動的講者，分享全新作品、撰寫文章，或展示他們的實體與數位草圖本，同時回望自當年演講以來所經歷的時間與變化。\n\n《Letterspace 50》如同其講座本身，呈現出豐富多元的面貌。這是一本匯集各種觀念、方法與創作者的選集，展現出字體設計並非一門狹隘的專業領域，而是一片充滿活力、持續演變的創作風景。本書由兩位曾是 Arnhem 530 Type Club 成員的設計師共同操刀，以精美的設計呈現；而 530 Type Club 同樣以社群之間共同享受字體創作的樂趣為精神。"
+   },
+   {
+    "name": "水土不服 tsuí two book",
+    "by": "「水」作者群、「土」作者群 / 鯉魚藝廊Carp Gallery、窯座替代空間YÁO Alternative space",
+    "bio": "《水土不服》(tsuí two book) 是一本由鯉魚藝廊Carp Gallery及窯座替代空間YÁO Alternative space所共同出版的獨立刊物，以中英雙語發行。刊物名稱擷取各自空間名稱中「水」及「土」的元素意象，以「水土不服」的詼諧命名，指向兩個不同個性的空間，也取其成語之意，指出獨立藝術空間以一種靈活、彈性、不貼合現狀的狀態存在於藝術空間的範圍之中。"
+   },
+   {
+    "name": "Journal of Wear",
+    "by": "Xingyun Shen / Clothes Press",
+    "bio": "《The Journal of Wear》 是一本文集，關注我們在感受、思考、遊玩、工作與生活中所穿的衣物，探討服裝如何以及為何被融入日常生活中。\n\n這本書以敘事風格的訪談為特色，從穿著者與撰寫者的視角共同捕捉穿著者獨特的聲音與故事。透過進入個人的衣櫃這個親密而私人的空間，讀者被邀請一同走進真實的人類生活經驗，感受衣著所帶來的喜悅與困擾。這些故事既描繪了穿衣這件事的日常與平凡，也展現了所謂「平凡」服裝所蘊含與激發的驚奇與奇觀，邀請讀者反思自己所接觸的日常服飾，將它們視為不僅是工具與自我表達的物件，更是承載更大故事的媒介。"
+   }
+  ]
+ },
+ "Spot2-4": {
+  "no": "Spot2-4",
+  "name": "本冊圖書館 Artqpie Library",
+  "ready": true,
+  "ig": [
+   "@booksitedaily"
+  ],
+  "introZh": "Artqpie Library，\n一間用獨立出版方式分享紙本ZINE並編輯所見所聞的閱讀空間「本冊圖書館」。\n以雜誌和書堆疊城市裡的故事，用分享紙本與空間的方式介入群眾，\n透過獨有的展覽策劃和特色紙本與人群對話，空間搭配推廣插畫設計與喜歡的人事物，\n目前以台中為基楚地緩慢向外發展向內累積。",
+  "books": [
+   {
+    "name": "My dear ghost - 親愛的 鬼",
+    "by": "XINs / 咱誌Let’s Zine",
+    "bio": "於2022年疫情期間繪製的油性粉彩作品，畫在牛皮紙盒包裝上，\n色彩飽和溫潤帶著些許少女般的空靈，特殊的多次畫面重構，\n從版畫般的油粉彩堆疊到滿逸詩意的內頁編輯，\n內頁採用單光白牛粗糙面印製留下實體作品的紋理，\n白底也還原作者XIN在豐馥色彩下的純粹。\n圖文並敘的描述閱讀起來意外地容易有些共鳴，\n封面內頁信袋與信紙般的設計也藏著感情與愛情私心的乖隔。"
+   },
+   {
+    "name": "三角錐生態觀察日誌大圖鑑",
+    "by": "KAI / 咱誌Let’s Zine",
+    "bio": "「三角錐生態觀察日誌」的經營者 KAI，\n是一位身份多元的創作者——既是像素藝術創作者、\n玩具設計師，也是一位熱衷於觀察生活的記錄者。\n自 2020 年起，KAI 開始進行三角錐攝影創作，\n至今已拍攝超過 1000 支風貌各異的三角錐。\n他在城市的角落中，持續捕捉這些被忽略的小角色，\n並透過影像，展現它們在日常中的存在感與個性。"
+   },
+   {
+    "name": "真的假的 台灣！",
+    "by": "咱誌Let's Zine",
+    "bio": "此書在於發掘台灣有趣又不被經常說嘴的好「食」與好「物」，\n以「食的」和「用的」構成並搜羅近一百個品項，\n蘊藏著豐富日常文化的冷知識，發現那些遍佈台灣的日常風景。\n如同封面你我常見的台灣犬一樣有意思。\n內頁以黃綠雙色印刷，像是台中的好天氣與綠地充滿活力，\n內容更加入英文及日文，讓外國朋友也能夠帶著這本guide book了解台灣。\n也許在閱讀此書的同時會不停的發出「真的假的」的聲音呢！"
+   }
+  ]
+ },
+ "artqpie": {
+  "no": "Spot2-4",
+  "name": "本冊圖書館 Artqpie Library",
+  "ready": true,
+  "ig": [
+   "@booksitedaily"
+  ],
+  "introZh": "Artqpie Library，\n一間用獨立出版方式分享紙本ZINE並編輯所見所聞的閱讀空間「本冊圖書館」。\n以雜誌和書堆疊城市裡的故事，用分享紙本與空間的方式介入群眾，\n透過獨有的展覽策劃和特色紙本與人群對話，空間搭配推廣插畫設計與喜歡的人事物，\n目前以台中為基楚地緩慢向外發展向內累積。",
+  "books": [
+   {
+    "name": "My dear ghost - 親愛的 鬼",
+    "by": "XINs / 咱誌Let’s Zine",
+    "bio": "於2022年疫情期間繪製的油性粉彩作品，畫在牛皮紙盒包裝上，\n色彩飽和溫潤帶著些許少女般的空靈，特殊的多次畫面重構，\n從版畫般的油粉彩堆疊到滿逸詩意的內頁編輯，\n內頁採用單光白牛粗糙面印製留下實體作品的紋理，\n白底也還原作者XIN在豐馥色彩下的純粹。\n圖文並敘的描述閱讀起來意外地容易有些共鳴，\n封面內頁信袋與信紙般的設計也藏著感情與愛情私心的乖隔。"
+   },
+   {
+    "name": "三角錐生態觀察日誌大圖鑑",
+    "by": "KAI / 咱誌Let’s Zine",
+    "bio": "「三角錐生態觀察日誌」的經營者 KAI，\n是一位身份多元的創作者——既是像素藝術創作者、\n玩具設計師，也是一位熱衷於觀察生活的記錄者。\n自 2020 年起，KAI 開始進行三角錐攝影創作，\n至今已拍攝超過 1000 支風貌各異的三角錐。\n他在城市的角落中，持續捕捉這些被忽略的小角色，\n並透過影像，展現它們在日常中的存在感與個性。"
+   },
+   {
+    "name": "真的假的 台灣！",
+    "by": "咱誌Let's Zine",
+    "bio": "此書在於發掘台灣有趣又不被經常說嘴的好「食」與好「物」，\n以「食的」和「用的」構成並搜羅近一百個品項，\n蘊藏著豐富日常文化的冷知識，發現那些遍佈台灣的日常風景。\n如同封面你我常見的台灣犬一樣有意思。\n內頁以黃綠雙色印刷，像是台中的好天氣與綠地充滿活力，\n內容更加入英文及日文，讓外國朋友也能夠帶著這本guide book了解台灣。\n也許在閱讀此書的同時會不停的發出「真的假的」的聲音呢！"
+   }
+  ]
+ },
+ "Spot2-5": {
+  "no": "Spot2-5",
+  "name": "白水 SPRINGBAO",
+  "ready": true,
+  "ig": [
+   "@springbaopress"
+  ],
+  "introZh": "白水是台灣一家攝影書籍出版社，成立於2023年，發行攝影季刊《白水報》。 2025年成立藝術空間，以攝影藝術為主要研究基地，聚焦以攝影為主的當代藝術，並販售書籍、舉辦展覽及攝影工作坊。",
+  "introEn": "白水(Springbao) is a photography book publisher established in 2023, publishing the quarterly 白水報 (Springbao) as its main project. In 2025, an art center was established, with photography art as its main research base, focusing on contemporary art with photography as the main focus, and also selling books, small exhibitions and photography workshops.",
+  "books": [
+   {
+    "name": "登陸東途",
+    "by": "鄧廣燊&袁雅芝 / 白水",
+    "bio": "《登陸東途》作品登陸香港最東端，探索被埋藏在東平洲的歷史。\n月球的引力影響著潮汐，以太空人身分作聯想的登陸計劃，以潮汐現象為創作主軸，引用憩潮瞬間靜止及過渡狀態，詮釋香港持續受不同年代的人潮推湧，跟著浪潮流動。一些人會在浪濤中選擇停留；另一些人則會繼續流走。\n潮起潮落，「太空人」再度升空。\n\n\"Landing on the East\" reaches Hong Kong’s easternmost point to investigate the buried history of Tung Ping Chau, the city's most eastern island.\nJust as the moon’s gravitational pull influences the tides, this ‘landing’ project—conceived through the metaphor of an astronaut—centres on tidal phenomena. Drawing on the momentary stillness and transitional states of the ebb and flow, it interprets how Hong Kong has continually been swept along by the tides of people across different eras, moving with the currents. Some choose to remain amidst the waves; others continue to drift away.\nAs the tides rise and fall, the ‘astronauts’ take to the skies once more."
+   },
+   {
+    "name": "石頭山",
+    "by": "謝振允 / 白水",
+    "bio": "《石頭山》是謝振允在印度與中國邊界進行拍攝計畫的攝影集，本書收錄藝術家獨自一人騎乘摩托車，在崎嶇的高山中沿著公路朝邊境前進時所拍攝的照片，照片多以邊境公路上的水泥標誌為對象，其詼諧的詞句為寂寥綿延的中印邊境景觀寫下註腳。這些收錄於書中的邊境公路日常地景，轉化成為作者對現實、時間與社會結構的深刻反思。這些影像不僅是一段旅程的紀錄，更是關於邊界、記憶與身份的詩意隱喻。"
+   },
+   {
+    "name": "白水報(季刊)",
+    "by": "多位作家 / 白水",
+    "bio": "白水報，2023年開始的攝影刊物，每期由多位藝術家以連載方式刊登攝影作品，目前每季發行一次。白水報追求用紙本與大版面來呈現攝影，希望能引發人們對藝術攝影的興趣，並熱愛攝影。白水報初衷為固定刊登在頭版的白水計畫（創作者必須使用一捲底片拍照，不能挑選或格放，直接以印樣方式展示），白水計畫以攝影者的觀看與選擇作為對社會時代的回應，報紙同時包含多個文字專欄。"
+   }
+  ],
+  "website": "https://www.springbao.com/"
+ },
+ "springbao": {
+  "no": "Spot2-5",
+  "name": "白水 SPRINGBAO",
+  "ready": true,
+  "ig": [
+   "@springbaopress"
+  ],
+  "introZh": "白水是台灣一家攝影書籍出版社，成立於2023年，發行攝影季刊《白水報》。 2025年成立藝術空間，以攝影藝術為主要研究基地，聚焦以攝影為主的當代藝術，並販售書籍、舉辦展覽及攝影工作坊。",
+  "introEn": "白水(Springbao) is a photography book publisher established in 2023, publishing the quarterly 白水報 (Springbao) as its main project. In 2025, an art center was established, with photography art as its main research base, focusing on contemporary art with photography as the main focus, and also selling books, small exhibitions and photography workshops.",
+  "books": [
+   {
+    "name": "登陸東途",
+    "by": "鄧廣燊&袁雅芝 / 白水",
+    "bio": "《登陸東途》作品登陸香港最東端，探索被埋藏在東平洲的歷史。\n月球的引力影響著潮汐，以太空人身分作聯想的登陸計劃，以潮汐現象為創作主軸，引用憩潮瞬間靜止及過渡狀態，詮釋香港持續受不同年代的人潮推湧，跟著浪潮流動。一些人會在浪濤中選擇停留；另一些人則會繼續流走。\n潮起潮落，「太空人」再度升空。\n\n\"Landing on the East\" reaches Hong Kong’s easternmost point to investigate the buried history of Tung Ping Chau, the city's most eastern island.\nJust as the moon’s gravitational pull influences the tides, this ‘landing’ project—conceived through the metaphor of an astronaut—centres on tidal phenomena. Drawing on the momentary stillness and transitional states of the ebb and flow, it interprets how Hong Kong has continually been swept along by the tides of people across different eras, moving with the currents. Some choose to remain amidst the waves; others continue to drift away.\nAs the tides rise and fall, the ‘astronauts’ take to the skies once more."
+   },
+   {
+    "name": "石頭山",
+    "by": "謝振允 / 白水",
+    "bio": "《石頭山》是謝振允在印度與中國邊界進行拍攝計畫的攝影集，本書收錄藝術家獨自一人騎乘摩托車，在崎嶇的高山中沿著公路朝邊境前進時所拍攝的照片，照片多以邊境公路上的水泥標誌為對象，其詼諧的詞句為寂寥綿延的中印邊境景觀寫下註腳。這些收錄於書中的邊境公路日常地景，轉化成為作者對現實、時間與社會結構的深刻反思。這些影像不僅是一段旅程的紀錄，更是關於邊界、記憶與身份的詩意隱喻。"
+   },
+   {
+    "name": "白水報(季刊)",
+    "by": "多位作家 / 白水",
+    "bio": "白水報，2023年開始的攝影刊物，每期由多位藝術家以連載方式刊登攝影作品，目前每季發行一次。白水報追求用紙本與大版面來呈現攝影，希望能引發人們對藝術攝影的興趣，並熱愛攝影。白水報初衷為固定刊登在頭版的白水計畫（創作者必須使用一捲底片拍照，不能挑選或格放，直接以印樣方式展示），白水計畫以攝影者的觀看與選擇作為對社會時代的回應，報紙同時包含多個文字專欄。"
+   }
+  ],
+  "website": "https://www.springbao.com/"
+ },
+ "Spot3-1": {
+  "no": "Spot3-1",
+  "name": "飛地書店 Nowhere Bookstore",
+  "ready": true,
+  "ig": [
+   "@nowherebookstore"
+  ],
+  "introZh": "飛地作為關心離散主題的書店，在這幾年來，除了離散的書籍以外，我們遇到的許多讀者都希望能夠透過創作，在日常和不斷移動的過程中，透過小誌表達感受。而我們相信，每一本小誌，都是創作者專屬的空間，能夠自由發聲、自由創造，並與世界對話，更能建構跨地域、跨文化閱讀的空間實驗。",
+  "books": [
+   {
+    "name": "這裡不是故鄉，但我們在這裡 – 飛地2025年度小誌",
+    "by": "飛地書店",
+    "bio": "這是一本關於流動的Zine，\n也是一份移動、生活在異鄉的人們的生活手記，\n收錄大家在「轉身、穿越、落地」過程中的故事，獻給每一個正在建立生活的你。"
+   },
+   {
+    "name": "在2022的黑夜裏",
+    "by": "Mao / 飛地出版",
+    "bio": "「請控制靈魂對自由的渴望，不要開窗歌唱。」\n那是我們隔著口罩，看不清彼此表情的一年；\n 也是身陷混沌，卻仍然無法停止奔跑的一年。\n 在那些被按下暫停鍵的日子裡，\n 人該如何繼續生活？\n「感覺隧道長得走不到頭，但終於還是走出去了。」\n一本寫於黑夜的私人圖像日記，\n 新銳漫畫家 mao 以細膩敏銳的黑白筆觸，\n 記錄 2022 年裡的告別、等待、逃離與徬徨。"
+   },
+   {
+    "name": "51 攤",
+    "by": "一名記錄者 / 51 人（上海）、李俊峰—水獺文化（香港）聯合出版",
+    "bio": "《51 攤》是從第 11 屆上海雙年展「51 人」項目中延續而來的考察紀錄，以繪畫速寫勾勒出散落在上海特定位置的攤販，記錄他們的擺設細節、構造邏輯、材質用料、空間策略和街頭對話——精妙而富有人情。"
+   }
+  ]
+ },
+ "nowhere": {
+  "no": "Spot3-1",
+  "name": "飛地書店 Nowhere Bookstore",
+  "ready": true,
+  "ig": [
+   "@nowherebookstore"
+  ],
+  "introZh": "飛地作為關心離散主題的書店，在這幾年來，除了離散的書籍以外，我們遇到的許多讀者都希望能夠透過創作，在日常和不斷移動的過程中，透過小誌表達感受。而我們相信，每一本小誌，都是創作者專屬的空間，能夠自由發聲、自由創造，並與世界對話，更能建構跨地域、跨文化閱讀的空間實驗。",
+  "books": [
+   {
+    "name": "這裡不是故鄉，但我們在這裡 – 飛地2025年度小誌",
+    "by": "飛地書店",
+    "bio": "這是一本關於流動的Zine，\n也是一份移動、生活在異鄉的人們的生活手記，\n收錄大家在「轉身、穿越、落地」過程中的故事，獻給每一個正在建立生活的你。"
+   },
+   {
+    "name": "在2022的黑夜裏",
+    "by": "Mao / 飛地出版",
+    "bio": "「請控制靈魂對自由的渴望，不要開窗歌唱。」\n那是我們隔著口罩，看不清彼此表情的一年；\n 也是身陷混沌，卻仍然無法停止奔跑的一年。\n 在那些被按下暫停鍵的日子裡，\n 人該如何繼續生活？\n「感覺隧道長得走不到頭，但終於還是走出去了。」\n一本寫於黑夜的私人圖像日記，\n 新銳漫畫家 mao 以細膩敏銳的黑白筆觸，\n 記錄 2022 年裡的告別、等待、逃離與徬徨。"
+   },
+   {
+    "name": "51 攤",
+    "by": "一名記錄者 / 51 人（上海）、李俊峰—水獺文化（香港）聯合出版",
+    "bio": "《51 攤》是從第 11 屆上海雙年展「51 人」項目中延續而來的考察紀錄，以繪畫速寫勾勒出散落在上海特定位置的攤販，記錄他們的擺設細節、構造邏輯、材質用料、空間策略和街頭對話——精妙而富有人情。"
+   }
+  ]
+ },
+ "Spot3-2": {
+  "no": "Spot3-2",
+  "name": "野点 nodate",
+  "ready": true,
+  "ig": [
+   "@nodate.club"
+  ],
+  "introZh": "恆成紙業內容品牌野点nodate，將「紙」的物質性與承載文化抽象意涵，透過材質、文化內容出版品、感官企劃，重新定義載體與內容的各種可能關係。包括主題式ARTBOOK、次文化梳理出版系列，以紙張、出版品、配件作為文化實驗場，持續打破傳統出版與媒體界線，對載體型態、製作方式進行再思考。",
+  "introEn": "nodate is a content brand under AUSPIC PAPER that explores the materiality of paper and its abstract cultural significance, reimagining the relationship between medium and content through material experimentation, culturally driven publications, and sensory experiences.\nIts projects include themed art books and a publishing series documenting subcultures. Treating paper, publications, and accessories as spaces for cultural experimentation, nodate continues to challenge the boundaries between traditional publishing and media, rethinking the forms, formats, and methods of production.",
+  "books": [
+   {
+    "name": "從破少年到酷小孩：台灣刺青師1980—2020",
+    "by": "張玉音 / 野点",
+    "bio": "台灣刺青如何從社會禁忌闖進潮流雜誌，成為人們追逐的時尚？四十年來分布各地獨立經營的刺青師們，如何構築出一個清晰的生態？《從破少年到酷小孩：台灣刺青師1980—2020》是台灣第一本梳理刺青生態演變的深度觀察與圖冊。"
+   },
+   {
+    "name": "廣場 Square",
+    "by": "陳敬元 / 野点",
+    "bio": "《廣場Square》裝幀以A3尺幅敞開藝術家陳敬元繪製的全幅廣場圖，其作品以乍看古典的技法，錯置日常的空間與時間性，在材質與物件的選定上帶有幽微的政治性隱喻。底圖圖像敘事由一處中央噴水池展開，設計師盧翊軒再將九張不同折法的摺頁置入九個紙卡夾，在圖文對話與手動操作間，調動圖像遠近的敘事。"
+   },
+   {
+    "name": "白髮  Grey Hair",
+    "by": "陳念瑩 / 野点",
+    "bio": "野点 nodate 的ARTBOOK出版品「白髮  Grey Hair」，與藝術家陳念瑩合作共製，以手繪重建童年1990年代台灣的「俗艷日常」——紫水晶、開運盆栽、卡典希德貼字、老電視機、奶油水果蛋糕、鐵花窗，從老花眼鏡到房仲廣告，以小屋造型為裝幀外盒，以卷軸式風景抽拉出台灣生活場景的感性面貌，由人成長至今一路所及的風景，思考轉折、衰敗與不滅。"
+   }
+  ],
+  "website": "https://nodate.club/"
+ },
+ "nodate": {
+  "no": "Spot3-2",
+  "name": "野点 nodate",
+  "ready": true,
+  "ig": [
+   "@nodate.club"
+  ],
+  "introZh": "恆成紙業內容品牌野点nodate，將「紙」的物質性與承載文化抽象意涵，透過材質、文化內容出版品、感官企劃，重新定義載體與內容的各種可能關係。包括主題式ARTBOOK、次文化梳理出版系列，以紙張、出版品、配件作為文化實驗場，持續打破傳統出版與媒體界線，對載體型態、製作方式進行再思考。",
+  "introEn": "nodate is a content brand under AUSPIC PAPER that explores the materiality of paper and its abstract cultural significance, reimagining the relationship between medium and content through material experimentation, culturally driven publications, and sensory experiences.\nIts projects include themed art books and a publishing series documenting subcultures. Treating paper, publications, and accessories as spaces for cultural experimentation, nodate continues to challenge the boundaries between traditional publishing and media, rethinking the forms, formats, and methods of production.",
+  "books": [
+   {
+    "name": "從破少年到酷小孩：台灣刺青師1980—2020",
+    "by": "張玉音 / 野点",
+    "bio": "台灣刺青如何從社會禁忌闖進潮流雜誌，成為人們追逐的時尚？四十年來分布各地獨立經營的刺青師們，如何構築出一個清晰的生態？《從破少年到酷小孩：台灣刺青師1980—2020》是台灣第一本梳理刺青生態演變的深度觀察與圖冊。"
+   },
+   {
+    "name": "廣場 Square",
+    "by": "陳敬元 / 野点",
+    "bio": "《廣場Square》裝幀以A3尺幅敞開藝術家陳敬元繪製的全幅廣場圖，其作品以乍看古典的技法，錯置日常的空間與時間性，在材質與物件的選定上帶有幽微的政治性隱喻。底圖圖像敘事由一處中央噴水池展開，設計師盧翊軒再將九張不同折法的摺頁置入九個紙卡夾，在圖文對話與手動操作間，調動圖像遠近的敘事。"
+   },
+   {
+    "name": "白髮  Grey Hair",
+    "by": "陳念瑩 / 野点",
+    "bio": "野点 nodate 的ARTBOOK出版品「白髮  Grey Hair」，與藝術家陳念瑩合作共製，以手繪重建童年1990年代台灣的「俗艷日常」——紫水晶、開運盆栽、卡典希德貼字、老電視機、奶油水果蛋糕、鐵花窗，從老花眼鏡到房仲廣告，以小屋造型為裝幀外盒，以卷軸式風景抽拉出台灣生活場景的感性面貌，由人成長至今一路所及的風景，思考轉折、衰敗與不滅。"
+   }
+  ],
+  "website": "https://nodate.club/"
+ },
+ "Spot3-3": {
+  "no": "Spot3-3",
+  "name": "不標準圖書 children eyes x 慢工文化 slowork publishing",
+  "ready": true,
+  "ig": [
+   "@childreneyes.co",
+   "@sloworkpublishing"
+  ],
+  "introZh": "慢工文化成立於2013年，專注出版亞洲原創圖像小說，透過各地生活與歷史，探索兼具在地特色與新穎視覺的敘事風格；children eyes 則聚焦藝術家書籍與繪本的交界，以孩子般的好奇心與玩心，重新探索閱讀的各種可能。children eyes 創辦人蘇維同時也是慢工文化的資深編輯，此次兩個品牌將共同展出各具特色的出版作品。",
+  "introEn": "Founded in 2013, Slowork Publishing specializes in original graphic novels from Asia, exploring local lives and histories through distinctive storytelling that combines fresh visual perspectives with a strong sense of place. Meanwhile, children eyes focuses on the intersection of artists’ books and picture books, reimagining the possibilities of reading with childlike curiosity and playfulness. SUWEI, founder of children eyes, is also a senior editor at Slowork Publishing. This time, the two publishers are joining forces to showcase their unique publications.",
+  "books": [
+   {
+    "name": "貓咪的123456件禮物",
+    "by": "蘇維 / children eyes",
+    "bio": "一本關於陪伴、失去與道別的圖畫書。故事源自蘇維照顧生病老貓的經驗，透過想像貓咪會留下什麼話語，以時而冷酷、時而溫柔的口吻，陪伴讀者經歷不同的告別情緒。全書結合四種紙材與四種印刷工藝，讓書籍本身也成為敘事的一部分。"
+   },
+   {
+    "name": "A Trick of the Light - Folds in Folds",
+    "by": "민정화 / children eyes",
+    "bio": "本書的靈感來自於光與暗的變化，透過視覺呈現晝夜交替、時間流逝，以及日食、月食等天文現象。作者運用漸層變化與紙張的摺疊角度，在整本書的空間中，實驗幾何形態與動態流逝之間的交織敘事。"
+   },
+   {
+    "name": "我們失去而活著",
+    "by": "熱尼婭・奧莉妮克 / 慢工文化",
+    "bio": "本書收錄烏克蘭漫畫家熱尼婭．奧莉妮克刊於《紐約時報》與《紐約客》的兩篇散文漫畫，書寫戰爭中的失去、親密關係與殖民語言的認同糾葛。特別邀請長年報導烏克蘭的記者劉致昕執筆中譯，盈餘將全數投入另一部戰爭圖像小說製作。"
+   }
+  ]
+ },
+ "childreneyes": {
+  "no": "Spot3-3",
+  "name": "不標準圖書 children eyes x 慢工文化 slowork publishing",
+  "ready": true,
+  "ig": [
+   "@childreneyes.co",
+   "@sloworkpublishing"
+  ],
+  "introZh": "慢工文化成立於2013年，專注出版亞洲原創圖像小說，透過各地生活與歷史，探索兼具在地特色與新穎視覺的敘事風格；children eyes 則聚焦藝術家書籍與繪本的交界，以孩子般的好奇心與玩心，重新探索閱讀的各種可能。children eyes 創辦人蘇維同時也是慢工文化的資深編輯，此次兩個品牌將共同展出各具特色的出版作品。",
+  "introEn": "Founded in 2013, Slowork Publishing specializes in original graphic novels from Asia, exploring local lives and histories through distinctive storytelling that combines fresh visual perspectives with a strong sense of place. Meanwhile, children eyes focuses on the intersection of artists’ books and picture books, reimagining the possibilities of reading with childlike curiosity and playfulness. SUWEI, founder of children eyes, is also a senior editor at Slowork Publishing. This time, the two publishers are joining forces to showcase their unique publications.",
+  "books": [
+   {
+    "name": "貓咪的123456件禮物",
+    "by": "蘇維 / children eyes",
+    "bio": "一本關於陪伴、失去與道別的圖畫書。故事源自蘇維照顧生病老貓的經驗，透過想像貓咪會留下什麼話語，以時而冷酷、時而溫柔的口吻，陪伴讀者經歷不同的告別情緒。全書結合四種紙材與四種印刷工藝，讓書籍本身也成為敘事的一部分。"
+   },
+   {
+    "name": "A Trick of the Light - Folds in Folds",
+    "by": "민정화 / children eyes",
+    "bio": "本書的靈感來自於光與暗的變化，透過視覺呈現晝夜交替、時間流逝，以及日食、月食等天文現象。作者運用漸層變化與紙張的摺疊角度，在整本書的空間中，實驗幾何形態與動態流逝之間的交織敘事。"
+   },
+   {
+    "name": "我們失去而活著",
+    "by": "熱尼婭・奧莉妮克 / 慢工文化",
+    "bio": "本書收錄烏克蘭漫畫家熱尼婭．奧莉妮克刊於《紐約時報》與《紐約客》的兩篇散文漫畫，書寫戰爭中的失去、親密關係與殖民語言的認同糾葛。特別邀請長年報導烏克蘭的記者劉致昕執筆中譯，盈餘將全數投入另一部戰爭圖像小說製作。"
+   }
+  ]
+ },
+ "Spot3-4": {
+  "no": "Spot3-4",
+  "name": "Storage Book & Film",
+  "ready": false,
+  "note": "單位還未確定"
+ },
+ "storage": {
+  "no": "Spot3-4",
+  "name": "Storage Book & Film",
+  "ready": false,
+  "note": "單位還未確定"
+ },
+ "Spot3-5": {
+  "no": "Spot3-5",
+  "name": "學學齋古書店 Jerry’s Rare Books & Autographs",
+  "ready": true,
+  "ig": [
+   "@jerrysrarebooks"
+  ],
+  "introZh": "學學齋創辦人Jerry Wang經營西洋與東亞古書、信札手稿及歷史文獻，透過專業選書、考證與圖錄，探索紙上留下的個人經歷、大時代背景與文化交會。本次以「日本帝國下的多語言學習」專題圖錄為核心，搭配藝術家手稿、親簽書與江戶時代版畫等，邀請讀者從文字、圖像與手寫痕跡，走近不同時代的閱讀、學習與創作現場。",
+  "introEn": "Jerry’s Rare Books & Autographs specializes in Western and East Asian rare books, letters, manuscripts, and historical documents. Through research and catalogues, we explore personal histories, historical backgrounds and cultural encounters preserved on paper. At this fair, our thematic catalogue, Multilingual Learning under the Japanese Empire, is presented alongside artists’ manuscripts, signed books, and Edo-period prints, etc. inviting visitors to discover how people read, learned, and created across different eras.",
+  "books": [
+   {
+    "name": "《廣東語辭典 Kantongo Jiten》｜日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan",
+    "by": null,
+    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities."
+   },
+   {
+    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》｜從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees",
+    "by": null,
+    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages."
+   },
+   {
+    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book",
+    "by": null,
+    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy."
+   }
+  ]
+ },
+ "jerrys": {
+  "no": "Spot3-5",
+  "name": "學學齋古書店 Jerry’s Rare Books & Autographs",
+  "ready": true,
+  "ig": [
+   "@jerrysrarebooks"
+  ],
+  "introZh": "學學齋創辦人Jerry Wang經營西洋與東亞古書、信札手稿及歷史文獻，透過專業選書、考證與圖錄，探索紙上留下的個人經歷、大時代背景與文化交會。本次以「日本帝國下的多語言學習」專題圖錄為核心，搭配藝術家手稿、親簽書與江戶時代版畫等，邀請讀者從文字、圖像與手寫痕跡，走近不同時代的閱讀、學習與創作現場。",
+  "introEn": "Jerry’s Rare Books & Autographs specializes in Western and East Asian rare books, letters, manuscripts, and historical documents. Through research and catalogues, we explore personal histories, historical backgrounds and cultural encounters preserved on paper. At this fair, our thematic catalogue, Multilingual Learning under the Japanese Empire, is presented alongside artists’ manuscripts, signed books, and Edo-period prints, etc. inviting visitors to discover how people read, learned, and created across different eras.",
+  "books": [
+   {
+    "name": "《廣東語辭典 Kantongo Jiten》｜日治時期唯一的臺灣客語大辭典 The Only Major Taiwanese Hakka Dictionary of the Japanese Colonial Period Taiwan",
+    "by": null,
+    "bio": "昭和七年（1932）《廣東語辭典》由臺灣總督府編纂，以日語對譯臺灣客語，收錄約二萬五千條詞彙。在當時，「廣東語」所指的並非今日一般理解的廣東話，而是臺灣客家語。從語言學習、殖民行政，到地方語言的調查與記錄，九十多年後重新翻開這本辭典，它已成為今日研究日治時期臺灣客語的重要語言史料，彷彿重新聽見當時臺灣客庄曾經使用的聲音。\n\nShōwa 7 (1932) Kantongo Jiten was compiled by the Government-General of Taiwan as a Japanese–Taiwanese Hakka dictionary, containing approximately 25,000 entries. At the time, the term Kantongo (廣東語, “Guangdong language”) did not refer to Cantonese as it is generally understood today, but to the Hakka language spoken in Taiwan. \nFrom language learning and colonial administration to the survey and documentation of local languages, more than ninety years later, Kantongo Jiten remains an important historical record for understanding Taiwanese Hakka during the Japanese colonial period, as if allowing us to hear once again the voices once spoken in Taiwan’s Hakka communities."
+   },
+   {
+    "name": "《臺灣主要樹木方言集 Taiwan Shuyō Jumoku Hōgenshū》｜從樹木名稱看見臺灣的多語言地景 Taiwan’s Multilingual Landscape Through the Names of Trees",
+    "by": null,
+    "bio": "佐佐木舜一編，臺灣山林會，昭和十年（1935）。《臺灣主要樹木方言集》以臺灣常見樹木為核心，整理不同地區與族群對同一植物所使用的名稱，將植物學調查與地方語言記錄交織在同一本書中。一棵樹，在不同的人口中，可能擁有完全不同的名字。\n透過這些名稱，我們得以看見日治時期臺灣複雜的語言地景：閩南語、客語，以及各原住民族語言，都在植物名稱中留下痕跡。它不只是一冊植物學工具書，也是一份以樹木為座標，記錄臺灣土地、族群與語言關係的珍貴文獻。\n\nEdited by Sasaki Shun’ichi, Taiwan Sanrinkai, Shōwa 10 (1935) Taiwan Shuyō Jumoku Hōgenshū focuses on the major trees of Taiwan, documenting the different names used for the same plants across regions and communities. \nIn doing so, it brings botanical surveys and the recording of local languages together within a single volume. \nA single tree could carry entirely different names among different communities. Through these names, the book reveals the complex linguistic landscape of Taiwan under Japanese rule: Taiwanese Hokkien, Hakka, and various Indigenous languages all left their traces in the vocabulary of plants. More than a botanical reference book, it is a valuable record that uses trees as coordinates through which to trace the relationships between Taiwan’s land, peoples, and languages."
+   },
+   {
+    "name": "《Les Parisiennes》 藤田嗣治原畫 x 40位藝術家簽名 x Artists’ Book An Original Drawing by Tsuguharu Foujita × 40 Artists’ Signatures × Artists’ Book",
+    "by": null,
+    "bio": "1958年，巴黎 Musée Galliera 以「巴黎女性」為題舉辦第七屆 Les Peintres Témoins de leur Temps 展覽，並出版《Les Parisiennes》。封面由 Bernard Buffet 設計，書中匯集當時法國藝壇眾多藝術家的作品。 而這一冊更留下了藝術家本人直接介入的痕跡：藤田嗣治以藍墨親筆畫下一顆「有翼之心」（Cœur ailé）並簽名，書中另集有 39位法國藝術家的親筆簽名。 它既是1950年代巴黎藝術現場的展覽出版物，也是一冊逐漸被藝術家們親手改造成「唯一一本」的書。\n\nIn 1958, the Musée Galliera in Paris hosted the seventh Les Peintres Témoins de leur Temps exhibition, devoted to the theme of “Parisian Women,” and published Les Parisiennes to accompany it. Featuring a cover designed by Bernard Buffet, the volume brings together works by numerous artists active in France at the time.\nThis copy bears the personal marks of the artists themselves: Tsuguharu Foujita drew and signed a “winged heart” (Cœur ailé) in blue ink, while 39 other French artists added their signatures throughout the book.\nBoth a record of the Parisian art scene of the 1950s and a volume progressively transformed by the artists’ own hands, this is a truly unique copy."
+   }
+  ]
+ },
+ "Spot3-6": {
+  "no": "Spot3-6",
+  "name": "亞洲藝術文獻庫 Asia Art Archive",
+  "ready": true,
+  "ig": [
+   "@asiaartarchive"
+  ],
+  "introZh": "藝術即學問。亞洲藝術文獻庫以典藏、創造及分享亞洲當代藝術知識為己任，催化新知，豐富我們對世界的認識。亞洲藝術文獻庫擁有區內最珍貴的亞洲近代藝術歷史資料，公眾可透過我們的網站及親臨位於香港的圖書館免費查閱。文獻庫致力開發研究工具及建立社群，藉著舉辦研究項目、駐場計劃及教育活動，集思廣益以開拓知識領域。",
+  "introEn": "Art is knowledge. Asia Art Archive is a catalyst for new ideas that enrich our understanding of the world through the collection, creation, and sharing of knowledge around recent art in Asia. With one of the most valuable growing collections of material on the recent history of art from Asia, freely available from our website and onsite library, AAA builds tools and communities to collectively expand knowledge through research, residency, educational programmes, and publications.",
+  "books": [
+   {
+    "name": "People in Paper City (Part 1) and Notes for Paper City (Part 2)",
+    "by": "Kitman YEUNG, 楊潔雯 / the memory machine",
+    "bio": "People in Paper City is a collaborative photozine that explores how mobility has become us. It brings together real and fictional stories of paper people navigating shifting urban landscapes, the project initiates an intergenerational dialogue on globalization and city-making. \nNotes for Paper City curates six artistic works spanning from the late 1990s to today. Each exercise prompts us to think about the fluid, nomadic identity of the contemporary global resident—the person who moves for economic change, for cultural intersection, or who becomes immediately global as soon as they log in online. Produced in Kit Yeung's Try Try Zine residency 2026. \n\n\n楊潔雯發起了公開徵集，邀請參與者提交在其生命中意義重大的城市之檔案資料，並將這些檔案與其祖母的旅行照片並置，拼貼成攝影小誌《People in Paper City》，開展關於全球化與城市建構的跨代對話。在楊氏的工作坊中，參與者將一邊遊走城市，一邊閱讀小誌中那些被拼貼重組的城市故事，並在隨附筆記冊《Notes for Paper City》中記錄觀察。此筆記冊收錄一系列練習，取材自當代藝術家對城市流動性的批判，以及《移動中的城市》檔案的提案。我們誠邀大家在《Paper City》中一同動筆、聆聽、分享，共同傳遞流動的城市經驗。"
+   },
+   {
+    "name": "Hong Kong Art: A Curator’s History (1987–2004)",
+    "by": "HO Hing Kay Oscar, 何慶基 / Rizzoli International Publications (New York, United States)",
+    "bio": "Hong Kong Art (1987–2004): A Curator's History brings together groundbreaking artists, artworks, and exhibitions from one of the most important and overlooked periods of art history in Hong Kong. This book is the first illustrated study of its kind, presenting the situations and the stories that shaped the experience of many artists as their city underwent unprecedented political, social, and cultural change. Guiding the reader on this momentous journey is author and curator Oscar Ho, whose own boundary-pushing exhibitions were instrumental in shaping the development of Hong Kong art. Supported by the Asia Art Archive (AAA) and featuring more than 200 artworks and archival images, the research underpinning this publication builds on the AAA's extensive collections and artistic-community networks in Hong Kong.\n\n\n何慶基是《Hong Kong Art: A Curator’s History (1987–2004)》的作者，也是一位資深策展人、藝術評論家、教育家和藝術家，自1980年代以來一直致力形塑香港的文化景觀。他曾於1988年至2001年擔任香港藝術中心展覽總監，並在香港境內外策劃了眾多展覽。該書是資深策展人、藝術評論家及藝術家何慶基的新作，由文獻庫策劃製作、Rizzoli出版。配合大量首次發表的圖片，作者以親歷者的角度回顧其策展生涯，為讀者帶來一部豐富的香港藝術文化史。"
+   },
+   {
+    "name": "Zine* Together",
+    "by": "Claire Kim, Michelle Yee, Elizabeth Chung, S. Yi Yao Chao, Sarula Bao / Asia Art Archive in America",
+    "bio": "Zine* Together is the first exhibition of its kind to examine Asian American zines not only as objects, but as actions—creative, collective, and relational. Drawing from Asia Art Archive in America’s Reading Room collection, the exhibition highlights collaboratively produced zines from 2010 to the present, alongside newly commissioned projects and prompts that trace zine-making as a mode of shared authorship and community building."
+   }
+  ]
+ },
+ "aaa": {
+  "no": "Spot3-6",
+  "name": "亞洲藝術文獻庫 Asia Art Archive",
+  "ready": true,
+  "ig": [
+   "@asiaartarchive"
+  ],
+  "introZh": "藝術即學問。亞洲藝術文獻庫以典藏、創造及分享亞洲當代藝術知識為己任，催化新知，豐富我們對世界的認識。亞洲藝術文獻庫擁有區內最珍貴的亞洲近代藝術歷史資料，公眾可透過我們的網站及親臨位於香港的圖書館免費查閱。文獻庫致力開發研究工具及建立社群，藉著舉辦研究項目、駐場計劃及教育活動，集思廣益以開拓知識領域。",
+  "introEn": "Art is knowledge. Asia Art Archive is a catalyst for new ideas that enrich our understanding of the world through the collection, creation, and sharing of knowledge around recent art in Asia. With one of the most valuable growing collections of material on the recent history of art from Asia, freely available from our website and onsite library, AAA builds tools and communities to collectively expand knowledge through research, residency, educational programmes, and publications.",
+  "books": [
+   {
+    "name": "People in Paper City (Part 1) and Notes for Paper City (Part 2)",
+    "by": "Kitman YEUNG, 楊潔雯 / the memory machine",
+    "bio": "People in Paper City is a collaborative photozine that explores how mobility has become us. It brings together real and fictional stories of paper people navigating shifting urban landscapes, the project initiates an intergenerational dialogue on globalization and city-making. \nNotes for Paper City curates six artistic works spanning from the late 1990s to today. Each exercise prompts us to think about the fluid, nomadic identity of the contemporary global resident—the person who moves for economic change, for cultural intersection, or who becomes immediately global as soon as they log in online. Produced in Kit Yeung's Try Try Zine residency 2026. \n\n\n楊潔雯發起了公開徵集，邀請參與者提交在其生命中意義重大的城市之檔案資料，並將這些檔案與其祖母的旅行照片並置，拼貼成攝影小誌《People in Paper City》，開展關於全球化與城市建構的跨代對話。在楊氏的工作坊中，參與者將一邊遊走城市，一邊閱讀小誌中那些被拼貼重組的城市故事，並在隨附筆記冊《Notes for Paper City》中記錄觀察。此筆記冊收錄一系列練習，取材自當代藝術家對城市流動性的批判，以及《移動中的城市》檔案的提案。我們誠邀大家在《Paper City》中一同動筆、聆聽、分享，共同傳遞流動的城市經驗。"
+   },
+   {
+    "name": "Hong Kong Art: A Curator’s History (1987–2004)",
+    "by": "HO Hing Kay Oscar, 何慶基 / Rizzoli International Publications (New York, United States)",
+    "bio": "Hong Kong Art (1987–2004): A Curator's History brings together groundbreaking artists, artworks, and exhibitions from one of the most important and overlooked periods of art history in Hong Kong. This book is the first illustrated study of its kind, presenting the situations and the stories that shaped the experience of many artists as their city underwent unprecedented political, social, and cultural change. Guiding the reader on this momentous journey is author and curator Oscar Ho, whose own boundary-pushing exhibitions were instrumental in shaping the development of Hong Kong art. Supported by the Asia Art Archive (AAA) and featuring more than 200 artworks and archival images, the research underpinning this publication builds on the AAA's extensive collections and artistic-community networks in Hong Kong.\n\n\n何慶基是《Hong Kong Art: A Curator’s History (1987–2004)》的作者，也是一位資深策展人、藝術評論家、教育家和藝術家，自1980年代以來一直致力形塑香港的文化景觀。他曾於1988年至2001年擔任香港藝術中心展覽總監，並在香港境內外策劃了眾多展覽。該書是資深策展人、藝術評論家及藝術家何慶基的新作，由文獻庫策劃製作、Rizzoli出版。配合大量首次發表的圖片，作者以親歷者的角度回顧其策展生涯，為讀者帶來一部豐富的香港藝術文化史。"
+   },
+   {
+    "name": "Zine* Together",
+    "by": "Claire Kim, Michelle Yee, Elizabeth Chung, S. Yi Yao Chao, Sarula Bao / Asia Art Archive in America",
+    "bio": "Zine* Together is the first exhibition of its kind to examine Asian American zines not only as objects, but as actions—creative, collective, and relational. Drawing from Asia Art Archive in America’s Reading Room collection, the exhibition highlights collaboratively produced zines from 2010 to the present, alongside newly commissioned projects and prompts that trace zine-making as a mode of shared authorship and community building."
+   }
+  ]
+ },
+ "Spot4-1": {
+  "no": "Spot4-1",
+  "name": "品度藝術 PRNDL.art",
+  "ready": true,
+  "ig": [
+   "@prndl.art"
+  ],
+  "introZh": "PRNDL.art 成立於 2026 年，是一支以當代藝術為核心理念的年輕團隊。團隊致力於展覽策劃與國際交流計畫的專業執行，透過靈活的工作方法回應當代藝術生態系的多樣需求，並與藝術家、機構及文化工作者攜手合作，共同推動深具意義的創作與對話。",
+  "introEn": "PRNDL.art was founded in 2026 as a young team rooted in contemporary art. We specialize in exhibition curation and international exchange projects, responding to the diverse needs of the contemporary art ecosystem through flexible ways of working. We collaborate with artists, institutions, and cultural workers to foster meaningful creation and dialogue.",
+  "books": [
+   {
+    "name": "逃跑計畫 Running Sketch",
+    "by": "劉妍蓁 / moroyoung",
+    "bio": "《running sketch》是持續連載的長期工具書企劃，以黑色幽默反諷地探問：這個世代的台灣人面對戰爭危機，在想什麼、做了什麼、又能做些什麼？小誌混合工具書、漫畫與地獄笑話，融入大量台灣在地文化，既呈現戰爭風險下的現況，也批判全球與區域的政治角力。\n\nRunning Sketch is an ongoing handbook project that uses dark, satirical humor to ask what Taiwan's younger generation thinks, does, and can do in the face of war threats. Blending survival guide, comics, and gallows humor, with plenty of distinctly Taiwanese cultural references, the zine captures life under geopolitical tension while criticizing the regional and international power politics behind it."
+   },
+   {
+    "name": "今日孕夫 Daily Yunfu",
+    "by": "葉采薇 / moroyoung",
+    "bio": "本書源自藝術家葉采薇懷孕期間的隨筆塗鴉，將孕婦性轉為「孕夫」，以可愛詼諧的方式記錄孕期日常，描繪新手「爸爸」面對情緒起伏與生活不便時，如何與自己的身體相處。Risograph 印刷，質感如鉛筆素描本；序頁呼應「性別揭曉文化」，粉、藍二色隨機出貨。\n\nDaily Yunfu grew out of artist Yeh Tsai-Wei's doodles made during her pregnancy. Reimagining the expectant mother as a \"pregnant husband,\" the book records the humor and awkwardness of pregnancy: mood swings, daily inconveniences, and learning to live with a changing body. Printed in Risograph to resemble pencil on a sketchbook page, its opening page nods to gender-reveal culture, with pink or blue covers sent at random."
+   },
+   {
+    "name": "Archive Book “FORMATION RECORD”",
+    "by": "HOME ECONOMICS EXPERIMENT / BLANKMAGBOOKS（BLANKMAG）",
+    "bio": "HOME ECONOMICS EXPERIMENT 的檔案書，收錄 2020 至 2025 年的作品、展覽現場與周邊商品，全 208 頁、精裝。「FORMATION」是在日常與實驗中逐漸成形的狀態，「RECORD」是過程中定著的片段。本書並非總結過去，而是截取仍在流動的一段，讓讀者感受思考與嘗試彼此相連。\n\nThis 208-page hardcover archive documents HOME ECONOMICS EXPERIMENT's practice from 2020 to 2025, spanning artworks, exhibition views, and merchandise. \"Formation\" is the ongoing state of becoming through daily life and experimentation; \"Record\" is a fragment fixed along the way. Rather than closing the past, the book captures a moment in a continuing flow, where each page connects thought and trial to what comes next."
+   }
+  ]
+ },
+ "prndl": {
+  "no": "Spot4-1",
+  "name": "品度藝術 PRNDL.art",
+  "ready": true,
+  "ig": [
+   "@prndl.art"
+  ],
+  "introZh": "PRNDL.art 成立於 2026 年，是一支以當代藝術為核心理念的年輕團隊。團隊致力於展覽策劃與國際交流計畫的專業執行，透過靈活的工作方法回應當代藝術生態系的多樣需求，並與藝術家、機構及文化工作者攜手合作，共同推動深具意義的創作與對話。",
+  "introEn": "PRNDL.art was founded in 2026 as a young team rooted in contemporary art. We specialize in exhibition curation and international exchange projects, responding to the diverse needs of the contemporary art ecosystem through flexible ways of working. We collaborate with artists, institutions, and cultural workers to foster meaningful creation and dialogue.",
+  "books": [
+   {
+    "name": "逃跑計畫 Running Sketch",
+    "by": "劉妍蓁 / moroyoung",
+    "bio": "《running sketch》是持續連載的長期工具書企劃，以黑色幽默反諷地探問：這個世代的台灣人面對戰爭危機，在想什麼、做了什麼、又能做些什麼？小誌混合工具書、漫畫與地獄笑話，融入大量台灣在地文化，既呈現戰爭風險下的現況，也批判全球與區域的政治角力。\n\nRunning Sketch is an ongoing handbook project that uses dark, satirical humor to ask what Taiwan's younger generation thinks, does, and can do in the face of war threats. Blending survival guide, comics, and gallows humor, with plenty of distinctly Taiwanese cultural references, the zine captures life under geopolitical tension while criticizing the regional and international power politics behind it."
+   },
+   {
+    "name": "今日孕夫 Daily Yunfu",
+    "by": "葉采薇 / moroyoung",
+    "bio": "本書源自藝術家葉采薇懷孕期間的隨筆塗鴉，將孕婦性轉為「孕夫」，以可愛詼諧的方式記錄孕期日常，描繪新手「爸爸」面對情緒起伏與生活不便時，如何與自己的身體相處。Risograph 印刷，質感如鉛筆素描本；序頁呼應「性別揭曉文化」，粉、藍二色隨機出貨。\n\nDaily Yunfu grew out of artist Yeh Tsai-Wei's doodles made during her pregnancy. Reimagining the expectant mother as a \"pregnant husband,\" the book records the humor and awkwardness of pregnancy: mood swings, daily inconveniences, and learning to live with a changing body. Printed in Risograph to resemble pencil on a sketchbook page, its opening page nods to gender-reveal culture, with pink or blue covers sent at random."
+   },
+   {
+    "name": "Archive Book “FORMATION RECORD”",
+    "by": "HOME ECONOMICS EXPERIMENT / BLANKMAGBOOKS（BLANKMAG）",
+    "bio": "HOME ECONOMICS EXPERIMENT 的檔案書，收錄 2020 至 2025 年的作品、展覽現場與周邊商品，全 208 頁、精裝。「FORMATION」是在日常與實驗中逐漸成形的狀態，「RECORD」是過程中定著的片段。本書並非總結過去，而是截取仍在流動的一段，讓讀者感受思考與嘗試彼此相連。\n\nThis 208-page hardcover archive documents HOME ECONOMICS EXPERIMENT's practice from 2020 to 2025, spanning artworks, exhibition views, and merchandise. \"Formation\" is the ongoing state of becoming through daily life and experimentation; \"Record\" is a fragment fixed along the way. Rather than closing the past, the book captures a moment in a continuing flow, where each page connects thought and trial to what comes next."
+   }
+  ]
+ },
+ "Spot4-2": {
+  "no": "Spot4-2",
+  "name": "The Book Society",
+  "ready": false
+ },
+ "booksociety": {
+  "no": "Spot4-2",
+  "name": "The Book Society",
+  "ready": false
+ },
+ "Spot4-3": {
+  "no": "Spot4-3",
+  "name": "Thing Books / Singapore Art Book Fair",
+  "ready": false,
+  "note": "選書未確定",
+  "ig": [
+   "@thingbooks.co",
+   "@singaporeartbookfair"
+  ],
+  "introEn": "Founder and organiser of the annual Singapore Art Book Fair (SGABF) and home to a catalogue of published print materials under the SG Art Book Library, Thing Books is a centre for art book events & initiatives in Singapore.",
+  "books": [
+   {
+    "name": "New Worlds",
+    "by": "Designed by H55 in Singapore\nPublished in 2022 by Robert Zhao Renhui",
+    "bio": "From the window of my high-rise flat, I can see several green spaces. One of them is a small and lush green island bordered by several roads, and further away, a larger secondary forest. During Singapore's Covid-19 lockdown, I spent a lot of time looking at them.\n\nIn December 2020, the secondary forest started being cleared. At around the same time, I spotted a wild boar in the green island building a nest, preparing to give birth. She must have been evicted from the secondary forest, and her journey to her new home would have involved crossing several roads. In the end, this mother pig gave birth to six piglets. The secondary forest is now mostly gone. In the green island, I occasionally see the odd wild boar surfacing from the sides of the greenery.\n\nImages of deforestation outside my window, with a wild boar giving birth in a nearby forest during the same period. View from my window, December 2020.\n\nArchival images of deforestation in Singapore."
+   }
+  ]
+ },
+ "thingbooks": {
+  "no": "Spot4-3",
+  "name": "Thing Books / Singapore Art Book Fair",
+  "ready": false,
+  "note": "選書未確定",
+  "ig": [
+   "@thingbooks.co",
+   "@singaporeartbookfair"
+  ],
+  "introEn": "Founder and organiser of the annual Singapore Art Book Fair (SGABF) and home to a catalogue of published print materials under the SG Art Book Library, Thing Books is a centre for art book events & initiatives in Singapore.",
+  "books": [
+   {
+    "name": "New Worlds",
+    "by": "Designed by H55 in Singapore\nPublished in 2022 by Robert Zhao Renhui",
+    "bio": "From the window of my high-rise flat, I can see several green spaces. One of them is a small and lush green island bordered by several roads, and further away, a larger secondary forest. During Singapore's Covid-19 lockdown, I spent a lot of time looking at them.\n\nIn December 2020, the secondary forest started being cleared. At around the same time, I spotted a wild boar in the green island building a nest, preparing to give birth. She must have been evicted from the secondary forest, and her journey to her new home would have involved crossing several roads. In the end, this mother pig gave birth to six piglets. The secondary forest is now mostly gone. In the green island, I occasionally see the odd wild boar surfacing from the sides of the greenery.\n\nImages of deforestation outside my window, with a wild boar giving birth in a nearby forest during the same period. View from my window, December 2020.\n\nArchival images of deforestation in Singapore."
+   }
+  ]
+ },
+ "Spot4-4": {
+  "no": "Spot4-4",
+  "name": "拇指书 Thumb Books",
+  "ready": true,
+  "ig": [
+   "@thumb.books"
+  ],
+  "introEn": "Thumb Books makes children’s books for both children and adults. Founded in 2022, the press publishes the works of Singaporean artist, Lai Yu Tong.",
+  "books": [
+   {
+    "name": "Rearrange The World",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "A bottle, a can, and a cup move about on a table. With each arrangement, the objects take on different meanings. They tumble, balance, overturn and roll around one another. If we can’t change the world, let’s rearrange it."
+   },
+   {
+    "name": "The World (Postcards)",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "When I think about the end of the world I often think of a bright light. In our last moments we recount all the things that make up the world as we know it that will now be gone. A pencil, a butterfly, a hammer, a ring, a seed, a hat, a wheel, a leaf, a bird, a button, an airplane, a car, a shoe. All of the things we touched, used, saw, bought, loved, threw away. Every single one of them in front of our eyes for one last time."
+   },
+   {
+    "name": "The Dogs",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "The first time I saw the dogs, they barked and chased after me. I cycled away as fast as I could. Then I realised I had never felt fear like this before. I kept going back to see them. The more I did, the more I understood them."
+   }
+  ],
+  "website": "https://thumb-books.com"
+ },
+ "thumbbooks": {
+  "no": "Spot4-4",
+  "name": "拇指书 Thumb Books",
+  "ready": true,
+  "ig": [
+   "@thumb.books"
+  ],
+  "introEn": "Thumb Books makes children’s books for both children and adults. Founded in 2022, the press publishes the works of Singaporean artist, Lai Yu Tong.",
+  "books": [
+   {
+    "name": "Rearrange The World",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "A bottle, a can, and a cup move about on a table. With each arrangement, the objects take on different meanings. They tumble, balance, overturn and roll around one another. If we can’t change the world, let’s rearrange it."
+   },
+   {
+    "name": "The World (Postcards)",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "When I think about the end of the world I often think of a bright light. In our last moments we recount all the things that make up the world as we know it that will now be gone. A pencil, a butterfly, a hammer, a ring, a seed, a hat, a wheel, a leaf, a bird, a button, an airplane, a car, a shoe. All of the things we touched, used, saw, bought, loved, threw away. Every single one of them in front of our eyes for one last time."
+   },
+   {
+    "name": "The Dogs",
+    "by": "Lai Yu Tong / Thumb Books",
+    "bio": "The first time I saw the dogs, they barked and chased after me. I cycled away as fast as I could. Then I realised I had never felt fear like this before. I kept going back to see them. The more I did, the more I understood them."
+   }
+  ],
+  "website": "https://thumb-books.com"
+ },
+ "Spot5-1": {
+  "no": "Spot5-1",
+  "name": "ss space space",
+  "ready": false
+ },
+ "ssspace": {
+  "no": "Spot5-1",
+  "name": "ss space space",
+  "ready": false
+ },
+ "Spot5-2": {
+  "no": "Spot5-2",
+  "name": "遊牧木瓜出版 Nomad Papaya Books",
+  "ready": true,
+  "ig": [
+   "@nomadpapayabooks"
+  ],
+  "introZh": "是一個設立於臺灣及德國的獨立出版社，專注以藝術書 / 小誌探討文化及身份認同上的跨越及轉型。\n當人們跨越國界，離開原生的歷史及故鄉，是什麼產生了變化？\n相遇的意外性是否能產生一種新的身份認同？\n遊牧木瓜出版以臺灣的視角出發，試圖透過藝術出版的實踐建立新的連結。",
+  "introEn": "Nomad Papaya Books is an art book publishing house focusing on transition of culture and identity, based in Taiwan / Germany. \nThe founder started questioning the identity of Taiwan and got really confused by himself, so he decided to collaborate with people and try (not) to answer the questions.\nWhat is changing when you cross the border, leaving your own history / houses ?\nCan new encounters form new identities ?",
+  "books": [
+   {
+    "name": "麻將：國際說明書",
+    "by": "Mahjong Friends（麻將朋友） / 遊牧木瓜出版",
+    "bio": "我們該如何面對中、港、臺之間的緊張及衝突？\n\n麻將是一個凝聚了東亞豐富歷史和文化傳統的桌遊。在其傳播過程中，因文化和地理分界，不同的國家和地區發展出了各自不同的麻將規則（如台灣、香港、中國各地區、日本、韓國、馬來西亞和新加坡等地的麻將規則都不同）。 但由於所有不同的規則都相對容易互換，懂麻將的人－盡管有不同的語言、文化和意識形態背景－都可以坐在一起打：在這樣的情況下，那些衝突、民族、政治立場、問題、意識形態鬥爭－瞬間退後並使人們找到了一個共同的基礎。麻將因此成為人們聚會、溝通、交流和交朋友的場所。\n\n\n為了進一步擴展和推廣這一珍貴的情境，我們決定成立一個名為 \"Mahjong Friends麻將朋友 \"的藝術團體，與來自不同地區的人們一起開始這個計畫。\n我們研究了各國各地區的不同玩法，找出最大的交集點，抓出一個「麻將規則的骨幹」寫成這本國際說明書，是一個不屬於任何一個地方卻通用的規則。希望透過這本書學到規則後能夠依據不同情境、不同地方的打法彈性調整，也為了翻轉字過多的枯躁感所以嘗試了以圖像主導的說明書。而除了單純的「規則」，我們將各種隱喻嵌入了整套體系，重新詮釋了牌面及遊戲。我們也在海報上整理了兩個年表，一則為麻將在世界上傳播的過程，另一則為中港臺之間的重要事件年表，讓不同地區的人可以有一個共同的基本認識。\n \n我們希望以麻將做為手段，讓更多人了解東亞地區錯綜複雜的歷史和微妙緊張的政治現狀，因為麻將本身就充滿了政治隱喻。作為 \"Mahjong Friends \"的第一本出版品，《麻將：國際說明書》透過幽默的描述和生動的插圖，介紹了麻將的基本規則以及麻將牌型背後的文化故事，並配有一張充滿麻將檔案和歷史的海報，以及一張小小的作弊小紙（給初學者）。這本*又酷又有深度*的小手冊旨在透過麻將，為世界帶來和平。\n\nHow can we deal with the conflicts between Taiwan – China- Hong Kong?\nMahjong is a board game that encapsulates the rich history and cultural traditions of East Asia. Due to the cultural and geographical isolation in the process of Mahjong’s transmission, different countries and regions have their own diverse mahjong rules (e.g. the rules in Taiwan, Hong Kong, various regions of China, Japan, Korea, Malaysia and Singapore etc.), but because all the different rules are relatively easy to interchange, people who know Mahjong - though having different language, cultural and ideological backgrounds - could sit down and play mahjong together: in this case those conflicts, nationalities, political positions, problems, ideologies, struggles - found a common ground. Mahjong thus becomes the situation/place where people meet, communicate, exchange, and make friends.\n \nIn the wish to further extend and promote this precious situation, we decided to form a collective „Mahjong Friends“ and started the project with people from different regions. We hope to use mahjong as a means to help more people understand the intricate history and delicate, tense current political situation in East Asia, as the game itself is full of political metaphors. As the first publication of Mahjong Friends, Mahjong: an International Manual introduced the basic Mahjong rules as well as the culture/stories behind the patterns of Mahjong tiles through witty descriptions and vivid illustrations, accomplished with a poster full of Mahjong archive & history, as well as a piece of tiny Mahjong cheating paper, this *very cool and deep* Mahjong Manual book aims to bring peace to the world."
+   },
+   {
+    "name": "城市遊牧木瓜鳥集",
+    "by": "遊牧木瓜出版",
+    "bio": "城市高樓的陰影裡，一棵野生的木瓜樹下停了一隻鳥，牠的身形圓潤、色澤如土，挺立身體的模樣像極了樹上的木瓜。黑冠麻鷺，人們常稱牠為地瓜或大笨鳥，平時在城市裡悠然自得。而就在某個偶然的午後，牠凜然站立於結實累累的木瓜樹下，在光影交錯之間我們彷彿在這兩者之間看見了相似的一面。\n本書以黑冠麻鷺作為主要凝視與談論的對象，並仿照人們對黑冠麻鷺取小名的邏輯，從外觀的「相似形」出發，以「木瓜鳥」作為新暱稱之，進而衍生攝影、三行詩、觀察筆記等方法，去描繪一種承載人們太多投射的鳥類。同時也回扣本社前作《城市遊牧木瓜圖集》對於臺灣木瓜的探索，將二者並置觀看，在兩方逐步與城市共存的身姿中，思索其因歷史、生態變遷而產生的多種身份與意義。\n\nIn the shadow of the city’s high-rises, a bird perched beneath a wild papaya tree. Its rounded form and earthy hue allowed it to stand almost upright, like a papaya hanging from the branches. The Malayan Night Heron, often nicknamed “sweet potato bird” or “big silly bird” by locals - usually wanders the city with a carefree ease. Yet, on one chance afternoon, it stood quietly beneath a papaya tree heavy with fruit. In the shifting interplay of light and shadow, a striking resemblance between the two came into our view.\n\nThis book focuses its gaze and discourse on the Malayan Night Heron. Following the logic behind the nicknames people give to this bird, and taking the physical resemblance as the starting point, we propose “papaya bird” as a new nickname for it. From there, the book also employs methods such as photography, three-line poems, and observational notes to portray a bird that bears the weight of so many human projections. Echoing the exploration of Taiwanese papayas in our previous publication The Image Book of Nomad Papaya, by juxtaposing the bird and the fruit, we reflect on their evolving identities and meanings shaped by historical and ecological shifts, as both species gradually adapt to coexisting within the cityscape."
+   },
+   {
+    "name": "熱帶植物寫真集 第七卷",
+    "by": "林庭宇",
+    "bio": "《熱帶植物寫真集》是一套於二戰前在臺北植物園拍攝的植物攝影集。當時日本本島因氣候環境關係，無法在自然條件下種植熱帶植物，因此當臺灣成為日本領土時，熱帶植物的種植及開發，便成了植民時期的重點工作之一。作者工藤彌九郎（1889～？）並沒有留下太多資訊，也沒有任何照片，只知道他是一位在臺北植物園工作的植物栽培技師。出版時間橫跨十四年（1929～1943），《熱帶植物寫真集》總共有六卷，收錄了180種熱帶植物，是臺灣最早且完整的關於「熱帶植物」的影像紀錄。\n\n這套書作為熱帶植物在臺灣生長萌芽的見證，在經歷時間的洗滌，究竟有什麼留下？\n\n《熱帶植物寫真集 第七卷》試圖爬梳整套書出版的過程，作為原六卷出版經緯的徹底考察紀錄，《第七卷》試圖探問各種關於「痕跡」的問題——古書流轉與版本更迭所留下的痕跡（版本學）、時間在紙張上沉積的痕跡（色澤與斑痕），以及東亞殖民歷史所遺留的痕跡。在這些痕跡之間，交織著一種曖昧而複雜的情感：對植物與自然的熱愛，以及殖民土地的凝視與倒映。\n\n\n\"Iconography of Tropical Plants\" is originally a photo collection of tropical plants in Taiwan published before World War II. Unable to grow tropical plants naturally in mainland Japan, the Japanese colonial administration made their cultivation a priority in Taiwan. Very little is known about the author, Yakuro Kudo (1889–?), and no photographs of him are known to survive. It is only known that he worked as a plant cultivation technician at the Taipei Botanical Garden. Published over a span of fourteen years (1929–1943), \"Iconography of Tropical Plants in Taiwan\" remains Taiwan’s earliest and most comprehensive visual record, consists of six volumes documenting 180 species.\n\nAs an Evidence to the growth and cultivation of tropical plants in Taiwan, what has lasted through the passage of time?\n\n\"Iconography of Tropical Plants Vol. VII\" attempts to retrace the publication history of the entire collection, offering a detailed investigation and documentation of the original six volumes. Through this process, \"Vol.VII\" explores various questions around the idea of traces: the traces of the distribution and different editions (bibliography); the traces of time accumulated on paper (discoloration and stains); and the traces of colonialism in east asia.\nInterwoven among these traces is an ambiguous and complex sentiment: a love for plants and nature, with the gaze and reflection towards the colonized places."
+   }
+  ],
+  "website": "https://nomadpapayabooks.com"
+ },
+ "papaya": {
+  "no": "Spot5-2",
+  "name": "遊牧木瓜出版 Nomad Papaya Books",
+  "ready": true,
+  "ig": [
+   "@nomadpapayabooks"
+  ],
+  "introZh": "是一個設立於臺灣及德國的獨立出版社，專注以藝術書 / 小誌探討文化及身份認同上的跨越及轉型。\n當人們跨越國界，離開原生的歷史及故鄉，是什麼產生了變化？\n相遇的意外性是否能產生一種新的身份認同？\n遊牧木瓜出版以臺灣的視角出發，試圖透過藝術出版的實踐建立新的連結。",
+  "introEn": "Nomad Papaya Books is an art book publishing house focusing on transition of culture and identity, based in Taiwan / Germany. \nThe founder started questioning the identity of Taiwan and got really confused by himself, so he decided to collaborate with people and try (not) to answer the questions.\nWhat is changing when you cross the border, leaving your own history / houses ?\nCan new encounters form new identities ?",
+  "books": [
+   {
+    "name": "麻將：國際說明書",
+    "by": "Mahjong Friends（麻將朋友） / 遊牧木瓜出版",
+    "bio": "我們該如何面對中、港、臺之間的緊張及衝突？\n\n麻將是一個凝聚了東亞豐富歷史和文化傳統的桌遊。在其傳播過程中，因文化和地理分界，不同的國家和地區發展出了各自不同的麻將規則（如台灣、香港、中國各地區、日本、韓國、馬來西亞和新加坡等地的麻將規則都不同）。 但由於所有不同的規則都相對容易互換，懂麻將的人－盡管有不同的語言、文化和意識形態背景－都可以坐在一起打：在這樣的情況下，那些衝突、民族、政治立場、問題、意識形態鬥爭－瞬間退後並使人們找到了一個共同的基礎。麻將因此成為人們聚會、溝通、交流和交朋友的場所。\n\n\n為了進一步擴展和推廣這一珍貴的情境，我們決定成立一個名為 \"Mahjong Friends麻將朋友 \"的藝術團體，與來自不同地區的人們一起開始這個計畫。\n我們研究了各國各地區的不同玩法，找出最大的交集點，抓出一個「麻將規則的骨幹」寫成這本國際說明書，是一個不屬於任何一個地方卻通用的規則。希望透過這本書學到規則後能夠依據不同情境、不同地方的打法彈性調整，也為了翻轉字過多的枯躁感所以嘗試了以圖像主導的說明書。而除了單純的「規則」，我們將各種隱喻嵌入了整套體系，重新詮釋了牌面及遊戲。我們也在海報上整理了兩個年表，一則為麻將在世界上傳播的過程，另一則為中港臺之間的重要事件年表，讓不同地區的人可以有一個共同的基本認識。\n \n我們希望以麻將做為手段，讓更多人了解東亞地區錯綜複雜的歷史和微妙緊張的政治現狀，因為麻將本身就充滿了政治隱喻。作為 \"Mahjong Friends \"的第一本出版品，《麻將：國際說明書》透過幽默的描述和生動的插圖，介紹了麻將的基本規則以及麻將牌型背後的文化故事，並配有一張充滿麻將檔案和歷史的海報，以及一張小小的作弊小紙（給初學者）。這本*又酷又有深度*的小手冊旨在透過麻將，為世界帶來和平。\n\nHow can we deal with the conflicts between Taiwan – China- Hong Kong?\nMahjong is a board game that encapsulates the rich history and cultural traditions of East Asia. Due to the cultural and geographical isolation in the process of Mahjong’s transmission, different countries and regions have their own diverse mahjong rules (e.g. the rules in Taiwan, Hong Kong, various regions of China, Japan, Korea, Malaysia and Singapore etc.), but because all the different rules are relatively easy to interchange, people who know Mahjong - though having different language, cultural and ideological backgrounds - could sit down and play mahjong together: in this case those conflicts, nationalities, political positions, problems, ideologies, struggles - found a common ground. Mahjong thus becomes the situation/place where people meet, communicate, exchange, and make friends.\n \nIn the wish to further extend and promote this precious situation, we decided to form a collective „Mahjong Friends“ and started the project with people from different regions. We hope to use mahjong as a means to help more people understand the intricate history and delicate, tense current political situation in East Asia, as the game itself is full of political metaphors. As the first publication of Mahjong Friends, Mahjong: an International Manual introduced the basic Mahjong rules as well as the culture/stories behind the patterns of Mahjong tiles through witty descriptions and vivid illustrations, accomplished with a poster full of Mahjong archive & history, as well as a piece of tiny Mahjong cheating paper, this *very cool and deep* Mahjong Manual book aims to bring peace to the world."
+   },
+   {
+    "name": "城市遊牧木瓜鳥集",
+    "by": "遊牧木瓜出版",
+    "bio": "城市高樓的陰影裡，一棵野生的木瓜樹下停了一隻鳥，牠的身形圓潤、色澤如土，挺立身體的模樣像極了樹上的木瓜。黑冠麻鷺，人們常稱牠為地瓜或大笨鳥，平時在城市裡悠然自得。而就在某個偶然的午後，牠凜然站立於結實累累的木瓜樹下，在光影交錯之間我們彷彿在這兩者之間看見了相似的一面。\n本書以黑冠麻鷺作為主要凝視與談論的對象，並仿照人們對黑冠麻鷺取小名的邏輯，從外觀的「相似形」出發，以「木瓜鳥」作為新暱稱之，進而衍生攝影、三行詩、觀察筆記等方法，去描繪一種承載人們太多投射的鳥類。同時也回扣本社前作《城市遊牧木瓜圖集》對於臺灣木瓜的探索，將二者並置觀看，在兩方逐步與城市共存的身姿中，思索其因歷史、生態變遷而產生的多種身份與意義。\n\nIn the shadow of the city’s high-rises, a bird perched beneath a wild papaya tree. Its rounded form and earthy hue allowed it to stand almost upright, like a papaya hanging from the branches. The Malayan Night Heron, often nicknamed “sweet potato bird” or “big silly bird” by locals - usually wanders the city with a carefree ease. Yet, on one chance afternoon, it stood quietly beneath a papaya tree heavy with fruit. In the shifting interplay of light and shadow, a striking resemblance between the two came into our view.\n\nThis book focuses its gaze and discourse on the Malayan Night Heron. Following the logic behind the nicknames people give to this bird, and taking the physical resemblance as the starting point, we propose “papaya bird” as a new nickname for it. From there, the book also employs methods such as photography, three-line poems, and observational notes to portray a bird that bears the weight of so many human projections. Echoing the exploration of Taiwanese papayas in our previous publication The Image Book of Nomad Papaya, by juxtaposing the bird and the fruit, we reflect on their evolving identities and meanings shaped by historical and ecological shifts, as both species gradually adapt to coexisting within the cityscape."
+   },
+   {
+    "name": "熱帶植物寫真集 第七卷",
+    "by": "林庭宇",
+    "bio": "《熱帶植物寫真集》是一套於二戰前在臺北植物園拍攝的植物攝影集。當時日本本島因氣候環境關係，無法在自然條件下種植熱帶植物，因此當臺灣成為日本領土時，熱帶植物的種植及開發，便成了植民時期的重點工作之一。作者工藤彌九郎（1889～？）並沒有留下太多資訊，也沒有任何照片，只知道他是一位在臺北植物園工作的植物栽培技師。出版時間橫跨十四年（1929～1943），《熱帶植物寫真集》總共有六卷，收錄了180種熱帶植物，是臺灣最早且完整的關於「熱帶植物」的影像紀錄。\n\n這套書作為熱帶植物在臺灣生長萌芽的見證，在經歷時間的洗滌，究竟有什麼留下？\n\n《熱帶植物寫真集 第七卷》試圖爬梳整套書出版的過程，作為原六卷出版經緯的徹底考察紀錄，《第七卷》試圖探問各種關於「痕跡」的問題——古書流轉與版本更迭所留下的痕跡（版本學）、時間在紙張上沉積的痕跡（色澤與斑痕），以及東亞殖民歷史所遺留的痕跡。在這些痕跡之間，交織著一種曖昧而複雜的情感：對植物與自然的熱愛，以及殖民土地的凝視與倒映。\n\n\n\"Iconography of Tropical Plants\" is originally a photo collection of tropical plants in Taiwan published before World War II. Unable to grow tropical plants naturally in mainland Japan, the Japanese colonial administration made their cultivation a priority in Taiwan. Very little is known about the author, Yakuro Kudo (1889–?), and no photographs of him are known to survive. It is only known that he worked as a plant cultivation technician at the Taipei Botanical Garden. Published over a span of fourteen years (1929–1943), \"Iconography of Tropical Plants in Taiwan\" remains Taiwan’s earliest and most comprehensive visual record, consists of six volumes documenting 180 species.\n\nAs an Evidence to the growth and cultivation of tropical plants in Taiwan, what has lasted through the passage of time?\n\n\"Iconography of Tropical Plants Vol. VII\" attempts to retrace the publication history of the entire collection, offering a detailed investigation and documentation of the original six volumes. Through this process, \"Vol.VII\" explores various questions around the idea of traces: the traces of the distribution and different editions (bibliography); the traces of time accumulated on paper (discoloration and stains); and the traces of colonialism in east asia.\nInterwoven among these traces is an ambiguous and complex sentiment: a love for plants and nature, with the gaze and reflection towards the colonized places."
+   }
+  ],
+  "website": "https://nomadpapayabooks.com"
+ },
+ "Spot5-3": {
+  "no": "Spot5-3",
+  "name": "Phyllshin Books",
+  "ready": true,
+  "ig": [
+   "@phyllshin_books"
+  ],
+  "introZh": "一間以視覺為核心的書店，網羅來自世界各地、不同時代與文化背景的出版品，並將我們認為值得被看見的創意內容推廣給更多人。選書涵蓋珍稀絕版藝術書籍，以及來自攝影、設計、時尚等多元領域的新銳獨立出版品。\n除了選書之外，我們也定期策劃展覽、活動與合作企劃，希望透過這些計畫分享我們所關注的創意實踐，並建立一個彼此連結的社群。",
+  "books": [
+   {
+    "name": "Recast 2015",
+    "by": "Choo Yeyoon / Self-published",
+    "bio": "過去寫下的日記與手帳裡，靜靜殘留著童年時期的感覺，以及當時觀看世界的視線。順著文字閱讀時，雖然會浮現一些模糊的場景，但有些片段並不是鮮明的影像，而更像久遠的記憶，只留下情緒的餘韻輕輕掠過。\n《Recast 2015》是一件將那些日記中記錄的故事，以攝影重新召回的作品。它並非試圖原封不動地重現過去，而是透過重新詮釋與再演繹的方式接近記憶。曾以少女視角凝視的世界、家人與朋友、當時流行的設計與角色、微小物件與空氣中的氛圍，以及滲透其中的情感，都在照片中被重新構築成新的形式。\n將文字與塗鴉留下的過去透過攝影轉印在紙本上，她以現在的視角重新凝視 2015 年的自己。童年的鄉愁與那個時代的感覺彼此重疊，《Recast 2015》最終成為一個在記憶與影像之間，緩慢變形而成的全新場景。"
+   },
+   {
+    "name": "Some Notes on the Military Jacket",
+    "by": "Yoona /Self-published",
+    "bio": "本書以軍用夾克為主題展開研究，為限量20本的論述出版品。文章追溯軍用夾克在2026春夏時裝秀上的重新崛起，以及它作為戲服、微流行、戀物、意識形態工具，以及與indie sleaze等文化現象之間的關聯與其他意涵。\n書中收錄原始的剪貼簿式版面、純文字版本的文章，以及一份彙整重要時裝秀系列的影像檔案。這件作品最終成為藝術家「公開進行研究」的一種方式，試圖為這件不朽的軍用夾克提出一套微型理論。"
+   },
+   {
+    "name": "STRONG WILL HIDETOMO ABE",
+    "by": "小林節正 /SEtt Inc",
+    "bio": "General Research為設計師小林節正於1993年創立的時裝品牌。本書收錄品牌1998年系列作品，由安部英知（Hidetomo Abe）拍攝，記錄當季特別製作的等身人體模型展示。這些以FRP（玻璃纖維強化塑膠）製成的模特被置於伸展台上，身著品牌最具代表性的Multi Pocket Parasite系列服裝，完整呈現該季度的系列概念。"
+   }
+  ]
+ },
+ "phyllshin": {
+  "no": "Spot5-3",
+  "name": "Phyllshin Books",
+  "ready": true,
+  "ig": [
+   "@phyllshin_books"
+  ],
+  "introZh": "一間以視覺為核心的書店，網羅來自世界各地、不同時代與文化背景的出版品，並將我們認為值得被看見的創意內容推廣給更多人。選書涵蓋珍稀絕版藝術書籍，以及來自攝影、設計、時尚等多元領域的新銳獨立出版品。\n除了選書之外，我們也定期策劃展覽、活動與合作企劃，希望透過這些計畫分享我們所關注的創意實踐，並建立一個彼此連結的社群。",
+  "books": [
+   {
+    "name": "Recast 2015",
+    "by": "Choo Yeyoon / Self-published",
+    "bio": "過去寫下的日記與手帳裡，靜靜殘留著童年時期的感覺，以及當時觀看世界的視線。順著文字閱讀時，雖然會浮現一些模糊的場景，但有些片段並不是鮮明的影像，而更像久遠的記憶，只留下情緒的餘韻輕輕掠過。\n《Recast 2015》是一件將那些日記中記錄的故事，以攝影重新召回的作品。它並非試圖原封不動地重現過去，而是透過重新詮釋與再演繹的方式接近記憶。曾以少女視角凝視的世界、家人與朋友、當時流行的設計與角色、微小物件與空氣中的氛圍，以及滲透其中的情感，都在照片中被重新構築成新的形式。\n將文字與塗鴉留下的過去透過攝影轉印在紙本上，她以現在的視角重新凝視 2015 年的自己。童年的鄉愁與那個時代的感覺彼此重疊，《Recast 2015》最終成為一個在記憶與影像之間，緩慢變形而成的全新場景。"
+   },
+   {
+    "name": "Some Notes on the Military Jacket",
+    "by": "Yoona /Self-published",
+    "bio": "本書以軍用夾克為主題展開研究，為限量20本的論述出版品。文章追溯軍用夾克在2026春夏時裝秀上的重新崛起，以及它作為戲服、微流行、戀物、意識形態工具，以及與indie sleaze等文化現象之間的關聯與其他意涵。\n書中收錄原始的剪貼簿式版面、純文字版本的文章，以及一份彙整重要時裝秀系列的影像檔案。這件作品最終成為藝術家「公開進行研究」的一種方式，試圖為這件不朽的軍用夾克提出一套微型理論。"
+   },
+   {
+    "name": "STRONG WILL HIDETOMO ABE",
+    "by": "小林節正 /SEtt Inc",
+    "bio": "General Research為設計師小林節正於1993年創立的時裝品牌。本書收錄品牌1998年系列作品，由安部英知（Hidetomo Abe）拍攝，記錄當季特別製作的等身人體模型展示。這些以FRP（玻璃纖維強化塑膠）製成的模特被置於伸展台上，身著品牌最具代表性的Multi Pocket Parasite系列服裝，完整呈現該季度的系列概念。"
+   }
+  ]
+ },
+ "Spot5-4": {
+  "no": "Spot5-4",
+  "name": "節點 Zit-Dim Art Space",
+  "ready": true,
+  "note": "四本選三本",
+  "ig": [
+   "@zitdimartspace"
+  ],
+  "introZh": "節點於2019年在台南成立，港澳臺共同合作經營之藝術空間，試圖創建亞洲平台，致力當代藝術推廣、教育經營、田野累積、文化研究、自製出版與策展規劃；重視實驗性，跨媒材合作、國際駐村等藝術交流。",
+  "introEn": "Zit-Dim Art Space was established in Tainan in 2019 as an art space collaboratively operated by Hong Kong, Macau, and Taiwan. It seeks to create an Asian platform dedicated to the promotion of contemporary art, educational management, field research, cultural studies, independent publishing, and curatorial planning. Emphasizing experimentation, cross-media collaboration, international residencies, and artistic exchange, Node fosters innovative and diverse artistic practices.",
+  "books": [
+   {
+    "name": "五橘宮 沿革誌",
+    "by": "黃舜廷／黃舜廷",
+    "bio": "《五橘宮 沿革誌》收錄黃舜廷2015至2020年間「五橘」系列創作，涵蓋繪畫、雕塑、複合媒材與裝置等作品。藝術家以「五橘」與台語「有錢」的諧音為起點，從在地招財文化出發，在荒謬與虛構之中，探索藝術與信仰、世俗與神聖的模糊界線，並以宮廟沿革誌的形式呈現其創作脈絡。"
+   },
+   {
+    "name": "我可以給你一根白頭髮",
+    "by": "許芸瑄／自出版",
+    "bio": "收集別人的白頭髮，畫成一本書，從影子開始著手，像是傷痕、悲傷，那種讓人不想留在身上的東西。\nIt's always easy to get a white hair from someone, rather than the black one. \nLike animals find their habitat, go get them! \nIt always starts from the shadow. \nAfter that, it's always something more than that."
+   },
+   {
+    "name": "PI LI PA LA",
+    "by": "李紫寧／自出版",
+    "bio": "以連續攝影的方式拍攝鞭炮施放的過程，將瞬間爆裂的畫面拆解為一連串細微的影像。這些影像被編排為書頁，在翻閱的過程中，頁面與頁面之間的摩擦聲，形成近似鞭炮聲響的聲音節奏。"
+   }
+  ]
+ },
+ "zitdim": {
+  "no": "Spot5-4",
+  "name": "節點 Zit-Dim Art Space",
+  "ready": true,
+  "note": "四本選三本",
+  "ig": [
+   "@zitdimartspace"
+  ],
+  "introZh": "節點於2019年在台南成立，港澳臺共同合作經營之藝術空間，試圖創建亞洲平台，致力當代藝術推廣、教育經營、田野累積、文化研究、自製出版與策展規劃；重視實驗性，跨媒材合作、國際駐村等藝術交流。",
+  "introEn": "Zit-Dim Art Space was established in Tainan in 2019 as an art space collaboratively operated by Hong Kong, Macau, and Taiwan. It seeks to create an Asian platform dedicated to the promotion of contemporary art, educational management, field research, cultural studies, independent publishing, and curatorial planning. Emphasizing experimentation, cross-media collaboration, international residencies, and artistic exchange, Node fosters innovative and diverse artistic practices.",
+  "books": [
+   {
+    "name": "五橘宮 沿革誌",
+    "by": "黃舜廷／黃舜廷",
+    "bio": "《五橘宮 沿革誌》收錄黃舜廷2015至2020年間「五橘」系列創作，涵蓋繪畫、雕塑、複合媒材與裝置等作品。藝術家以「五橘」與台語「有錢」的諧音為起點，從在地招財文化出發，在荒謬與虛構之中，探索藝術與信仰、世俗與神聖的模糊界線，並以宮廟沿革誌的形式呈現其創作脈絡。"
+   },
+   {
+    "name": "我可以給你一根白頭髮",
+    "by": "許芸瑄／自出版",
+    "bio": "收集別人的白頭髮，畫成一本書，從影子開始著手，像是傷痕、悲傷，那種讓人不想留在身上的東西。\nIt's always easy to get a white hair from someone, rather than the black one. \nLike animals find their habitat, go get them! \nIt always starts from the shadow. \nAfter that, it's always something more than that."
+   },
+   {
+    "name": "PI LI PA LA",
+    "by": "李紫寧／自出版",
+    "bio": "以連續攝影的方式拍攝鞭炮施放的過程，將瞬間爆裂的畫面拆解為一連串細微的影像。這些影像被編排為書頁，在翻閱的過程中，頁面與頁面之間的摩擦聲，形成近似鞭炮聲響的聲音節奏。"
+   }
+  ]
+ },
+ "Spot5-5": {
+  "no": "Spot5-5",
+  "name": "LICORICE BOOK SERVICE",
+  "ready": true,
+  "ig": [
+   "@licorice.bookservice"
+  ],
+  "introZh": "位於台北打鐵街一隅的策展型書店。在昔日硬黑的地景中，透過每季不定期的策展選書，帶來涵蓋藝術、設計、文化主題的書籍探索。",
+  "introEn": "A curation-driven bookstore located in a corner of Taipei's historic ironworking district. Set against a backdrop once defined by dark iron and steel. It invites visitors to explore books across art, design and culture through seasonally curated showcases.",
+  "books": [
+   {
+    "name": "Discarded",
+    "by": "Bonnye Su / Licorice Books",
+    "bio": "本書集結了作者在倫敦生活期間「回收」的街邊紙條；垃圾桶旁的吉他指譜、車站遺落的電話字條、圖書館書裡夾著的愛的告白……。陌生人留下的隻字片語似乎有某種「觸動」，它觸動了逐漸萎靡的日常探索，和他人之間消散的集結，令人懷念並持續著。"
+   },
+   {
+    "name": "Statement and Counter-Statement 2: Typologies/Typographies/Topologies/Topographies",
+    "by": "Experimental Jetset / Roma Publications",
+    "bio": "本書是位於阿姆斯特丹的知名平面設計工作室 Experimental Jetset 時隔11年再集大成之作。除作品之外，書中收錄藝術家、出版人、設計師透過隨行觀察、生活實驗、城市行動、攝影中的標誌等，回應書名主題，看各式交織的思考如何刺激構成設計創造的脈絡拼圖。"
+   },
+   {
+    "name": "Distance",
+    "by": "井手裕介 (Yusuke Ide) / Self-Published",
+    "bio": "2020 年，因感染新冠病毒而失去嗅覺的經歷，促使井手拾起一台半世紀前的相機，用鏡頭感知日常。作為編輯所培養的「觀察/選擇/安排」的意識，悄悄融入了其攝影和暗房工作中，以一種靜謐的方式，在意圖與非意圖之間，思考與世界之間的距離。"
+   }
+  ]
+ },
+ "licorice": {
+  "no": "Spot5-5",
+  "name": "LICORICE BOOK SERVICE",
+  "ready": true,
+  "ig": [
+   "@licorice.bookservice"
+  ],
+  "introZh": "位於台北打鐵街一隅的策展型書店。在昔日硬黑的地景中，透過每季不定期的策展選書，帶來涵蓋藝術、設計、文化主題的書籍探索。",
+  "introEn": "A curation-driven bookstore located in a corner of Taipei's historic ironworking district. Set against a backdrop once defined by dark iron and steel. It invites visitors to explore books across art, design and culture through seasonally curated showcases.",
+  "books": [
+   {
+    "name": "Discarded",
+    "by": "Bonnye Su / Licorice Books",
+    "bio": "本書集結了作者在倫敦生活期間「回收」的街邊紙條；垃圾桶旁的吉他指譜、車站遺落的電話字條、圖書館書裡夾著的愛的告白……。陌生人留下的隻字片語似乎有某種「觸動」，它觸動了逐漸萎靡的日常探索，和他人之間消散的集結，令人懷念並持續著。"
+   },
+   {
+    "name": "Statement and Counter-Statement 2: Typologies/Typographies/Topologies/Topographies",
+    "by": "Experimental Jetset / Roma Publications",
+    "bio": "本書是位於阿姆斯特丹的知名平面設計工作室 Experimental Jetset 時隔11年再集大成之作。除作品之外，書中收錄藝術家、出版人、設計師透過隨行觀察、生活實驗、城市行動、攝影中的標誌等，回應書名主題，看各式交織的思考如何刺激構成設計創造的脈絡拼圖。"
+   },
+   {
+    "name": "Distance",
+    "by": "井手裕介 (Yusuke Ide) / Self-Published",
+    "bio": "2020 年，因感染新冠病毒而失去嗅覺的經歷，促使井手拾起一台半世紀前的相機，用鏡頭感知日常。作為編輯所培養的「觀察/選擇/安排」的意識，悄悄融入了其攝影和暗房工作中，以一種靜謐的方式，在意圖與非意圖之間，思考與世界之間的距離。"
+   }
+  ]
+ },
+ "Spot5-6": {
+  "no": "Spot5-6",
+  "name": "重本書店 Weight Books",
+  "ready": true,
+  "ig": [
+   "@weightbooks"
+  ],
+  "introZh": "重本書店Weight Books設立於2022年的臺北市中山區，「Weight」（字重）為字體設計中用來描述粗細參數的用語，書店以此命名並致力於推廣字體排印、平面設計和視覺文化等領域之書籍，並關注臺灣本地與世界各地的創作者、研究者與自出版單位等等，更期望能成為使廣泛議題與讀者相遇的空間。\n除販售書籍以外，店內前方也設有展覽空間，定期與如字體設計、工業設計與推測設計等團隊合作推出企劃；店內後方則為提供休憩的吧台與包廂區，提供由專業咖啡師打造的飲品與甜點，並於日落後轉換為夜Bar模式，不定期推出與調酒師或餐廳共同訂做的限定菜單，使設計類書籍有與各種領域碰撞與對話的機會，將書店展開為充滿各種可能性的場域。",
+  "books": [
+   {
+    "name": "Bibliographic Performances & Surrogate Readings",
+    "by": "Janelle Rebel / The Everyday Press",
+    "bio": "「Bibliography」通常譯作書目或參考書目。Rebel進一步將它理解為一種包含選擇、編輯與展示的實踐。她寫道：「書目編纂者的工作，由許多細小的詮釋與判斷組成。」每一次收錄、排除、命名與排序，都在建立主題的範圍，也影響讀者接下來可能遇見哪些作品。\n本書探討書目作為一種包含選擇、分類與排布的詮釋實踐。收錄超過五十項藝術家書、閱讀清單與裝置案例，展現編者如何透過選書建立觀點。"
+   },
+   {
+    "name": "Ciné-Passion",
+    "by": "Bettina Richter, Museum für Gestaltung Zürich / Lars Müller Publishers",
+    "bio": "電影海報在平面設計史中被視為獨立的藝術作品。蘇黎世設計博物館策劃的《Ciné-Passion》專書，講述了1920年至今的經典電影海報故事。書中探討Stenberg兄弟與Jan Tschichold等設計師在商業限制下，以創意重構將素材轉化為象徵電影的符號圖像。這些「另類」海報捨棄明星肖像與劇照，以非正統的視覺語言與詩意曖昧性進行「陌生化」處理，並將內容鞏固為符號，為商業海報帶來不同形式的展現。"
+   },
+   {
+    "name": "Wolfgang Tillmans. four books. 45th Ed.",
+    "by": "Wolfgang Tillmans / TASCHEN",
+    "bio": "Wolfgang Tillmans在當代藝術中的位置，已然超出「攝影師」的範疇。從1980年代末的英國次文化場景出發，穿梭於同志社群、銳舞文化、全球化地景、天文與抽象形式，同時持續介入民主、LGBTQ+ 權益與全球資訊政治。攝影對他而言，從來不是單一媒介，而是一種與世界交涉的方法。\n本書將Tillmans四本經典攝影集整合為單冊，收錄逾三百幅影像。將初期1990年代至2010年代的創作軌跡，呈現一條視覺敘事線，勾勒出其如何在全球化與數位時代不斷重探「可見性」與「可說性」的政治邊界。"
+   }
+  ],
+  "website": "https://weightbooks.com"
+ },
+ "weightbooks": {
+  "no": "Spot5-6",
+  "name": "重本書店 Weight Books",
+  "ready": true,
+  "ig": [
+   "@weightbooks"
+  ],
+  "introZh": "重本書店Weight Books設立於2022年的臺北市中山區，「Weight」（字重）為字體設計中用來描述粗細參數的用語，書店以此命名並致力於推廣字體排印、平面設計和視覺文化等領域之書籍，並關注臺灣本地與世界各地的創作者、研究者與自出版單位等等，更期望能成為使廣泛議題與讀者相遇的空間。\n除販售書籍以外，店內前方也設有展覽空間，定期與如字體設計、工業設計與推測設計等團隊合作推出企劃；店內後方則為提供休憩的吧台與包廂區，提供由專業咖啡師打造的飲品與甜點，並於日落後轉換為夜Bar模式，不定期推出與調酒師或餐廳共同訂做的限定菜單，使設計類書籍有與各種領域碰撞與對話的機會，將書店展開為充滿各種可能性的場域。",
+  "books": [
+   {
+    "name": "Bibliographic Performances & Surrogate Readings",
+    "by": "Janelle Rebel / The Everyday Press",
+    "bio": "「Bibliography」通常譯作書目或參考書目。Rebel進一步將它理解為一種包含選擇、編輯與展示的實踐。她寫道：「書目編纂者的工作，由許多細小的詮釋與判斷組成。」每一次收錄、排除、命名與排序，都在建立主題的範圍，也影響讀者接下來可能遇見哪些作品。\n本書探討書目作為一種包含選擇、分類與排布的詮釋實踐。收錄超過五十項藝術家書、閱讀清單與裝置案例，展現編者如何透過選書建立觀點。"
+   },
+   {
+    "name": "Ciné-Passion",
+    "by": "Bettina Richter, Museum für Gestaltung Zürich / Lars Müller Publishers",
+    "bio": "電影海報在平面設計史中被視為獨立的藝術作品。蘇黎世設計博物館策劃的《Ciné-Passion》專書，講述了1920年至今的經典電影海報故事。書中探討Stenberg兄弟與Jan Tschichold等設計師在商業限制下，以創意重構將素材轉化為象徵電影的符號圖像。這些「另類」海報捨棄明星肖像與劇照，以非正統的視覺語言與詩意曖昧性進行「陌生化」處理，並將內容鞏固為符號，為商業海報帶來不同形式的展現。"
+   },
+   {
+    "name": "Wolfgang Tillmans. four books. 45th Ed.",
+    "by": "Wolfgang Tillmans / TASCHEN",
+    "bio": "Wolfgang Tillmans在當代藝術中的位置，已然超出「攝影師」的範疇。從1980年代末的英國次文化場景出發，穿梭於同志社群、銳舞文化、全球化地景、天文與抽象形式，同時持續介入民主、LGBTQ+ 權益與全球資訊政治。攝影對他而言，從來不是單一媒介，而是一種與世界交涉的方法。\n本書將Tillmans四本經典攝影集整合為單冊，收錄逾三百幅影像。將初期1990年代至2010年代的創作軌跡，呈現一條視覺敘事線，勾勒出其如何在全球化與數位時代不斷重探「可見性」與「可說性」的政治邊界。"
+   }
+  ],
+  "website": "https://weightbooks.com"
+ },
+ "Spot1-5": {
+  "no": "Spot1-5",
+  "name": "激浪特攻本部 ✕ pebbling",
+  "ready": false,
+  "ig": [
+   "@kooonoyaro",
+   "@pebbling.tw"
+  ],
+  "introZh": "從最初的市集擺攤與甜點製作開始，激浪特攻本部以「因為熱愛生活，所以創造理想生活」為核心，透過飲食與空間氛圍的塑造，將喜歡的事物轉化為日常中可以親近的體驗。店內以海洋世界為主題，揉合懷舊泡沫紅茶店的氣息，提供飲品、甜點與輕食，也不定期延伸放映、市集、音樂及跨領域合作。\n\n於 2026 年創立台灣茶專門品牌 Pebbling。以企鵝透過鵝卵石傳遞愛意的習性為靈感，相信喝茶不只是品味，更是一種細膩而溫暖的交流，將土地的滋味與人情的溫度融入日常。\n\n柯達（負責人之一）成長於南投魚池的茶香世家，從小在茶園與山霧之間長大，這次特別以南投自產台灣茶為基底，帶來茶調酒，透過意想不到的風味混搭，呈現熟悉又新鮮的滋味！"
+ },
+ "pebbling": {
+  "no": "Spot1-5",
+  "name": "激浪特攻本部 ✕ pebbling",
+  "ready": true,
+  "ig": [
+   "@kooonoyaro",
+   "@pebbling.tw"
+  ],
+  "introZh": "從最初的市集擺攤與甜點製作開始，激浪特攻本部以「因為熱愛生活，所以創造理想生活」為核心，透過飲食與空間氛圍的塑造，將喜歡的事物轉化為日常中可以親近的體驗。店內以海洋世界為主題，揉合懷舊泡沫紅茶店的氣息，提供飲品、甜點與輕食，也不定期延伸放映、市集、音樂及跨領域合作。\n\n於 2026 年創立台灣茶專門品牌 Pebbling。以企鵝透過鵝卵石傳遞愛意的習性為靈感，相信喝茶不只是品味，更是一種細膩而溫暖的交流，將土地的滋味與人情的溫度融入日常。\n\n柯達（負責人之一）成長於南投魚池的茶香世家，從小在茶園與山霧之間長大，這次特別以南投自產台灣茶為基底，帶來茶調酒，透過意想不到的風味混搭，呈現熟悉又新鮮的滋味！",
+  "menu": [
+   "Pebbling 特選台灣茶品",
+   "激浪特攻本部 招牌茶調酒與飲品",
+   "激浪特攻本部 手作甜點與輕食",
+   "Pebbling 冷泡茶系列",
+   "激浪特攻本部 現場特調",
+   "激浪特攻本部 空間精選"
+  ]
+ },
+ "Spot1-6": {
+  "no": "Spot1-6",
+  "name": "三更小尾巴 WanterTail",
+  "ready": true,
+  "ig": [
+   "@wander_tail_"
+  ],
+  "introZh": "「三更半夜拖著小尾巴，在街上晃呀晃呀找東西吃」\n\n從前從前，愛吃起司的我到了起司專賣店總是很憂鬱，因為我什麼都想吃，但是在那裡，每種起司最少都要買100g（最後吃不完的起司都會老死冰箱收場）。\n\n因此，製作起司盒是幫從前的自己圓夢，也希望讓跟我一樣對起司充滿好奇與喜愛的人們，都可以吃得滿足幸福！\n\n小尾巴的起司大都來自歐洲，許多品項更是擁有產地認證保護A.O.C的傳統起司，延續百年歷史的製造工藝，並且傳承至今。風土條件與製作歷程，創造每塊起司獨一無二的個性。因此，起司就像人森，你永遠不會知道下一口是什麼口味！\n\n起司不只能搭配紅酒，也能搭配啤酒、烈酒、手搖飲料，以及更多更多。\n期待開發多變的起司組合，讓大家吃得幸福。\n\n一起走進起司的大宇宙吧♡",
+  "menu": [
+   "經典入門系列｜百搭起司盒",
+   "經典入門系列｜午後起司盒",
+   "經典入門系列｜微醺起司盒",
+   "經典入門系列｜素醉起司盒",
+   "經典入門系列｜飽睏起司盒",
+   "鹽之花布朗尼"
+  ],
+  "limited": "單人獨享盒",
+  "website": "https://wandertail.com/"
+ },
+ "wandertail": {
+  "no": "Spot1-6",
+  "name": "三更小尾巴 WanterTail",
+  "ready": true,
+  "ig": [
+   "@wander_tail_"
+  ],
+  "introZh": "「三更半夜拖著小尾巴，在街上晃呀晃呀找東西吃」\n\n從前從前，愛吃起司的我到了起司專賣店總是很憂鬱，因為我什麼都想吃，但是在那裡，每種起司最少都要買100g（最後吃不完的起司都會老死冰箱收場）。\n\n因此，製作起司盒是幫從前的自己圓夢，也希望讓跟我一樣對起司充滿好奇與喜愛的人們，都可以吃得滿足幸福！\n\n小尾巴的起司大都來自歐洲，許多品項更是擁有產地認證保護A.O.C的傳統起司，延續百年歷史的製造工藝，並且傳承至今。風土條件與製作歷程，創造每塊起司獨一無二的個性。因此，起司就像人森，你永遠不會知道下一口是什麼口味！\n\n起司不只能搭配紅酒，也能搭配啤酒、烈酒、手搖飲料，以及更多更多。\n期待開發多變的起司組合，讓大家吃得幸福。\n\n一起走進起司的大宇宙吧♡",
+  "menu": [
+   "經典入門系列｜百搭起司盒",
+   "經典入門系列｜午後起司盒",
+   "經典入門系列｜微醺起司盒",
+   "經典入門系列｜素醉起司盒",
+   "經典入門系列｜飽睏起司盒",
+   "鹽之花布朗尼"
+  ],
+  "limited": "單人獨享盒",
+  "website": "https://wandertail.com/"
+ },
+ "Spot1-7": {
+  "no": "Spot1-7",
+  "name": "頑固油飯 OneGu Steamed Glutinious Rice",
+  "ready": true,
+  "ig": [
+   "@onegu.2019"
+  ],
+  "introZh": "｜國宴油飯的現代遊牧.島嶼海味的採集之路｜\n頑固的不只是性格，更多的是帶著職人感的堅持氣息。\n融合及傳承，本身就是一件很酷的事情。\n能讓眼神閃閃發光的，就絕對能感動人心。\n讓老油飯以新世代的紳士車，繼續頑固上路，療癒人心。",
+  "menu": [
+   "頑固油飯",
+   "台派老靈魂油飯",
+   "小鮮貝干貝酥油飯",
+   "小海味烏魚子油飯",
+   "大人系威士鴨油飯",
+   "辣個香皮蛋油飯",
+   "繽紛系霓虹蝦款"
+  ]
+ },
+ "onegu": {
+  "no": "Spot1-7",
+  "name": "頑固油飯 OneGu Steamed Glutinious Rice",
+  "ready": true,
+  "ig": [
+   "@onegu.2019"
+  ],
+  "introZh": "｜國宴油飯的現代遊牧.島嶼海味的採集之路｜\n頑固的不只是性格，更多的是帶著職人感的堅持氣息。\n融合及傳承，本身就是一件很酷的事情。\n能讓眼神閃閃發光的，就絕對能感動人心。\n讓老油飯以新世代的紳士車，繼續頑固上路，療癒人心。",
+  "menu": [
+   "頑固油飯",
+   "台派老靈魂油飯",
+   "小鮮貝干貝酥油飯",
+   "小海味烏魚子油飯",
+   "大人系威士鴨油飯",
+   "辣個香皮蛋油飯",
+   "繽紛系霓虹蝦款"
+  ]
+ },
+ "Spot1-8": {
+  "no": "Spot1-8",
+  "name": "Narcos.sugar",
+  "ready": true,
+  "ig": [
+   "@narcos.sugar"
+  ],
+  "introZh": "☠️ 全植少糖甜點毒窟 ☠️\n\n\n\n本窟甜點無蛋奶之外，少糖更是標配。\n\n刺辣肉桂、無麩巴斯克，\n\n每個口味都有自己的個性。\n\n\n\n叛逆的我們最近又不安分了，\n\n甜的做了，連鹹的也不放過！\n\n鹹食首批問世，爸媽們準備換個口味繼續上癮～\n\n\n\n全植的路上，繼續不務正業！\n\n你的癮，NARCOS來養，這批保證純！",
+  "menu": [
+   "三分糖肉桂捲",
+   "蘋果肉桂捲",
+   "馬告可可司康",
+   "芝麻焙茶磅蛋糕",
+   "⚠️ 無麩質巴斯克（預計販售 原味/芝麻/泰式奶茶/開心果巧克力）",
+   "香料堅果醬",
+   "香濃肉桂醬"
+  ],
+  "limited": "湯品！（口味未定，還在研發中）（感覺可以用問號宣傳哈哈）"
+ },
+ "narcos": {
+  "no": "Spot1-8",
+  "name": "Narcos.sugar",
+  "ready": true,
+  "ig": [
+   "@narcos.sugar"
+  ],
+  "introZh": "☠️ 全植少糖甜點毒窟 ☠️\n\n\n\n本窟甜點無蛋奶之外，少糖更是標配。\n\n刺辣肉桂、無麩巴斯克，\n\n每個口味都有自己的個性。\n\n\n\n叛逆的我們最近又不安分了，\n\n甜的做了，連鹹的也不放過！\n\n鹹食首批問世，爸媽們準備換個口味繼續上癮～\n\n\n\n全植的路上，繼續不務正業！\n\n你的癮，NARCOS來養，這批保證純！",
+  "menu": [
+   "三分糖肉桂捲",
+   "蘋果肉桂捲",
+   "馬告可可司康",
+   "芝麻焙茶磅蛋糕",
+   "⚠️ 無麩質巴斯克（預計販售 原味/芝麻/泰式奶茶/開心果巧克力）",
+   "香料堅果醬",
+   "香濃肉桂醬"
+  ],
+  "limited": "湯品！（口味未定，還在研發中）（感覺可以用問號宣傳哈哈）"
+ },
+ "Spot1-9 (SAT)": {
+  "no": "Spot1-9 (SAT)",
+  "name": "jammm果醬",
+  "ready": false,
+  "ig": [
+   "@jammm_taiwan"
+  ],
+  "introZh": "jammm｜讓台灣果香，成為日常裡的小小美好\njammm 是以台灣在地特色水果為核心的精品果醬品牌，嚴選天然食材，堅持不添加防腐劑、人工色素及人工香料，將台灣土地孕育的豐富果香，轉化為一瓶瓶充滿層次的美好滋味。\n品牌連續兩年榮獲英國世界柑橘果醬大賽金牌肯定，並累積多項國際獎項。從早餐的一片吐司、午後的一杯茶，到與朋友分享的甜蜜時光，jammm 希望讓果醬不只是佐餐配角，更是值得細細品味的生活日常。",
+  "menu": [
+   "品項名稱：單入/兩入/三入/四入禮盒、香酥蒜味法國麵包、香草佛卡夏佐果醬",
+   "【果醬風味與茶葉】",
+   "01 帕香金芒果醬",
+   "02 茉莉柚香三寶柑果醬",
+   "03 金蜜三寶柑果醬",
+   "04 晨曦桶柑果醬",
+   "05 霧光琴酒三寶柑果醬",
+   "06 橙霧三寶柑果醬",
+   "07 午夜威士忌桶柑果醬",
+   "08 金門高粱桶柑果醬",
+   "09 晨光草莓果醬",
+   "10 輕春烏龍茶葉"
+  ],
+  "website": "https://www.kitazawashop.com.tw/"
+ },
+ "jammmm": {
+  "no": "Spot1-9 (SAT)",
+  "name": "jammm果醬",
+  "ready": true,
+  "ig": [
+   "@jammm_taiwan"
+  ],
+  "introZh": "jammm｜讓台灣果香，成為日常裡的小小美好\njammm 是以台灣在地特色水果為核心的精品果醬品牌，嚴選天然食材，堅持不添加防腐劑、人工色素及人工香料，將台灣土地孕育的豐富果香，轉化為一瓶瓶充滿層次的美好滋味。\n品牌連續兩年榮獲英國世界柑橘果醬大賽金牌肯定，並累積多項國際獎項。從早餐的一片吐司、午後的一杯茶，到與朋友分享的甜蜜時光，jammm 希望讓果醬不只是佐餐配角，更是值得細細品味的生活日常。",
+  "menu": [
+   "香草佛卡夏佐果醬",
+   "香酥蒜味法國麵包",
+   "單入 / 兩入禮盒",
+   "三入 / 四入禮盒",
+   "英國柑橘果醬大賽金牌風味系列",
+   "台灣在地特色水果果醬系列"
+  ],
+  "website": "https://www.kitazawashop.com.tw/"
+ },
+ "Spot1-9 (SUN)": {
+  "no": "Spot1-9 (SUN)",
+  "name": "吉龍里麵包計劃",
+  "ready": false
+ },
+ "jilongli": {
+  "no": "Spot1-9 (SUN)",
+  "name": "吉龍里麵包計劃",
+  "ready": false
+ }
+}

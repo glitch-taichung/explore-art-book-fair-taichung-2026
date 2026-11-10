@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Source Han Sans TC VF";
+  src: url("../未整理素材/字體/SourceHanSansTC-VF.ttf") format("truetype-variations"),
+       url("../未整理素材/字體/SourceHanSansTC-VF.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 色票：取自 Guidelines P.17、主視覺與 EXPLORE ABF_Logotype_20261105.ai */
+@theme {
+  --color-slate: #5d7a90;
+  --color-cool: #d0d2d4;
+  --color-cool-light: #e6e8ea;
+  --color-ice: #c9d4de;
+  --color-lime: #d2fea1;
+  --color-peri: #789cf1;
+  --color-teal: #009e9b;
+  --color-mint: #00ee95;
+  --color-ink: #111518;
+  --color-white: #ffffff;
+
+  --font-sans: "Source Han Sans TC VF", "Source Han Sans TC", "PingFang TC", "Noto Sans TC", sans-serif;
+  --font-latin: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* 四個字級（層級差距收斂）：display / title / body / cap；兩種字重：400 / 700 */
+  --text-display: clamp(1.75rem, 3vw, 2.5rem);
+  --text-display--line-height: 1.2;
+  --text-title: clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-title--line-height: 1.45;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.75;
+  --text-cap: 0.875rem;
+  --text-cap--line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-ink);
+  font-size: 1rem;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* AI 檔中 Explore Art Book Fair 的英文字型感（不帶斜體） */
+.font-explore-en {
+  font-family: "Helvetica Neue", "Inter", "Source Han Sans TC VF", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* 區段滾動過渡：取自主視覺海報的菱形擴張網圖樣 (Diamond Expanded-Metal Mesh) */
+.bg-grey-grid {
+  background-color: #eaeced;
+  background-image:
+    repeating-linear-gradient(
+      60deg,
+      rgba(93, 122, 144, 0.34) 0px,
+      rgba(93, 122, 144, 0.34) 1.5px,
+      transparent 1.5px,
+      transparent 13px
+    ),
+    repeating-linear-gradient(
+      -60deg,
+      rgba(93, 122, 144, 0.34) 0px,
+      rgba(93, 122, 144, 0.34) 1.5px,
+      transparent 1.5px,
+      transparent 13px
+    );
+}
+
+/* 設計軟體常見的左右雙箭頭游標：只用游標暗示可拖曳，不加任何點或方塊 */
+.resize-edge { cursor: ew-resize; }
+
+@keyframes drawer-in {
+  from { transform: translateX(32px); opacity: 0; }
+}
+.drawer-in { animation: drawer-in 320ms cubic-bezier(.2,.7,.2,1); }
+
+@keyframes modal-slide-in {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.modal-slide-in {
+  animation: modal-slide-in 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform;
+}
+
+:where(a:any-link, button, summary):focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+/* 全站圖片防下載與防拖曳保護 */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* 展商內頁專屬字色：原本萊姆綠加深一點點，明亮自然且無外框線 */
+.lime-stroke {
+  color: #90d326;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+@layer base {
+  p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}

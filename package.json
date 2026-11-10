@@ -1,0 +1,25 @@
+{
+  "name": "explore-abf",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/optimize-images.mjs && vite build",
+    "preview": "vite preview",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "check:data": "node scripts/check-data.mjs"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.70.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.6"
+  }
+}

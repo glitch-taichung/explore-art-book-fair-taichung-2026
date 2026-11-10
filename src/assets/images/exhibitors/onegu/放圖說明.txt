@@ -1,0 +1,23 @@
+【Spot 1】頑固油飯 OneGu Steamed Glutinious Rice（資料夾代號：onegu）
+
+1. 攤位代表圖與 Logo（直接放在此資料夾 exhibitors/onegu/ 下）：
+  cover.jpg        攤位代表圖（參展名單游標滑過時預覽用，建議直式 3:4，寬約 600–800px）
+  logo.png         攤商內頁右側主圖／Logo（支援 .png / .jpg / .webp；若放 logo.pdf，執行 npm run build 會自動轉為 logo.png）
+
+2. 餐點圖片（放在子資料夾 exhibitors/onegu/books/ 下）：
+  books/01.jpg（或 book01.jpg）   ← 第 1 項：頑固油飯
+  books/02.jpg（或 book02.jpg）   ← 第 2 項：台派老靈魂油飯
+  books/03.jpg（或 book03.jpg）   ← 第 3 項：小鮮貝干貝酥油飯
+  books/04.jpg（或 book04.jpg）   ← 第 4 項：小海味烏魚子油飯
+  books/05.jpg（或 book05.jpg）   ← 第 5 項：大人系威士鴨油飯
+  books/06.jpg（或 book06.jpg）   ← 第 6 項：辣個香皮蛋油飯
+  books/07.jpg（或 book07.jpg）   ← 第 7 項：繽紛系霓虹蝦款
+
+3. 單本書若要使用「兩張圖片並排 ＋ 文字繞圖」版式：
+  只要將該本書的圖片拆成兩張放入 books/ 資料夾即可自動切換為並排文繞圖！
+  例如第 1 本書放兩張圖：
+    books/01-1.jpg  ＋  books/01-2.jpg
+    （或命名為 books/book01-1.jpg ＋ books/book01-2.jpg 亦可）
+
+4. 支援副檔名：
+  .jpg / .jpeg / .png / .webp / .avif（大小寫皆可，無需修改程式碼，放進資料夾即自動生效！）
