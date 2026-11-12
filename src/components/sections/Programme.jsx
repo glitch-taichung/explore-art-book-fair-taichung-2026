@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { event } from '../../data/event'
 import { schedule, speakerProfiles } from '../../data/schedule'
+import { img } from '../../lib/images'
 import Picture from '../ui/Picture'
 
 // ============================================================================
@@ -467,6 +468,67 @@ const profileOf = (name) => {
   return speakerProfiles.find((p) => p.name.includes(key))
 }
 
+function renderNoBreakHyphenWords(text) {
+  if (!text) return text
+  return String(text)
+    .split(/(\S+-\S+)/g)
+    .map((part, idx) =>
+      /\S+-\S+/.test(part) ? (
+        <span key={idx} className="whitespace-nowrap">
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    )
+}
+
+function UniformWidthImg({ path, label, widthClass = 'w-60 sm:w-[280px]', alt = '' }) {
+  const src = img(path)
+  if (!src) {
+    return (
+      <div className={`${widthClass} max-w-full aspect-[4/3]`}>
+        <Picture path={path} label={label} ratio="auto" align="left" className="h-full w-full" />
+      </div>
+    )
+  }
+  return (
+    <div className={`${widthClass} max-w-full flex items-start justify-start overflow-hidden`}>
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        className="w-full h-auto max-h-[340px] object-contain object-left pointer-events-none select-none"
+      />
+    </div>
+  )
+}
+
+function UniformHeightImg({ path, label, heightClass = 'h-24', alt = '' }) {
+  const src = img(path)
+  if (!src) {
+    return (
+      <div className={`${heightClass} aspect-[4/3] max-w-full`}>
+        <Picture path={path} label={label} ratio="auto" align="left" className="h-full w-full" />
+      </div>
+    )
+  }
+  return (
+    <div className={`${heightClass} w-full flex items-center justify-start overflow-hidden`}>
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        className="h-full w-auto max-w-full object-contain object-left pointer-events-none select-none"
+      />
+    </div>
+  )
+}
+
 function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram }) {
   const [open, setOpen] = useState(false)
   const rowRef = useRef(null)
@@ -495,6 +557,20 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
     : isMatched
       ? venueStyle.bg
       : 'bg-cool-light text-ink/45'
+
+  const beyondContentBgClass = isBeyond
+    ? s.type === 'quiet'
+      ? 'bg-teal text-white md:bg-white md:text-ink'
+      : 'bg-lime text-ink md:bg-white md:text-ink'
+    : 'bg-transparent md:bg-white'
+
+  const beyondSubColorClass = isBeyond && s.type === 'quiet'
+    ? 'text-white/85 md:text-ink/75'
+    : 'text-ink/75'
+
+  const beyondLinkColorClass = isBeyond && s.type === 'quiet'
+    ? 'text-white md:text-ink'
+    : 'text-ink'
 
   // 代表圖路徑分配
   const getRepresentativeCover = (item) => {
@@ -554,31 +630,35 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
         aria-expanded={open}
         onClick={toggle}
         onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), toggle())}
-        className="grid cursor-pointer md:grid-cols-[13.5rem_1fr]"
+        className={`grid cursor-pointer ${
+          isBeyond ? 'md:grid-cols-[13.5rem_12.5rem_1fr] lg:grid-cols-[13.5rem_14.5rem_1fr]' : 'md:grid-cols-[13.5rem_1fr]'
+        }`}
       >
         <div
           className={`relative -mx-6 flex items-center justify-between px-10 py-2.5 transition-colors duration-200 md:mx-0 md:flex-col md:items-start md:justify-center md:px-5 md:py-4 ${leftBgClass}`}
         >
           {isBeyond ? (
-            <div className="space-y-0.5 text-left">
-              <p className="font-latin text-body font-bold leading-none md:leading-normal md:text-title text-ink">
-                {fmtDateBeyond(s.date)}
-              </p>
-              <p className="font-latin text-body font-bold leading-none md:leading-normal md:text-title text-ink">
-                {s.start} - {s.end}
-              </p>
-              <p className="text-cap leading-none md:leading-normal text-ink/75 md:mt-1">
+            <div className="flex w-full items-center justify-between gap-3 md:block md:space-y-0.5">
+              <div className="shrink-0 space-y-0.5 text-left">
+                <p className="font-latin text-body font-bold leading-none md:leading-normal md:text-title text-ink text-left">
+                  {fmtDateBeyond(s.date)}
+                </p>
+                <p className="font-latin text-body font-bold leading-none md:leading-normal md:text-title text-ink text-left">
+                  {s.start} - {s.end}
+                </p>
+              </div>
+              <p className="text-cap leading-snug text-ink/75 text-right md:hidden">
                 {s.venue}
               </p>
             </div>
           ) : (
             <>
-              <div className="flex items-center gap-x-2.5 md:block">
-                <p className="text-body font-bold leading-none md:leading-normal md:text-title">
+              <div className="flex items-center gap-x-2.5 md:block text-left">
+                <p className="text-body font-bold leading-none md:leading-normal md:text-title text-left">
                   {showDate && `${fmtDate(s.date)} `}
                   {s.start} - {s.end}
                 </p>
-                <p className="text-cap leading-none md:leading-normal md:mt-0.5">{s.venue}</p>
+                <p className="text-cap leading-none md:leading-normal text-left md:mt-0.5">{s.venue}</p>
               </div>
               {s.registration === 'required' && (
                 s.registerUrl ? (
@@ -601,16 +681,27 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
           )}
         </div>
 
+        {/* 電腦版延伸活動中欄：地點 */}
+        {isBeyond && (
+          <div className="hidden md:flex md:items-center md:bg-white md:px-4 md:py-5">
+            <p className="text-body text-ink/80 text-left">{s.venue}</p>
+          </div>
+        )}
+
         <div
-          className={`flex items-center justify-between gap-3 bg-transparent px-4 py-4 transition-opacity duration-200 md:gap-4 md:bg-white md:px-6 md:py-5 ${
-            !isBeyond && !isMatched ? 'opacity-55' : 'opacity-100'
-          }`}
+          className={`flex items-center justify-between gap-3 transition-opacity duration-200 md:gap-4 md:px-6 md:py-5 ${
+            isBeyond ? `-mx-6 px-10 py-4 md:mx-0 ${beyondContentBgClass}` : 'bg-transparent px-4 py-4 md:bg-white'
+          } ${!isBeyond && !isMatched ? 'opacity-55' : 'opacity-100'}`}
         >
-          <div className="min-w-0 pr-2 my-auto">
-            <p className="text-title font-bold text-ink">
+          <div className="min-w-0 pr-2 my-auto text-left">
+            <p className={`text-title font-bold text-left ${isBeyond ? beyondLinkColorClass : 'text-ink'}`}>
               {main}
             </p>
-            {sub && <p className="mt-1 text-body text-ink/75">{sub}</p>}
+            {sub && (
+              <p className={`mt-1 text-body text-left ${isBeyond ? beyondSubColorClass : 'text-ink/75'}`}>
+                {renderNoBreakHyphenWords(sub)}
+              </p>
+            )}
           </div>
 
           {isBeyond ? (
@@ -620,12 +711,12 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                 target="_blank"
                 rel="noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="shrink-0 self-center text-cap font-bold text-ink underline underline-offset-4 hover:opacity-75"
+                className={`shrink-0 self-center text-cap font-bold underline underline-offset-4 hover:opacity-75 ${beyondLinkColorClass}`}
               >
                 報名連結 ↗︎
               </a>
             ) : (
-              <span className="shrink-0 self-center text-cap text-ink/75">
+              <span className={`shrink-0 self-center text-cap ${beyondSubColorClass}`}>
                 報名連結 ↗︎
               </span>
             )
@@ -644,9 +735,9 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
             <div className={`hidden md:block ${leftBgClass}`} />
 
             {/* 中欄 ＋ 右欄 */}
-            <div className={`grid gap-6 px-4 py-5 md:px-6 md:py-6 ${showRightColumn ? 'lg:grid-cols-[1fr_13rem]' : 'grid-cols-1'}`}>
-              {/* 中間欄位：依附圖 5 排版 */}
-              <div className="space-y-4">
+            <div className={`grid gap-6 px-4 pt-5 pb-0 md:px-6 md:py-6 ${showRightColumn ? 'lg:grid-cols-[1fr_14.5rem]' : 'grid-cols-1'}`}>
+              {/* 中間欄位 */}
+              <div className="min-w-0 space-y-4">
                 {s.id === 'salon-6' && (
                   <p className="text-body font-bold text-ink text-left">
                     野点沙龍：紙本派，集合！
@@ -663,7 +754,7 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                   {s.blurb || '節目介紹整理中。'}
                 </p>
 
-                {/* 四空間對談：四個空間直接往下排，不要右欄 */}
+                {/* 四空間對談：四個空間直接往下排，不要右欄，Logo 統一高度 */}
                 {s.id === 'salon-5' ? (
                   <div className="pt-2 space-y-6">
                     {[
@@ -673,19 +764,14 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                       { name: '毛刺 Glitch', origin: 'Taichung', logo: 'exhibitors/glitch/logo' },
                     ].map((space) => (
                       <div key={space.name} className="space-y-2 text-left">
-                        <p className="font-bold text-ink text-body">
+                        <p className="font-bold text-ink text-body text-left">
                           {space.name}｜{space.origin}
                         </p>
-                        <div className="w-32 h-32">
-                          <Picture
-                            path={space.logo}
-                            label={space.name}
-                            ratio="1 / 1"
-                            fit="contain"
-                            align="left"
-                            className="w-full h-full bg-transparent object-contain"
-                          />
-                        </div>
+                        <UniformHeightImg
+                          path={space.logo}
+                          label={space.name}
+                          heightClass="h-24"
+                        />
                       </div>
                     ))}
                   </div>
@@ -704,15 +790,12 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                     </div>
                   </div>
                 ) : (
-                  /* 代表圖 3:2（置於中間欄位介紹文字下方；嚴格靠左對齊） */
-                  <div className="pt-2 max-w-[480px] mr-auto text-left">
-                    <Picture
+                  /* 代表圖：所有場次統一為木頭書的寬度感 (w-60 sm:w-[280px])、靠左對齊 */
+                  <div className="pt-2 w-full mr-auto text-left">
+                    <UniformWidthImg
                       path={getRepresentativeCover(s)}
-                      label="節目主圖 3:2"
-                      ratio="3 / 2"
-                      fit="contain"
-                      align="left"
-                      className="w-full bg-transparent object-contain"
+                      label={main}
+                      widthClass="w-60 sm:w-[280px]"
                     />
                   </div>
                 )}
@@ -721,15 +804,15 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                 <div className="pt-2 text-cap text-ink/80 text-left space-y-0.5">
                   {s.registration === 'required' ? (
                     <>
-                      <p className="text-cap text-ink/65 font-normal">免費報名參與，請點選下方報名連結</p>
-                      <p lang="en" className="text-cap text-ink/60 font-normal">
+                      <p className="text-cap text-ink/65 font-normal text-left">免費報名參與，請點選下方報名連結</p>
+                      <p lang="en" className="text-cap text-ink/60 font-normal text-left">
                         Free admission upon registration. Click the link below to sign up.
                       </p>
                     </>
                   ) : (
                     <>
-                      <p className="text-cap text-ink/65 font-normal">免報名，現場自由參與</p>
-                      <p lang="en" className="text-cap text-ink/60 font-normal">
+                      <p className="text-cap text-ink/65 font-normal text-left">免報名，現場自由參與</p>
+                      <p lang="en" className="text-cap text-ink/60 font-normal text-left">
                         Free admission, walk-ins welcome.
                       </p>
                     </>
@@ -779,8 +862,8 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                           className="h-12 w-12 shrink-0 object-contain"
                         />
                         <div className="text-left text-cap">
-                          <p className="font-bold text-ink">{sp.name}</p>
-                          {sp.org && <p className="text-ink/60">{sp.org}</p>}
+                          <p className="font-bold text-ink text-left">{sp.name}</p>
+                          {sp.org && <p className="text-ink/60 text-left">{sp.org}</p>}
                         </div>
                       </div>
                     ))}
@@ -788,35 +871,40 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                 )}
               </div>
 
-              {/* 右欄（對齊需求：照片統一放大一倍至 128px，順序為 姓名 ➔ 單位 ➔ 照片 ➔ Logo照） */}
+              {/* 右欄（統一圖片高度 h-24，順序為 姓名 ➔ 單位 ➔ 圖片） */}
               {showRightColumn && (
-                <div className="space-y-6 border-t border-ink/10 pt-4 text-cap lg:border-t-0 lg:border-l lg:border-ink/10 lg:pt-0 lg:pl-6">
+                <div className="min-w-0 space-y-6 border-t border-ink/10 pt-4 text-cap lg:border-t-0 lg:border-l lg:border-ink/10 lg:pt-0 lg:pl-6">
                   {s.id === 'salon-3' ? (
-                    /* 曾哲偉（品度）：姓名 ➔ 單位 ➔ 曾哲偉照片 ➔ PRNDL Logo照 */
-                    <div className="space-y-2 text-left">
-                      <p className="font-bold text-ink">曾哲偉</p>
-                      <p className="text-cap text-ink/75">品度藝術 PRNDL.art</p>
-                      <div className="flex flex-col gap-3">
-                        <Picture
-                          path="programs/salon-3/speaker"
-                          label="曾哲偉"
-                          ratio="1 / 1"
-                          fit="contain"
-                          align="left"
-                          className="w-32 h-32 shrink-0 object-contain"
-                        />
-                        <Picture
-                          path="programs/salon-3/logo"
-                          label="PRNDL.art"
-                          ratio="1 / 1"
-                          fit="contain"
-                          align="left"
-                          className="w-32 h-32 shrink-0 object-contain"
+                    /* 品度藝術 + ss space space */
+                    <div className="space-y-6 text-left">
+                      <div className="space-y-2">
+                        <p className="font-bold text-ink text-left">曾哲偉</p>
+                        <p className="text-cap text-ink/75 text-left">品度藝術 PRNDL.art｜11:00 - 11:15</p>
+                        <div className="flex flex-col gap-3">
+                          <UniformHeightImg
+                            path="programs/salon-3/speaker"
+                            label="曾哲偉"
+                            heightClass="h-24"
+                          />
+                          <UniformHeightImg
+                            path="programs/salon-3/logo"
+                            label="PRNDL.art"
+                            heightClass="h-16"
+                          />
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <p className="font-bold text-ink text-left">ss space space</p>
+                        <p className="text-cap text-ink/75 text-left">11:15 - 11:30</p>
+                        <UniformHeightImg
+                          path="exhibitors/ssspace/logo"
+                          label="ss space space"
+                          heightClass="h-20"
                         />
                       </div>
                     </div>
                   ) : s.id === 'salon-6' ? (
-                    /* 野点：排出四個講者/主持（陳敬元、陳念瑩、張玉音、羅智信），層級同節點為 text-body font-bold */
+                    /* 野点：排出四個講者/主持（陳敬元、陳念瑩、張玉音、羅智信），所有圖片統一高度 */
                     <div className="space-y-6 text-left">
                       {[
                         { name: '陳敬元 Chen Ching-Yuan', role: '講者', path: 'programs/salon-6/陳敬元' },
@@ -825,37 +913,31 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
                         { name: '羅智信 Lo Chih-Hsin', role: '主持', path: 'programs/salon-6/羅智信' },
                       ].map((person) => (
                         <div key={person.name} className="space-y-2 text-left">
-                          <p className="font-bold text-ink text-body">
+                          <p className="font-bold text-ink text-body text-left">
                             {person.name}
                             <span className="ml-1 text-ink/60 font-normal">（{person.role}）</span>
                           </p>
-                          <Picture
+                          <UniformHeightImg
                             path={person.path}
                             label={person.name}
-                            ratio="1 / 1"
-                            fit="contain"
-                            align="left"
-                            className="w-32 h-32 shrink-0 object-contain"
+                            heightClass="h-24"
                           />
                         </div>
                       ))}
                     </div>
                   ) : (
-                    /* 論壇及其他活動講者名單：嚴格遵循 姓名 ➔ 單位 ➔ 照片 順序，且照片放大一倍 (w-32 h-32) */
+                    /* 論壇及其他活動講者名單：嚴格遵循 姓名 ➔ 單位 ➔ 照片 順序，所有圖片統一高度 h-24 */
                     forumPeople.map((sp, idx) => (
                       <div key={sp.name} className="space-y-2 text-left">
-                        <p className="font-bold text-ink">
+                        <p className="font-bold text-ink text-left">
                           {sp.name}
                           {sp.isModerator && <span className="ml-1 text-ink/60 font-normal">（主持）</span>}
                         </p>
                         {sp.org && <p className="text-cap text-ink/75 text-left">{sp.org}</p>}
-                        <Picture
+                        <UniformHeightImg
                           path={getSpeakerImgPath(sp.name, idx)}
                           label={sp.name.slice(0, 3)}
-                          ratio="1 / 1"
-                          fit="contain"
-                          align="left"
-                          className="w-32 h-32 shrink-0 object-contain"
+                          heightClass="h-24"
                         />
                       </div>
                     ))
@@ -864,8 +946,8 @@ function Row({ s, showDate, isBeyond = false, isMatched = true, onSelectProgram 
               )}
             </div>
 
-            {/* 手機版底部收合按鈕：置左 */}
-            <div className="flex justify-start px-4 pb-4 pt-2 md:hidden">
+            {/* 手機版底部收合按鈕：置左，前後垂直行距一致 */}
+            <div className="flex justify-start px-4 py-5 md:hidden">
               <button
                 type="button"
                 onClick={toggle}
@@ -915,7 +997,7 @@ export default function Programme({ onSelectProgram }) {
     <section
       id="programme"
       aria-label="活動日程"
-      className="scroll-mt-12 min-h-dvh bg-cool-light px-6 py-24 sm:px-12"
+      className="md:snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-cool-light px-6 py-24 sm:px-12"
     >
       <div className="mx-auto max-w-[1280px]">
         <h2 className="mb-10 text-display font-bold lg:mb-14">
@@ -971,7 +1053,7 @@ export default function Programme({ onSelectProgram }) {
 
                   {WHEN_DAYS.map((day) => (
                     <div key={day.date} className="flex items-center gap-1.5 shrink-0">
-                      <span className="font-latin text-[0.72rem] font-bold tracking-wider text-ink/65 shrink-0">
+                      <span className="text-[0.78rem] font-normal text-ink/70 shrink-0">
                         {day.label}
                       </span>
                       {day.slots.map((slot) => {
@@ -1007,7 +1089,7 @@ export default function Programme({ onSelectProgram }) {
               <div className="space-y-5 text-cap">
                 {/* 1. Where：你到哪了？ */}
                 <div>
-                  <p className="mb-1.5 text-cap font-bold text-ink">
+                  <p className="mb-1.5 text-cap font-bold text-ink text-left">
                     Where　<span className="font-normal text-ink/70">你到哪了？</span>
                   </p>
                   <div className="flex flex-wrap gap-1.5">
@@ -1034,13 +1116,13 @@ export default function Programme({ onSelectProgram }) {
 
                 {/* 2. When：你幾點到？（可複選） */}
                 <div>
-                  <p className="mb-1.5 text-cap font-bold text-ink">
+                  <p className="mb-1.5 text-cap font-bold text-ink text-left">
                     When　<span className="font-normal text-ink/70">你幾點到？</span>
                   </p>
                   <div className="space-y-2">
                     {WHEN_DAYS.map((day) => (
                       <div key={day.date} className="space-y-1">
-                        <p className="font-latin text-[0.75rem] font-bold tracking-wider text-ink/65">
+                        <p className="text-cap font-normal text-ink/70 text-left">
                           {day.label}
                         </p>
                         <div className="flex flex-wrap gap-1.5">
@@ -1072,10 +1154,10 @@ export default function Programme({ onSelectProgram }) {
           </aside>
 
           {/* 右側：兩日書展活動列表 */}
-          <div>
+          <div className="min-w-0">
             {event.days.map((d) => (
               <div key={d.day} className="mb-20 last:mb-12">
-                <h3 className="mb-5 flex flex-wrap items-baseline gap-x-6 text-display font-bold px-4 sm:px-0">
+                <h3 className="mb-5 flex flex-wrap items-baseline gap-x-6 text-[1.25rem] sm:text-[1.5rem] font-bold px-4 sm:px-0">
                   {d.label.replace('.', '/')} {d.weekday}
                 </h3>
                 <ul className="border-t border-ink/15">
@@ -1104,11 +1186,11 @@ export default function Programme({ onSelectProgram }) {
             onClick={() => setBeyondOpen(!beyondOpen)}
             className="flex w-full cursor-pointer items-baseline justify-between gap-6 py-7 text-left"
           >
-            <div>
-              <h3 className="text-display font-bold text-ink">
+            <div className="text-left">
+              <h3 className="text-display font-bold text-ink text-left">
                 Zine 外一天才有空？
               </h3>
-              <p className="mt-1 text-body font-normal text-ink/75">
+              <p className="mt-1 text-body font-normal text-ink/75 text-left">
                 安靜共讀 ⋯ 親子手工書工作坊
               </p>
             </div>

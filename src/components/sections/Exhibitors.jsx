@@ -37,7 +37,7 @@ export default function Exhibitors({ openId, onOpen }) {
     <section
       id="exhibitor"
       aria-label="書展夥伴"
-      className="scroll-mt-12 min-h-dvh bg-white px-6 py-28 sm:px-12"
+      className="md:snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-white px-6 py-28 sm:px-12"
       onMouseMove={handleMouseMove}
     >
       <span id="exhibitors" className="sr-only" />
@@ -46,17 +46,17 @@ export default function Exhibitors({ openId, onOpen }) {
           <span className="font-explore-en font-bold not-italic">Exhibitors</span>　書展夥伴
         </h2>
 
-        {SPOTS.map((spot) => {
+        {SPOTS.map((spot, idx) => {
           const list = exhibitorList.filter((e) => e.zone === spot)
 
           return (
             <div
               key={spot}
-              className="grid gap-6 border-t border-ink/15 py-6 md:py-10 md:grid-cols-[13.5rem_1fr] md:gap-x-6"
+              className={`grid gap-6 ${idx > 0 ? 'border-t border-ink/15' : ''} py-6 md:py-10 md:grid-cols-[calc(25%-1.5rem)_1fr] md:gap-x-6`}
             >
-              {/* 左欄：手機版方格緊接在 Spot X｜ 後方；電腦版位於 Spot X｜ 正下方 */}
-              <div className="flex flex-wrap items-center gap-3 self-start md:flex-col md:items-start md:gap-4">
-                <p className="shrink-0 text-title font-bold">{spot}｜</p>
+              {/* 左欄：手機版方格緊接在 Spot X｜ 後方；電腦版對齊右側第一列攤商頂部留白 */}
+              <div className="flex flex-wrap items-center gap-3 self-start md:flex-col md:items-start md:gap-4 md:pt-2.5">
+                <p className="shrink-0 text-title font-bold leading-snug text-left">{spot}｜</p>
                 <SpotBoothSvg
                   spot={spot}
                   vendorsInSpot={list}
@@ -67,7 +67,7 @@ export default function Exhibitors({ openId, onOpen }) {
               </div>
 
               {/* 右欄：攤商名稱列表（對齊附圖 5 與日程表卡片左緣，右側地區保持獨立欄位不疊字） */}
-              <ul>
+              <ul className="min-w-0">
                 {list.map((e) => {
                   const isCurrentActive = (hoverId || openId) === e.id
                   return (
@@ -79,12 +79,12 @@ export default function Exhibitors({ openId, onOpen }) {
                         onMouseLeave={() => setHoverId(null)}
                         onFocus={() => setHoverId(e.id)}
                         onBlur={() => setHoverId(null)}
-                        className="flex w-full cursor-pointer flex-col items-start gap-y-1 py-2.5 text-left transition-opacity duration-200 sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-8"
+                        className="flex w-full min-w-0 cursor-pointer flex-col items-start gap-y-1 py-2.5 text-left transition-opacity duration-200 sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-8"
                         style={{
                           opacity: (hoverId || openId) && !isCurrentActive ? 0.25 : 1,
                         }}
                       >
-                        <span className="text-display leading-snug pr-4">{e.name}</span>
+                        <span className="min-w-0 break-words text-display leading-snug pr-4">{e.name}</span>
                         <span className="shrink-0 text-cap text-ink/60 sm:text-right whitespace-nowrap">
                           ｜{e.origin.join('・')}
                         </span>

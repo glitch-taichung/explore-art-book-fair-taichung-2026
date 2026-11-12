@@ -137,8 +137,11 @@ export function parseCurrentRoute() {
   if (hash === 'info') {
     return { type: 'section', id: 'info' }
   }
-  if (hash === 'map' || hash === 'home' || hash === 'top') {
-    return { type: 'section', id: 'map' }
+  if (hash === 'top') {
+    return { type: 'section', id: 'top' }
+  }
+  if (hash === 'home' || hash === 'map') {
+    return { type: 'section', id: 'home' }
   }
 
   return { type: null, id: null }

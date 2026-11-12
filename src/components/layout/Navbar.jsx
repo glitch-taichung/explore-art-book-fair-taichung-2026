@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { ExploreTextLogotype } from '../ui/ExploreLogotype'
 
 const LINKS = [
-  ['#map', 'Home'],
+  ['#home', 'Home'],
   ['#programme', 'Programme'],
   ['#exhibitor', 'Exhibitors'],
   ['#info', 'Info'],
@@ -10,8 +10,8 @@ const LINKS = [
 
 /**
  * 頂部導覽列：
- * - 在首頁、扉頁與活動日程區段（#programme）隱藏，確保節目日程閱讀視野乾淨無遮擋
- * - 一旦往下滑動到達書展夥伴（#exhibitor）及其後續活動資訊（#info）區段，即以半透明毛玻璃浮現於頂部
+ * - 在扉頁 (#top) 與首頁 (#home) 隱藏，保持視覺乾淨
+ * - 一旦往下滑動進入活動日程 (#programme) 及其後續區段 (#exhibitor / #info)，即以半透明毛玻璃浮現於頂部
  * - 英文字體採用 EXPLORE ABF_Logotype_20261105.ai 的粗斜體字型與原檔向量標準字
  */
 export default function Navbar() {
@@ -19,10 +19,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const checkScroll = () => {
-      const exhibEl = document.getElementById('exhibitor')
-      if (exhibEl) {
-        const rect = exhibEl.getBoundingClientRect()
-        // 在 programme 區段（以及首頁主畫面）不顯示 navbar；滑入 exhibitor 及其後續區段才浮現
+      const progEl = document.getElementById('programme')
+      if (progEl) {
+        const rect = progEl.getBoundingClientRect()
+        // 滑入 programme 及其後續區段（手機與電腦版皆顯示 navbar）
         setVisible(rect.top <= 80)
       } else {
         setVisible(window.scrollY > window.innerHeight * 1.8)
@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <header
       aria-hidden={!visible}
-      className={`fixed inset-x-0 top-0 z-[45] bg-white/90 backdrop-blur-md transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[45] bg-white/90 px-6 backdrop-blur-md transition-all duration-300 sm:px-12 ${
         visible
           ? 'translate-y-0 opacity-100'
           : 'pointer-events-none -translate-y-full opacity-0'
@@ -48,11 +48,11 @@ export default function Navbar() {
     >
       <nav
         aria-label="主選單"
-        className="mx-auto flex h-12 max-w-[1280px] items-center justify-center px-6 sm:h-13 sm:justify-between sm:px-12"
+        className="mx-auto flex h-12 max-w-[1280px] items-center justify-center sm:h-13 sm:justify-between"
       >
         <div className="hidden sm:flex sm:items-center">
           <a
-            href="#map"
+            href="#home"
             tabIndex={visible ? 0 : -1}
             aria-label="回到 Explore Art Book Fair 首頁"
             className="text-ink transition-opacity hover:opacity-70"

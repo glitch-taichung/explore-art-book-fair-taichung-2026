@@ -78,6 +78,7 @@ function getVendorDropMappings(vendor) {
     ],
     thumbbooks: [{ title: 'Thumb Books', intro: 'Thumb Books' }],
     papaya: [{ title: '遊牧木瓜出版', intro: '遊牧木瓜出版' }],
+    ssspace: [{ title: 'ss space space', intro: 'ss space space' }],
     zitdim: [{ title: '節點', intro: '節點' }],
     weightbooks: [
       { title: '重本書店', intro: '重本書店' },
@@ -92,6 +93,8 @@ function getVendorDropMappings(vendor) {
   const clean = vendor.name.split(/[✕/｜]/)[0].trim()
   return [{ title: clean, intro: clean }]
 }
+
+const NO_SELECTED_VENDOR_IDS = new Set(['library', 'jilongli'])
 
 function prepareVendorDrawerData(vendor) {
   if (!vendor) {
@@ -126,7 +129,7 @@ function prepareVendorDrawerData(vendor) {
     }
   }
 
-  const isDeletedSectionVendor = ['library', 'jilongli', 'ssspace'].includes(vendor.id)
+  const isDeletedSectionVendor = NO_SELECTED_VENDOR_IDS.has(vendor.id)
 
   let mappings = getVendorDropMappings(vendor)
   let text =
@@ -299,14 +302,14 @@ function MobileCollapsibleBio({ bio }) {
   const displayText = expanded ? bio : `${bio.slice(0, 240)}...`
 
   return (
-    <div className="font-sans text-body leading-relaxed text-ink/90 text-justify">
-      <p className="inline whitespace-pre-line">{displayText}</p>
+    <div className="font-sans text-body leading-relaxed text-ink/90">
+      <p className="whitespace-pre-line text-justify">{displayText}</p>
       <button
         type="button"
         onClick={() => setExpanded(!expanded)}
-        className="ml-2 inline-block cursor-pointer font-bold text-cap text-ink underline underline-offset-4 hover:opacity-75"
+        className="mt-3 block cursor-pointer text-left font-bold text-cap text-ink underline underline-offset-4 hover:opacity-75"
       >
-        {expanded ? 'Less' : 'More'}
+        {expanded ? 'Less －' : 'More ＋'}
       </button>
     </div>
   )
@@ -331,8 +334,8 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
   const titleLines = drawerData.titleLines
   const introParagraph = drawerData.introParagraph
 
-  // 圖書館、吉龍里麵包計劃、ss space 先只到第二區段（selected 按鈕先灰掉）
-  const hasSelected = !['library', 'jilongli', 'ssspace'].includes(vendor?.id)
+  // 圖書館、吉龍里麵包計劃先只到第二區段（selected 按鈕先灰掉）
+  const hasSelected = !NO_SELECTED_VENDOR_IDS.has(vendor?.id)
 
   useEffect(() => {
     if (!vendor) return
@@ -754,7 +757,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
            =================================================================== */}
         <section
           aria-label="攤商視覺主頁"
-          className="relative flex min-h-dvh w-full flex-col justify-between bg-white px-6 pt-20 pb-14 sm:px-10 md:snap-start"
+          className="relative flex min-h-dvh w-full flex-col justify-between overflow-x-clip bg-white px-6 pt-20 pb-14 sm:px-10 md:snap-start"
         >
           <div className="relative flex min-h-[calc(100dvh-8.5rem)] w-full flex-col justify-between md:w-[54%] md:pr-6">
             {/* 地區與限定日期 */}
@@ -850,16 +853,10 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
               </h2>
             </div>
 
-            {/* 手機版專屬 Logo 與連結（無連結則完全不顯示佔位文字） */}
+            {/* 手機版專屬 Logo 與連結（外部連結放在 Logo 上方靠左對齊，與電腦版一致） */}
             <div className="relative z-10 -mr-6 ml-auto w-[64%] sm:-mr-10 sm:w-[52%] md:hidden">
-              <Picture
-                path={`exhibitors/${vendor.id}/logo`}
-                label={`${vendor.name}\nLogo`}
-                ratio="1 / 1"
-                className="w-full bg-transparent"
-              />
               {(vendor.ig?.length > 0 || vendor.website) && (
-                <div className="mt-2.5 flex flex-wrap items-baseline gap-x-2 gap-y-1 pr-6 font-sans text-cap sm:pr-10">
+                <div className="mb-2 flex flex-wrap items-baseline justify-start gap-x-2 gap-y-1 pr-6 text-left font-sans text-cap sm:pr-10">
                   {vendor.ig?.map((h) => (
                     <a
                       key={h}
@@ -883,6 +880,12 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                   )}
                 </div>
               )}
+              <Picture
+                path={`exhibitors/${vendor.id}/logo`}
+                label={`${vendor.name}\nLogo`}
+                ratio="1 / 1"
+                className="w-full bg-transparent"
+              />
             </div>
 
             {/* intro 與 selected 錨點（思源標準字、萊姆綠 #d2fea1 帶細黑外框） */}
@@ -930,7 +933,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
           id="vendor-intro"
           ref={introSecRef}
           aria-label="攤商簡介"
-          className="flex min-h-dvh w-full flex-col justify-center bg-[#eef0f2] px-6 py-20 sm:px-10 md:snap-start"
+          className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-[#eef0f2] px-6 py-20 sm:px-10 md:snap-start"
         >
           <div className="w-full md:w-[54%] md:pr-8">
             {/* 簡介：自然出現的攤商名稱以萊姆綠 (#90d326) 標註，字飛回前保持透明空白，絕無 AI 額外添加文字 */}
@@ -983,7 +986,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                  文字為整體視覺排版素材之一，錯落呼吸感配置，非刻板圖說 */
               <section
                 aria-label="餐點品項當代排版"
-                className="flex min-h-dvh w-full flex-col justify-center bg-white px-6 py-20 sm:px-10 md:snap-start"
+                className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-white px-6 py-20 sm:px-10 md:snap-start"
               >
                 <div className="mx-auto w-full max-w-[1180px]">
                   <FoodStallEditorial vendor={vendor} />
@@ -1002,33 +1005,33 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                     bookSecRefs.current[idx] = el
                   }}
                   aria-label={it.title}
-                  className={`flex min-h-dvh w-full flex-col justify-center ${secBg} px-6 py-20 sm:px-10 md:snap-start`}
+                  className={`flex min-h-dvh w-full flex-col justify-center overflow-x-clip ${secBg} px-6 py-20 sm:px-10 md:snap-start`}
                 >
-                  <div className="w-full md:w-[54%] md:pr-8">
+                  <div className="w-full min-w-0 md:w-[54%] md:pr-8">
                     {/* 電腦版 (md:block)：對齊附圖 1（作者與出版者置於書號與標題上方，離標題更近） */}
                     <div className="hidden md:block mb-6">
                       {(it.author || it.publisher) && (
                         <div className="mb-2 space-y-1 font-sans text-cap max-w-[420px]">
                           {it.author && (
                             <div style={{ marginLeft: '16%' }} className="flex items-start">
-                              <span className="lime-stroke font-bold leading-normal">{it.author}</span>
+                              <span className="lime-stroke font-bold leading-normal break-words [overflow-wrap:anywhere]">{it.author}</span>
                             </div>
                           )}
                           {it.publisher && (
                             <div style={{ marginLeft: '32%' }} className="flex items-start gap-1.5">
                               <span className="shrink-0 font-normal text-ink/75">Published by</span>
-                              <span className="lime-stroke font-bold leading-normal whitespace-pre-line">{it.publisher}</span>
+                              <span className="lime-stroke font-bold leading-normal whitespace-pre-line break-words [overflow-wrap:anywhere]">{it.publisher}</span>
                             </div>
                           )}
                         </div>
                       )}
 
-                      <p className="font-sans text-cap text-ink/50">{num}</p>
-                      <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight">
+                      <p className="font-sans text-cap text-ink/50 text-left">{num}</p>
+                      <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight whitespace-pre-line text-left break-words [overflow-wrap:anywhere]">
                         {it.title}
                       </h3>
                       {it.subtitle && (
-                        <p className="lime-stroke mt-1.5 font-sans text-cap font-bold leading-normal">
+                        <p className="lime-stroke mt-3 font-sans text-cap font-bold leading-normal text-left break-words [overflow-wrap:anywhere]">
                           {it.subtitle}
                         </p>
                       )}
@@ -1036,12 +1039,12 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
 
                     {/* 手機版 (md:hidden)：維持現有版面 */}
                     <div className="block md:hidden mb-6 pb-2">
-                      <p className="font-sans text-cap text-ink/50">{num}</p>
-                      <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight">
+                      <p className="font-sans text-cap text-ink/50 text-left">{num}</p>
+                      <h3 className="mt-1 font-sans text-title font-bold text-ink leading-tight whitespace-pre-line text-left break-words [overflow-wrap:anywhere]">
                         {it.title}
                       </h3>
                       {it.subtitle && (
-                        <p className="lime-stroke mt-1.5 font-sans text-cap font-bold leading-normal">
+                        <p className="lime-stroke mt-3 font-sans text-cap font-bold leading-normal text-left break-words [overflow-wrap:anywhere]">
                           {it.subtitle}
                         </p>
                       )}
@@ -1050,13 +1053,13 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                         <div className="mt-3 space-y-1.5 font-sans text-cap">
                           {it.author && (
                             <div className="inline-flex items-baseline gap-1.5">
-                              <span className="lime-stroke font-bold">{it.author}</span>
+                              <span className="lime-stroke font-bold break-words [overflow-wrap:anywhere]">{it.author}</span>
                             </div>
                           )}
                           {it.publisher && (
                             <div className="flex items-baseline gap-1.5">
-                              <span className="font-normal text-ink/75">Published by</span>
-                              <span className="lime-stroke font-bold whitespace-pre-line">{it.publisher}</span>
+                              <span className="shrink-0 font-normal text-ink/75">Published by</span>
+                              <span className="lime-stroke font-bold whitespace-pre-line break-words [overflow-wrap:anywhere]">{it.publisher}</span>
                             </div>
                           )}
                         </div>

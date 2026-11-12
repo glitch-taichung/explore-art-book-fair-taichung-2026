@@ -161,16 +161,23 @@ export function getProgramDetails(programId) {
     stackedImages = null
     carouselPhotos = [
       { caption: '曾哲偉', path: 'programs/salon-3/speaker' },
-      { caption: '品度藝術 PRNDL.art', path: 'programs/salon-3/logo' }
+      { caption: '品度藝術 PRNDL.art', path: 'programs/salon-3/logo' },
+      { caption: 'ss space space', path: 'exhibitors/ssspace/logo' }
     ]
     statement = '遠方的鼓聲：「PRNDL.criticism」與東亞藝評的跨國實驗'
     richIntro = `閱讀，是認識一個地方最溫和也最深入的方式。透過文字，我們聽見遠方的鼓聲，也看見另一個社會如何思考自身的歷史與當下。\n\n「PRNDL.criticism」是一個以台灣為基地、以繁體中文與英文雙語運作的藝術評論平台，聚焦東亞與東南亞的當代藝術書寫，並與ArtsEquator（新加坡）、Afterall（英國）、湄公河文化中心（台灣）等國際組織合作，將該區域內的重要評論引介給中文讀者；同時發起「青春的迫切性」系列專題，委託年輕寫作者書寫他們親身參與的國際交流經驗。\n\n本場講座將分享該平台如何在有限資源下建立國際合作關係、翻譯如何成為一種編輯與策展的工作，以及在數位出版的時代，評論平台能為藝術社群扮演什麼樣的角色。講座也將介紹平台的投稿機制，歡迎對藝術書寫、翻譯與國際交流有興趣的朋友一同參與。`
     hosts = [
       {
         name: '曾哲偉 Tseng Che-Wei',
-        org: '品度藝術 PRNDL.art',
+        org: '品度藝術 PRNDL.art｜11:00 - 11:15',
         bioZh: `品度藝術（PRNDL.art）負責人，近年來以策展、研究與評論書寫等方式參與藝術實踐，現為臺灣文化政策研究學會、中華民國藝評人協會會員。同時就讀於國立臺北教育大學當代藝術評論與策展研究全英語碩士學位學程（CCSCA）。\n\n評論文章以中英雙語寫作，關注台灣、韓國與東南亞當代藝術，曾發表於《Ocula中文》《ArtReview中文》《典藏ARTouch》《CLABO實驗波》等平台，入圍第九屆國際藝術評論獎（IAAC）。近期參與展覽專案有「瓶中船」（2026，基隆美術館）計劃主持、「一四九海浬的時間：對抗遺忘」（2025，國家人權博物館）協同策展人、「漂流的阿波伎：水、風及星辰之徑」（2024，濟州道立美術館）合作策展人、「一百坪的散步練習」（2023，鳳甲美術館）共同研究等。`,
         ig: ['@tsengchewei', '@prndl.art']
+      },
+      {
+        name: 'ss space space',
+        org: '11:15 - 11:30',
+        bioZh: `ss space space 是一個以「空間」為題的研究團隊，也是由藝術家曾彥翔與吳依宣主導的獨立藝術空間。透過空間經營、創作實踐、策展、工作坊與共學計畫等形式，ss space space 試圖挑戰文化、科學、技術與社會的既有價值定義，以對話展開共同學習，為當代議題創造多元辯論與思考的流動場域。\n\n自 2020 年起，ss space space 以社會性與公共參與為目標，跨足臺灣、英國、挪威、義大利與瑞士等地推動計畫，邀請藝術家及跨領域工作者共同實驗。2023 年於臺灣成立其藝術家自營空間，並設有展演與閱覽區域，持續發掘海內外藝術創作，呈現兼具批判、實驗與學術深度的展演活動。`,
+        ig: ['@ssspacespace']
       }
     ]
   } else if (s.id === 'salon-4') {

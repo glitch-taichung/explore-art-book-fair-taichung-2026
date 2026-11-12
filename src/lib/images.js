@@ -225,6 +225,15 @@ function buildCandidatePaths(path) {
     if (path.includes('booksociety/logo')) {
       candidates.push('exhibitors/booksociety/logo', 'exhibitors/booksociety/TBS_logo_black')
     }
+    if (/exhibitors\/ssspace\/books\/0?1$/.test(path)) {
+      candidates.push('exhibitors/ssspace/books/open practice')
+    }
+    if (/exhibitors\/ssspace\/books\/0?2$/.test(path)) {
+      candidates.push('exhibitors/ssspace/books/no thing dies-1')
+    }
+    if (/exhibitors\/ssspace\/books\/0?3$/.test(path)) {
+      candidates.push('exhibitors/ssspace/books/on display-1')
+    }
   }
 
   // 若為 books/01 或 books/01-1 格式，自動支援 book01、01_1、book01-1 等常見命名

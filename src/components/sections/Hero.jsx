@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import wordmarkH from '../../assets/brand/wordmark_horizontal.png'
 import wordmarkSub from '../../assets/brand/wordmark_sub.png'
 import { EXPLORE_TILES, ExploreTile, ExploreTextLogotype } from '../ui/ExploreLogotype'
+import Marquee from '../ui/Marquee'
 
 // 扉頁左側原版交疊排法（對應 7 個圖樣字：E, X, P, L, O, R, E）
 // L 左上角交疊於 P 右下角；R 右上角交疊於 O 左下角
@@ -240,11 +241,11 @@ function ShadedPlazaGeometricBg() {
 }
 
 /**
- * 一頁式前兩屏舞台（扉頁 #top ＋ 首頁遮蔭廣場 #map）
+ * 一頁式前兩屏舞台（扉頁 #top ＋ 首頁遮蔭廣場 #home）
  * 效能優化：
  * - 起點與終點座標僅於 mount / resize 時量測快取，不在每次 scroll 時呼叫 16 次 getBoundingClientRect()
  * - 滾動時直接透過 DOM ref 更新 7 個字塊的 style.transform，零 React 狀態重繪 (0 re-renders)
- * - 滑過 #map 之後立即略過計算，徹底消除長頁面滾動卡頓
+ * - 滑過 #home 之後立即略過計算，徹底消除長頁面滾動卡頓
  */
 export default function Hero({ event }) {
   const stageRef = useRef(null)
@@ -261,11 +262,11 @@ export default function Hero({ event }) {
     // 僅在初始化與視窗縮放時量測一次幾何位置
     const measureLayout = () => {
       const stage = stageRef.current
-      const mapEl = document.getElementById('map')
-      if (!stage || !mapEl) return
+      const homeEl = document.getElementById('home')
+      if (!stage || !homeEl) return
 
       const stageRect = stage.getBoundingClientRect()
-      const totalTravel = Math.max(1, mapEl.offsetTop)
+      const totalTravel = Math.max(1, homeEl.offsetTop)
 
       const items = EXPLORE_TILES.map((_, i) => {
         const sEl = startRefs.current[i]
@@ -357,7 +358,7 @@ export default function Hero({ event }) {
   }, [])
 
   return (
-    <div ref={stageRef} className="relative overflow-hidden">
+    <div ref={stageRef} className="relative overflow-x-clip">
       {/* 中間層 (z-10)：可掉落並於下個區段排成整齊一列的 7 個 EXPLORE 圖樣字塊 */}
       <div
         aria-hidden="true"
@@ -385,7 +386,7 @@ export default function Hero({ event }) {
       <section
         id="top"
         aria-label="扉頁"
-        className="relative flex min-h-dvh flex-col justify-between overflow-hidden bg-[#eceeef] px-4 py-4 text-ink sm:px-12 sm:py-8"
+        className="md:snap-start relative flex min-h-dvh flex-col justify-between overflow-hidden bg-[#eceeef] px-4 py-4 text-ink sm:px-12 sm:py-8"
       >
         {/* 主內容區：
             電腦版兩欄（左：EXPLORE 散落字塊；右：一週年館慶標準字置於主視覺上方）
@@ -439,24 +440,14 @@ export default function Hero({ event }) {
         </div>
 
         {/* 底部導覽：時間地點置於進入書展現場上方，置中對齊 */}
-        <div
-          style={{ textAlign: 'center' }}
-          className="relative z-20 mx-auto mt-auto flex w-full flex-col items-center justify-center pt-2 pb-2 text-center"
-        >
-          <div
-            style={{ textAlign: 'center' }}
-            className="mb-2 w-full space-y-0.5 text-center font-normal text-ink"
-          >
-            <p
-              style={{ textAlign: 'center' }}
-              className="w-full text-center text-[0.88rem] font-normal whitespace-nowrap sm:text-title"
-            >
+        <div className="relative z-20 mx-auto mt-auto flex w-full flex-col items-center justify-center pt-2 pb-2 text-center">
+          <div className="mb-2 w-full space-y-0.5 text-center font-normal text-ink">
+            <p className="w-full text-center text-[0.88rem] font-normal whitespace-nowrap sm:text-title">
               <span>12/12 ⋯ 12/13</span>
               <span className="ml-2">臺中綠美圖・遮蔭廣場</span>
             </p>
             <p
               lang="en"
-              style={{ textAlign: 'center' }}
               className="w-full text-center text-[0.72rem] font-normal whitespace-nowrap tracking-tight sm:text-title sm:tracking-normal"
             >
               Taichung Green Museumbrary・Shaded Plaza
@@ -464,8 +455,7 @@ export default function Hero({ event }) {
           </div>
 
           <a
-            href="#map"
-            style={{ textAlign: 'center' }}
+            href="#home"
             className="inline-block text-center text-[0.92rem] font-normal text-ink underline underline-offset-8 transition-opacity hover:opacity-70 sm:text-title"
           >
             進入書展現場 ↓
@@ -474,12 +464,12 @@ export default function Hero({ event }) {
       </section>
 
       {/* =====================================================================
-          第二屏：首頁主畫面 (#map)
+          第二屏：首頁主畫面 (#home)
          ===================================================================== */}
       <section
-        id="map"
+        id="home"
         aria-label="Explore Art Book Fair 首頁"
-        className="relative flex min-h-dvh flex-col justify-between bg-slate px-6 py-16 text-white sm:px-12"
+        className="md:snap-start relative flex min-h-dvh flex-col justify-between overflow-hidden bg-slate px-6 pt-16 pb-0 text-white sm:px-12"
       >
         {/* 遮蔭廣場幾何建築空間背景 (z-0) */}
         <ShadedPlazaGeometricBg />
@@ -511,33 +501,40 @@ export default function Hero({ event }) {
           </div>
         </div>
 
-        {/* 底部大型三向引導（Programme / Exhibitors / Info） */}
-        <nav
-          aria-label="主要區段導覽"
-          className="relative z-20 mx-auto grid w-full max-w-[1280px] border-t border-white/45 sm:grid-cols-3"
-        >
-          {[
-            ['#programme', 'Programme', '活動日程'],
-            ['#exhibitor', 'Exhibitors', '書展夥伴'],
-            ['#info', 'Info', '活動資訊'],
-          ].map(([href, en, zh]) => (
-            <a
-              key={href}
-              href={href}
-              className="group flex items-baseline justify-between gap-4 border-b border-white/45 py-7 text-display transition-colors hover:text-lime sm:not-first:pl-8 sm:not-last:border-r sm:not-last:pr-8"
-            >
-              <span>
-                <span className="font-explore-en font-bold not-italic">{en}</span>
-                <span className="ml-4 text-title font-normal text-white/90 group-hover:text-lime">
-                  {zh}
+        {/* 底部大型三向引導（Programme / Exhibitors / Info）＋ 首頁尾巴跑馬燈 */}
+        <div className="relative z-20 w-full">
+          <nav
+            aria-label="主要區段導覽"
+            className="mx-auto grid w-full max-w-[1280px] border-t border-white/45 sm:grid-cols-3"
+          >
+            {[
+              ['#programme', 'Programme', '活動日程'],
+              ['#exhibitor', 'Exhibitors', '書展夥伴'],
+              ['#info', 'Info', '活動資訊'],
+            ].map(([href, en, zh]) => (
+              <a
+                key={href}
+                href={href}
+                className="group flex items-baseline justify-between gap-4 border-b border-white/45 py-7 text-display transition-colors hover:text-lime sm:not-first:pl-8 sm:not-last:border-r sm:not-last:pr-8"
+              >
+                <span>
+                  <span className="font-explore-en font-bold not-italic">{en}</span>
+                  <span className="ml-4 text-title font-normal text-white/90 group-hover:text-lime">
+                    {zh}
+                  </span>
                 </span>
-              </span>
-              <span aria-hidden="true" className="transition-transform group-hover:translate-y-1">
-                ↓
-              </span>
-            </a>
-          ))}
-        </nav>
+                <span aria-hidden="true" className="transition-transform group-hover:translate-y-1">
+                  ↓
+                </span>
+              </a>
+            ))}
+          </nav>
+
+          {/* 首頁的尾巴：跑馬燈 */}
+          <div className="-mx-6 mt-10 sm:-mx-12">
+            <Marquee />
+          </div>
+        </div>
       </section>
     </div>
   )

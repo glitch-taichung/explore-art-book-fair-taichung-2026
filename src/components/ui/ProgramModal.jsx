@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { getProgramDetails } from '../../lib/programDetails'
+import { img } from '../../lib/images'
 import Picture from './Picture'
 
 /**
@@ -90,7 +91,7 @@ function getProgramNavConfig(details) {
     }
   }
 
-  // 5. 品度藝術 (salon-3)
+  // 5. ss space space ✕ 品度藝術 (salon-3)
   if (id === 'salon-3') {
     return {
       type: 'custom',
@@ -98,6 +99,7 @@ function getProgramNavConfig(details) {
         { label: 'Event', photo: 'programs/salon-3/space' },
         { label: '曾哲偉', photo: 'programs/salon-3/speaker' },
         { label: '品度藝術 PRNDL.art', photo: 'programs/salon-3/PRNDL.art_logo_Orange-04' },
+        { label: 'ss space space', photo: 'exhibitors/ssspace/logo' },
       ],
     }
   }
@@ -173,7 +175,7 @@ function getSalonHeader(details) {
   const id = details.id
   if (id === 'salon-1') return '葉忠宜 Chung-Yi Yeh'
   if (id === 'salon-2') return '方序中 Joe Fang'
-  if (id === 'salon-3') return '曾哲偉 / 品度藝術 PRNDL.art'
+  if (id === 'salon-3') return 'ss space space ✕ 品度藝術 PRNDL.art'
   if (id === 'salon-4') return '本冊圖書館 Artqpie Library'
   if (id === 'salon-5') return '節點、鯉魚藝廊、窯座、毛刺'
   if (id === 'salon-6') return '野点沙龍：紙本派，集合！'
@@ -238,16 +240,24 @@ export default function ProgramModal({ programId, onClose }) {
     setShowScrollTop(false)
 
     if (programId) {
-      const prevOverflow = document.body.style.overflow
+      const prevBodyOverflow = document.body.style.overflow
+      const prevHtmlOverflow = document.documentElement.style.overflow
       document.body.style.overflow = 'hidden'
+      document.documentElement.style.overflow = 'hidden'
       const onKey = (e) => e.key === 'Escape' && onClose()
       window.addEventListener('keydown', onKey)
       return () => {
-        document.body.style.overflow = prevOverflow
+        document.body.style.overflow = prevBodyOverflow
+        document.documentElement.style.overflow = prevHtmlOverflow
         window.removeEventListener('keydown', onKey)
       }
     }
   }, [programId, onClose])
+
+  useEffect(() => {
+    if (modalRef.current) modalRef.current.scrollTop = 0
+    setShowScrollTop(false)
+  }, [slideIdx])
 
   if (!details) return null
 
@@ -294,7 +304,7 @@ export default function ProgramModal({ programId, onClose }) {
       .map((p) => p.trim())
       .filter(Boolean)
       .map((para, i) => (
-        <p key={i} className="text-body leading-relaxed text-ink text-justify">
+        <p key={i} className="text-body font-normal leading-relaxed text-ink text-justify">
           {para}
         </p>
       ))
@@ -486,24 +496,22 @@ export default function ProgramModal({ programId, onClose }) {
         </button>
       )}
 
-      {/* 內部滾動容器 */}
+      {/* 內部滾動容器：固定保留 scrollbar 軌道，防止論壇切換講者時畫面左右跳動 */}
       <div
         ref={modalRef}
         onScroll={handleScroll}
-        className="h-full w-full overflow-y-auto pt-14 pb-20 sm:pt-16 sm:pb-24"
+        className="h-full w-full overflow-y-scroll pt-14 pb-20 sm:pt-16 sm:pb-24"
       >
         <main className="mx-auto max-w-[1240px] px-6 sm:px-10 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-12 lg:gap-16">
             {/* =================================================================
-                左欄：版位不變 (md:w-[42%] lg:w-[440px] shrink-0)
-                - 電腦版：照片、膠囊圓點、英文大字標題、時間地點、報名連結，隨滾動吸附往下
-                - 手機版：照片、膠囊圓點、英文大字標題、導航行、慢速跑馬燈
+                左欄：固定高度圖片框 (h-[240px] sm:h-[270px] md:h-[280px])，上緣切齊右欄文字上緣
                ================================================================= */}
-            <div className="w-full md:w-[42%] lg:w-[440px] shrink-0 flex flex-col justify-between md:sticky md:top-14 self-start">
+            <div className="w-full md:w-[42%] lg:w-[440px] shrink-0 flex flex-col justify-between md:sticky md:top-16 self-start">
               <div>
-                {/* 1. 照片展示或 Instagram Reel 嵌入（統一靠左排版貼左） */}
+                {/* 1. 照片展示或 Instagram Reel 嵌入（固定佔位寬高、上緣切齊右欄文字上緣、靠左不跳動） */}
                 {details.topVideoEmbed && slideIdx === 0 ? (
-                  <div className="relative aspect-[9/16] max-h-[560px] w-full max-w-[340px] overflow-hidden bg-black/5 m-0 mr-auto">
+                  <div className="relative h-[420px] sm:h-[460px] md:h-[500px] aspect-[9/16] max-w-full overflow-hidden bg-black/5 m-0 mr-auto">
                     <iframe
                       src={details.topVideoEmbed}
                       title={details.title}
@@ -513,18 +521,30 @@ export default function ProgramModal({ programId, onClose }) {
                       className="h-full w-full border-0"
                     />
                   </div>
-                ) : (
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-transparent flex justify-start items-start">
-                    <Picture
-                      path={currentPhoto}
-                      label={details.title}
-                      ratio="4 / 3"
-                      fit="contain"
-                      align="left"
-                      className="h-full w-full bg-transparent object-contain object-left"
-                    />
-                  </div>
-                )}
+                ) : (() => {
+                  const photoSrc = img(currentPhoto)
+                  return (
+                    <div className="relative h-[220px] sm:h-[240px] w-full max-w-[360px] overflow-hidden bg-transparent flex items-start justify-start">
+                      {photoSrc ? (
+                        <img
+                          src={photoSrc}
+                          alt=""
+                          draggable={false}
+                          onContextMenu={(e) => e.preventDefault()}
+                          className="h-full w-auto max-w-full object-contain object-left-top pointer-events-none select-none"
+                        />
+                      ) : (
+                        <Picture
+                          path={currentPhoto}
+                          label={details.title}
+                          ratio="auto"
+                          align="left"
+                          className="h-full w-full max-w-[360px] bg-transparent"
+                        />
+                      )}
+                    </div>
+                  )
+                })()}
 
                 {/* 2. 膠囊圓點導航 (Info 區塊樣式：多圖時顯示) */}
                 {hasMultipleImages && (
@@ -557,11 +577,11 @@ export default function ProgramModal({ programId, onClose }) {
                   </div>
                 )}
 
-                {/* 3. 英文活動名稱（手機與電腦均具大字粗體質感） */}
+                {/* 3. 英文活動名稱（統一 font-medium） */}
                 {details.titleEn && (
                   <h2
                     lang="en"
-                    className="mt-6 mb-4 md:mt-8 md:mb-0 text-[1.5rem] sm:text-[1.75rem] font-bold leading-tight text-ink"
+                    className="mt-6 mb-4 md:mt-8 md:mb-0 text-[1.5rem] sm:text-[1.75rem] font-medium leading-tight text-ink"
                   >
                     {details.titleEn}
                   </h2>
@@ -577,9 +597,9 @@ export default function ProgramModal({ programId, onClose }) {
                   </div>
                 </div>
 
-                {/* 5. 電腦版專屬：時間地點與報名連結（只有電腦版在左欄） */}
+                {/* 5. 電腦版專屬：時間地點與報名連結（只有電腦版在左欄，統一 font-medium） */}
                 <div className="hidden md:block">
-                  <div className="mt-6 space-y-1.5 text-body font-bold text-ink">
+                  <div className="mt-6 space-y-1.5 text-body font-medium text-ink">
                     <p className="whitespace-pre-line leading-relaxed">{details.timeSimple}</p>
                     <p>{details.venue}</p>
                   </div>
@@ -590,12 +610,12 @@ export default function ProgramModal({ programId, onClose }) {
                         href={details.registerUrl || 'https://www.accupass.com/'}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-cap font-bold underline underline-offset-4 text-ink hover:opacity-65"
+                        className="text-cap font-medium underline underline-offset-4 text-ink hover:opacity-65"
                       >
                         報名連結 ↗︎
                       </a>
                     ) : (
-                      <p className="text-cap font-bold text-ink/75">
+                      <p className="text-cap font-medium text-ink/75">
                         免報名，現場自由參與
                       </p>
                     )}
@@ -613,13 +633,13 @@ export default function ProgramModal({ programId, onClose }) {
                 - 會換文字的只有論壇
                 - 電腦版底部保留導航行 (手機版已置頂)
                ================================================================= */}
-            <div className="w-full md:w-[38%] md:max-w-[390px] lg:max-w-[410px] md:ml-auto flex flex-col justify-between min-h-[440px]">
+            <div className="w-full md:w-[38%] md:max-w-[390px] lg:max-w-[410px] md:ml-auto md:-mr-3 lg:-mr-6 flex flex-col justify-between min-h-[440px]">
               <div>
-                {/* 1. 標題區塊：與下方段落相同字級 (text-body)，用字重 (font-bold) 分層級，靠左對齊 */}
+                {/* 1. 標題區塊：右欄 medium 字重統一靠左對齊 */}
                 {isForum && activeForumSpeaker ? (
                   /* 論壇講者切換模式：人名後面接單位，用｜ */
                   <div className="mb-6 font-sans text-left">
-                    <p className="text-body font-bold text-ink leading-snug">
+                    <p className="text-body font-medium text-ink leading-snug text-left">
                       {activeForumSpeaker.name}
                       {activeForumSpeaker.org ? ` ｜ ${activeForumSpeaker.org}` : ''}
                     </p>
@@ -627,16 +647,16 @@ export default function ProgramModal({ programId, onClose }) {
                 ) : isSalon ? (
                   /* 沙龍標題格式：Blablabla＞＞＞有話想說 與講者名相同層級 */
                   <div className="mb-6 text-left">
-                    <p className="text-body font-bold text-ink leading-snug">
+                    <p className="text-body font-medium text-ink leading-snug text-left">
                       Blablabla＞＞＞有話想說
                     </p>
-                    <h1 className="text-body font-bold text-ink leading-snug">
+                    <h1 className="text-body font-medium text-ink leading-snug text-left">
                       {getSalonHeader(details)}
                     </h1>
                   </div>
                 ) : (
                   /* 一般活動標題（林君燁導讀不加 Explore Art Book Fair 前綴） */
-                  <h1 className="mb-6 text-body font-bold text-ink leading-snug text-left">
+                  <h1 className="mb-6 text-body font-medium text-ink leading-snug text-left">
                     {details.id.startsWith('tour')
                       ? 'Hi～傻瓜書日的藝術書導讀'
                       : details.title}
@@ -667,23 +687,23 @@ export default function ProgramModal({ programId, onClose }) {
 
                     {/* 論壇總覽：講者名單與所屬單位，以 ｜ 連接 */}
                     {isForum && details.hosts?.length > 0 && (
-                      <div className="mt-8 space-y-1.5 pt-2 font-sans text-cap text-ink/75">
+                      <div className="mt-8 space-y-1.5 pt-2 font-sans text-cap font-medium text-ink/75 text-left">
                         {details.hosts.map((h, i) => (
-                          <p key={i}>
+                          <p key={i} className="text-left">
                             {h.name}{h.org ? ` ｜ ${h.org}` : ''}
                           </p>
                         ))}
                       </div>
                     )}
 
-                    {/* 單一講者（如施絜晴、草地房、林君燁、葉忠宜等）：無括號頭銜 */}
+                    {/* 單一講者（如施絜晴、草地房、林君燁、葉忠宜等）：medium 字重靠左 */}
                     {!isForum && details.hosts?.length > 0 && (
                       <div className="mt-8 space-y-4">
                         {details.hosts.map((h, i) => {
                           const isWoodbook = details.id.startsWith('woodbook')
                           return (
                             <div key={i} className="space-y-2">
-                              <p className="font-medium text-body text-ink">
+                              <p className="font-medium text-body text-ink text-left">
                                 {h.name}
                                 {!isWoodbook && h.org ? `（${h.org}）` : ''}
                                 {h.role && (

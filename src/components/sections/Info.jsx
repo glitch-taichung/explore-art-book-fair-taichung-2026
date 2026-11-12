@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { img } from '../../lib/images'
 
 const IG_SLIDES = [
@@ -23,9 +23,41 @@ const IG_SLIDES = [
 export default function Info({ event }) {
   const [active, setActive] = useState(0)
   const total = IG_SLIDES.length
+  const pointerStartRef = useRef(null)
+  const didSwipeRef = useRef(false)
 
   const prev = () => setActive((i) => (i - 1 + total) % total)
   const next = () => setActive((i) => (i + 1) % total)
+
+  useEffect(() => {
+    const onWindowPointerUp = (e) => {
+      const start = pointerStartRef.current
+      if (!start) return
+      pointerStartRef.current = null
+      const dx = e.clientX - start.x
+      const dy = e.clientY - start.y
+      if (Math.abs(dx) > 24 && Math.abs(dx) > Math.abs(dy)) {
+        didSwipeRef.current = true
+        if (dx < 0) setActive((i) => (i + 1) % total)
+        else setActive((i) => (i - 1 + total) % total)
+      }
+    }
+    const onWindowPointerCancel = () => {
+      pointerStartRef.current = null
+    }
+    window.addEventListener('pointerup', onWindowPointerUp)
+    window.addEventListener('pointercancel', onWindowPointerCancel)
+    return () => {
+      window.removeEventListener('pointerup', onWindowPointerUp)
+      window.removeEventListener('pointercancel', onWindowPointerCancel)
+    }
+  }, [total])
+
+  const handlePointerDown = (e) => {
+    if (e.button !== 0 && e.pointerType === 'mouse') return
+    didSwipeRef.current = false
+    pointerStartRef.current = { x: e.clientX, y: e.clientY }
+  }
 
   // 計算環形相對距離 (-3 ~ +4) 以排列成圓弧扇形
   const getOffset = (idx) => {
@@ -39,9 +71,9 @@ export default function Info({ event }) {
     <section
       id="info"
       aria-label="活動資訊"
-      className="snap-start scroll-mt-12 min-h-dvh bg-slate px-6 py-28 text-white sm:px-12"
+      className="snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-slate px-6 py-28 text-white sm:px-12"
     >
-      <div className="mx-auto max-w-[1280px]">
+      <div className="mx-auto max-w-[1280px] min-w-0">
         {/* 1. 圓弧型 IG 視覺輪播 (Curved Arc Carousel) */}
         <div className="mb-8">
           <h2 className="text-display font-bold">
@@ -50,7 +82,9 @@ export default function Info({ event }) {
         </div>
 
         <div
-          className="relative mx-auto h-[23rem] w-full overflow-hidden pt-6 sm:h-[27rem]"
+          className="relative mx-auto h-[23rem] w-full cursor-grab touch-pan-y overflow-hidden pt-6 select-none active:cursor-grabbing sm:h-[27rem]"
+          onPointerDown={handlePointerDown}
+          onDragStart={(e) => e.preventDefault()}
           onKeyDown={(e) => {
             if (e.key === 'ArrowLeft') prev()
             if (e.key === 'ArrowRight') next()
@@ -74,7 +108,13 @@ export default function Info({ event }) {
                 <button
                   key={slide.id}
                   type="button"
-                  onClick={() => setActive(idx)}
+                  onClick={() => {
+                    if (didSwipeRef.current) {
+                      didSwipeRef.current = false
+                      return
+                    }
+                    setActive(idx)
+                  }}
                   aria-label={`檢視第 ${idx + 1} 張活動圖卡：${slide.caption}`}
                   aria-pressed={offset === 0}
                   style={{
@@ -105,17 +145,17 @@ export default function Info({ event }) {
           </div>
         </div>
 
-        {/* 你喜歡的多圖選擇器：Previous / 中間圓弧伸縮膠囊 (▬ • •) / Next */}
-        <div className="mt-6 flex items-center justify-between gap-4">
+        {/* 多圖選擇器：手機版收斂按鈕與膠囊間距，確保右側 Next 不被裁切 */}
+        <div className="mt-6 flex w-full items-center justify-between gap-2 sm:gap-4">
           <button
             type="button"
             onClick={prev}
-            className="rounded-full bg-white/15 px-5 py-2 text-cap text-white transition hover:bg-lime hover:text-ink"
+            className="shrink-0 cursor-pointer rounded-full bg-white/15 px-3 py-1.5 text-[0.78rem] text-white transition hover:bg-lime hover:text-ink sm:px-5 sm:py-2 sm:text-cap"
           >
             Previous
           </button>
 
-          <div className="flex items-center gap-2" role="tablist" aria-label="切換活動圖卡">
+          <div className="flex min-w-0 items-center justify-center gap-1 sm:gap-2" role="tablist" aria-label="切換活動圖卡">
             {IG_SLIDES.map((s, i) => {
               const isCur = i === active
               return (
@@ -126,12 +166,8 @@ export default function Info({ event }) {
                   aria-selected={isCur}
                   aria-label={`第 ${i + 1} 張`}
                   onClick={() => setActive(i)}
-                  style={{
-                    width: isCur ? '28px' : '8px',
-                    transition: 'width 320ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 250ms',
-                  }}
-                  className={`h-2 rounded-full ${
-                    isCur ? 'bg-lime' : 'bg-white/35 hover:bg-white/65'
+                  className={`h-1.5 sm:h-2 cursor-pointer rounded-full transition-all duration-300 ${
+                    isCur ? 'w-5 sm:w-7 bg-lime' : 'w-1.5 sm:w-2 bg-white/35 hover:bg-white/65'
                   }`}
                 />
               )
@@ -141,7 +177,7 @@ export default function Info({ event }) {
           <button
             type="button"
             onClick={next}
-            className="rounded-full bg-white/15 px-5 py-2 text-cap text-white transition hover:bg-lime hover:text-ink"
+            className="shrink-0 cursor-pointer rounded-full bg-white/15 px-3 py-1.5 text-[0.78rem] text-white transition hover:bg-lime hover:text-ink sm:px-5 sm:py-2 sm:text-cap"
           >
             Next
           </button>
@@ -150,19 +186,19 @@ export default function Info({ event }) {
         {/* 2. 滑到最底部時的核心實用資訊（參考 OFFPRINT × timesmuseum 留白對齊版式） */}
         <div className="mt-28 grid gap-12 border-t border-white/25 pt-16 lg:grid-cols-12">
           {/* 左欄：時間、地點、入場 */}
-          <dl className="grid grid-cols-[5.5rem_1fr] gap-y-8 text-body lg:col-span-5">
-            <dt className="text-cap text-white/70">PLACE</dt>
-            <dd>
-              <p className="font-bold">@{event.venue}</p>
-              <p className="text-cap text-white/80">Taichung Green Museumbrary · Shaded Plaza</p>
-              <p className="mt-2 font-bold text-lime">Free entrance 自由入場</p>
+          <dl className="grid min-w-0 grid-cols-[4.75rem_1fr] items-baseline gap-y-8 text-body sm:grid-cols-[5.5rem_1fr] lg:col-span-5">
+            <dt className="text-cap text-white/70 text-left">PLACE</dt>
+            <dd className="min-w-0 text-left">
+              <p className="font-bold text-left">@{event.venue}</p>
+              <p className="text-cap text-white/80 text-left">Taichung Green Museumbrary · Shaded Plaza</p>
+              <p className="mt-2 font-bold text-lime text-left">Free entrance 自由入場</p>
             </dd>
 
-            <dt className="text-cap text-white/70">DATES</dt>
-            <dd className="space-y-3">
+            <dt className="text-cap text-white/70 text-left">DATES</dt>
+            <dd className="min-w-0 space-y-3 text-left">
               {event.days.map((d) => (
                 <div key={d.day} className="flex flex-wrap items-baseline gap-x-4">
-                  <span className="font-bold tracking-wide">
+                  <span className="inline-block min-w-[6.75rem] font-bold tracking-wide">
                     {d.label.replace('.', '/')} {d.weekday}
                   </span>
                   <span className="text-white/90">
@@ -172,14 +208,14 @@ export default function Info({ event }) {
               ))}
             </dd>
 
-            <dt className="text-cap text-white/70">ACCESS</dt>
-            <dd className="text-cap text-white/80">
+            <dt className="text-cap text-white/70 text-left">ACCESS</dt>
+            <dd className="min-w-0 text-cap text-white/80 text-left leading-relaxed">
               論壇與工作坊需事先報名，主舞台沙龍與專家導覽皆為現場自由參與。
             </dd>
           </dl>
 
           {/* 右欄：timesmuseum 風底線引言 ＋ 精簡論述 */}
-          <div className="space-y-6 lg:col-span-7">
+          <div className="min-w-0 space-y-6 lg:col-span-7">
             <p className="text-title font-bold underline underline-offset-8">
               在臺中綠美圖，從書籍出發，重新想像「書」如何成為每個人日常生活的一部分。
             </p>

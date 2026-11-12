@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Source Han Sans TC VF";
-  src: url("../未整理素材/字體/SourceHanSansTC-VF.ttf") format("truetype-variations"),
-       url("../未整理素材/字體/SourceHanSansTC-VF.ttf") format("truetype");
+  src: url("./assets/fonts/SourceHanSansTC-VF.ttf") format("truetype-variations"),
+       url("./assets/fonts/SourceHanSansTC-VF.ttf") format("truetype");
   font-weight: 200 900;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
   font-family: var(--font-sans);
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -55,7 +62,7 @@ body {
   background: var(--color-white);
   color: var(--color-ink);
   font-size: 1rem;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
 }
 

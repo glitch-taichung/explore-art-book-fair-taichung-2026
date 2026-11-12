@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState, useRef } from 'react'
 import { event } from './data/event'
 import { exhibitorList } from './data/exhibitors'
 import Hero from './components/sections/Hero'
-import Marquee from './components/ui/Marquee'
 import Navbar from './components/layout/Navbar'
 import Programme from './components/sections/Programme'
 import Exhibitors from './components/sections/Exhibitors'
@@ -72,9 +71,15 @@ export default function App() {
       if (route.type === 'vendor') {
         setOpenId(route.id)
         setSelectedProgramId(null)
+        requestAnimationFrame(() => {
+          document.getElementById('exhibitor')?.scrollIntoView({ behavior: 'auto' })
+        })
       } else if (route.type === 'program') {
         setSelectedProgramId(route.id)
         setOpenId(null)
+        requestAnimationFrame(() => {
+          document.getElementById('programme')?.scrollIntoView({ behavior: 'auto' })
+        })
       } else {
         setOpenId(null)
         setSelectedProgramId(null)
@@ -100,6 +105,51 @@ export default function App() {
     }
   }, [])
 
+  // 2. 滑動同步網址（無彈窗開啟時依所在區段靜默更新網址，回到扉頁 #top 時恢復乾淨首頁網址）
+  useEffect(() => {
+    if (openId || selectedProgramId) return
+
+    const SECTION_IDS = ['top', 'home', 'programme', 'exhibitor', 'info']
+    let rafId = null
+
+    const updateHashFromScroll = () => {
+      rafId = null
+      if (isNavigatingRef.current) return
+
+      const anchorY = window.scrollY + window.innerHeight * 0.32
+      let activeId = 'top'
+      for (const id of SECTION_IDS) {
+        const el = document.getElementById(id)
+        if (!el) continue
+        if (el.offsetTop <= anchorY) {
+          activeId = id
+        }
+      }
+
+      if (activeId === 'top') {
+        if (window.location.hash) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search)
+        }
+      } else {
+        const nextHash = `#${activeId}`
+        if (window.location.hash !== nextHash) {
+          window.history.replaceState(null, '', nextHash)
+        }
+      }
+    }
+
+    const onScroll = () => {
+      if (rafId) return
+      rafId = requestAnimationFrame(updateHashFromScroll)
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      if (rafId) cancelAnimationFrame(rafId)
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [openId, selectedProgramId])
+
   // 3. 全站圖片防下載、防拖曳與防長按選單
   useEffect(() => {
     const handleContextMenu = (e) => {
@@ -120,13 +170,16 @@ export default function App() {
     }
   }, [])
 
-  // 4. 側欄抽屜開啟時鎖定背景滾動
+  // 4. 側欄抽屜開啟時鎖定背景滾動（同時鎖定 html 與 body，徹底防止背景捲動）
   useEffect(() => {
     if (openId) {
-      const prev = document.body.style.overflow
+      const prevBodyOverflow = document.body.style.overflow
+      const prevHtmlOverflow = document.documentElement.style.overflow
       document.body.style.overflow = 'hidden'
+      document.documentElement.style.overflow = 'hidden'
       return () => {
-        document.body.style.overflow = prev
+        document.body.style.overflow = prevBodyOverflow
+        document.documentElement.style.overflow = prevHtmlOverflow
       }
     }
   }, [openId])
@@ -135,7 +188,6 @@ export default function App() {
     <>
       <Navbar />
       <Hero event={event} />
-      <Marquee />
       <main>
         <Programme onSelectProgram={handleOpenProgram} />
         <Exhibitors openId={openId} onOpen={handleOpenVendor} />

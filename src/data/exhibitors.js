@@ -17,7 +17,7 @@ export const exhibitors = [
 
   // Spot 2（5 組）
   b('spec', 'SPEC MAGAZINE', 'Spot 2', ['Taichung']),
-  b('yao', '窯座 YÁO', 'Spot 2', ['Taichung']),
+  b('papaya', '遊牧木瓜出版 Nomad Papaya Books', 'Spot 2', ['Taipei', 'Hamburg']),
   b('carp', '鯉魚藝廊 Carp Gallery', 'Spot 2', ['Taichung']),
   b('artqpie', '本冊圖書館 Artqpie Library', 'Spot 2', ['Taichung']),
   b('springbao', '白水 SPRINGBAO', 'Spot 2', ['Taichung']),
@@ -38,7 +38,7 @@ export const exhibitors = [
 
   // Spot 5（6 組）
   b('ssspace', 'ss space space', 'Spot 5', ['Taipei']),
-  b('papaya', '遊牧木瓜出版 Nomad Papaya Books', 'Spot 5', ['Taipei', 'Hamburg']),
+  b('yao', '窯座 YÁO', 'Spot 5', ['Taichung']),
   b('phyllshin', 'Phyllshin Books', 'Spot 5', ['Taipei', 'Keelung']),
   b('zitdim', '節點 Zit-Dim Art Space', 'Spot 5', ['Tainan']),
   b('licorice', 'LICORICE BOOK SERVICE', 'Spot 5', ['Taipei']),
@@ -49,21 +49,21 @@ export const exhibitors = [
 import vendors from './generated/vendors.json' with { type: 'json' }
 
 const VENDOR_KEY = {
-  glitch: 'A-1', dmp: 'A-2', meadowroom: 'A-3', spec: 'A-4', yao: 'A-5', carp: 'A-6', artqpie: 'A-7', springbao: 'A-8',
+  glitch: 'A-1', dmp: 'A-2', meadowroom: 'A-3', spec: 'A-4', papaya: 'A-5', carp: 'A-6', artqpie: 'A-7', springbao: 'A-8',
   pebbling: 'B-1', wandertail: 'B-2', onegu: 'B-3', narcos: 'B-4', jammmm: 'B-5', jilongli: 'B-5',
   nowhere: 'C-1', nodate: 'C-2', childreneyes: 'C-3', storage: 'C-4', jerrys: 'C-5', aaa: 'C-6',
   prndl: 'D-1', booksociety: 'D-2', thingbooks: 'D-4', thumbbooks: 'D-5',
-  ssspace: 'E-1', papaya: 'E-2', phyllshin: 'E-3', zitdim: 'E-4', licorice: 'E-5', weightbooks: 'E-6',
+  ssspace: 'E-1', yao: 'E-2', phyllshin: 'E-3', zitdim: 'E-4', licorice: 'E-5', weightbooks: 'E-6',
 }
 
 // 實體桌位索引（供地圖將週六 Jammm果醬 與週日 吉龍里麵包計劃 合併於同一桌位）
 const BOOTH_SLOT = {
   library: '1-1', glitch: '1-2', dmp: '1-3', meadowroom: '1-4',
   pebbling: '1-5', wandertail: '1-6', onegu: '1-7', narcos: '1-8', jammmm: '1-9', jilongli: '1-9',
-  spec: '2-1', yao: '2-2', carp: '2-3', artqpie: '2-4', springbao: '2-5',
+  spec: '2-1', papaya: '2-2', carp: '2-3', artqpie: '2-4', springbao: '2-5',
   nowhere: '3-1', nodate: '3-2', childreneyes: '3-3', storage: '3-4', jerrys: '3-5', aaa: '3-6',
   prndl: '4-1', booksociety: '4-2', thingbooks: '4-3', thumbbooks: '4-4',
-  ssspace: '5-1', papaya: '5-2', phyllshin: '5-3', zitdim: '5-4', licorice: '5-5', weightbooks: '5-6',
+  ssspace: '5-1', yao: '5-2', phyllshin: '5-3', zitdim: '5-4', licorice: '5-5', weightbooks: '5-6',
 }
 
 export const exhibitorList = exhibitors.map((e) => {
