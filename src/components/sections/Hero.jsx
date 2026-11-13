@@ -386,7 +386,7 @@ export default function Hero({ event }) {
       <section
         id="top"
         aria-label="扉頁"
-        className="snap-start relative flex min-h-dvh flex-col justify-between overflow-hidden bg-[#eceeef] px-4 py-4 text-ink sm:px-12 sm:py-8"
+        className="md:snap-start relative flex min-h-dvh flex-col justify-between overflow-hidden bg-[#eceeef] px-4 py-4 text-ink sm:px-12 sm:py-8"
       >
         {/* 主內容區：
             電腦版兩欄（左：EXPLORE 散落字塊；右：一週年館慶標準字置於主視覺上方）

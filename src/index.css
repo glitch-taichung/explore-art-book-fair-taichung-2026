@@ -44,6 +44,16 @@ html {
   font-weight: 400;
 }
 
+/* 當使用者在長內容區段（日程列表、攤商列表）內部閱讀時，暫時解除吸附，完全消除手機版往上滑時的強制鎖死阻力 */
+html.scroll-free-content {
+  scroll-snap-type: none !important;
+}
+
+html.scroll-free-content #programme,
+html.scroll-free-content #exhibitor {
+  scroll-snap-align: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {

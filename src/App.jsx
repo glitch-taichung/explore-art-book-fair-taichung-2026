@@ -116,13 +116,50 @@ export default function App() {
       rafId = null
       if (isNavigatingRef.current) return
 
-      const anchorY = window.scrollY + window.innerHeight * 0.32
+      const scrollY = window.scrollY || window.pageYOffset || 0
+      const winH = window.innerHeight || 800
+      const anchorY = scrollY + winH * 0.32
       let activeId = 'top'
       for (const id of SECTION_IDS) {
         const el = document.getElementById(id)
         if (!el) continue
         if (el.offsetTop <= anchorY) {
           activeId = id
+        }
+      }
+
+      // 智慧區段吸附控制：
+      // 當使用者在長內容區段（日程列表 #programme、書展夥伴 #exhibitor）內部閱讀時，
+      // 暫時解除整頁的 scroll-snap-type 與該區段的 snap-start，徹底消除手機版長頁面往上滑動時被頂部強行鎖死的阻力；
+      // 當滑動接近區段交界（即將跨入下一個區段，或即將回到上一區段頂部）時，即時恢復吸附，確保每個區段之間皆有清晰明確的「區段切齊感」。
+      const progEl = document.getElementById('programme')
+      const exhEl = document.getElementById('exhibitor')
+      const infoEl = document.getElementById('info')
+
+      let inContent = false
+      if (progEl && exhEl) {
+        const progTop = progEl.offsetTop
+        const progBottom = exhEl.offsetTop
+        if (scrollY > progTop + 140 && scrollY + winH < progBottom - 60) {
+          inContent = true
+        }
+      }
+      if (!inContent && exhEl && infoEl) {
+        const exhTop = exhEl.offsetTop
+        const exhBottom = infoEl.offsetTop
+        if (scrollY > exhTop + 140 && scrollY + winH < exhBottom - 60) {
+          inContent = true
+        }
+      }
+
+      const root = document.documentElement
+      if (inContent) {
+        if (!root.classList.contains('scroll-free-content')) {
+          root.classList.add('scroll-free-content')
+        }
+      } else {
+        if (root.classList.contains('scroll-free-content')) {
+          root.classList.remove('scroll-free-content')
         }
       }
 
