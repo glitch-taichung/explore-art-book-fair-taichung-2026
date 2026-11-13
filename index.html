@@ -18,12 +18,15 @@
       content="Explore Art Book Fair｜2026 臺中閱讀節「城市裡的閱讀風景」核心活動，2026.12.12–12.13 於臺中綠美圖遮蔭廣場登場。集結 25 組國內外藝術書店與獨立出版、5 攤特色飲食、亞洲獨立出版交流論壇、6 場沙龍、工作坊與台語金曲 Silent Party。"
     />
     <meta name="theme-color" content="#5d7a90" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="canonical" href="https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/" />
     <title>Explore Art Book Fair｜2026 臺中閱讀節・城市裡的閱讀風景</title>
 
     <!-- Open Graph / Facebook / LINE / Instagram -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Explore Art Book Fair" />
     <meta property="og:url" content="https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/" />
     <meta property="og:title" content="Explore Art Book Fair｜2026 臺中閱讀節・城市裡的閱讀風景" />
     <meta
@@ -49,8 +52,26 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ExhibitionEvent",
-      "name": "Explore Art Book Fair｜2026 臺中閱讀節・城市裡的閱讀風景",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/#website",
+          "url": "https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/",
+          "name": "Explore Art Book Fair",
+          "alternateName": ["Explore ABF", "2026 臺中閱讀節"],
+          "description": "2026 臺中閱讀節「城市裡的閱讀風景」核心活動，Explore Art Book Fair",
+          "publisher": {
+            "@type": "Organization",
+            "name": "毛刺 Glitch"
+          }
+        },
+        {
+          "@type": "ExhibitionEvent",
+          "@id": "https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/#event",
+          "isPartOf": {
+            "@id": "https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/#website"
+          },
+          "name": "Explore Art Book Fair｜2026 臺中閱讀節・城市裡的閱讀風景",
       "alternateName": "Explore ABF",
       "startDate": "2026-12-12T13:00:00+08:00",
       "endDate": "2026-12-13T17:30:00+08:00",
@@ -117,7 +138,9 @@
         { "@type": "Organization", "name": "吉龍里麵包計劃" }
       ]
     }
-    </script>
+  ]
+}
+</script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
