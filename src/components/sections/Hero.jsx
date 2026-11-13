@@ -437,13 +437,13 @@ export default function Hero({ event }) {
         {/* 主內容區：
             電腦版兩欄（左：EXPLORE 散落字塊；右：標準字 城市裡的閱讀風景 Reading in the City）
             手機版單欄垂直（上：標準字；下：EXPLORE 散落字塊，均水平置中） */}
-        <div className="relative z-20 mx-auto my-auto grid w-full max-w-[1280px] flex-1 items-center gap-6 py-4 md:grid-cols-12 md:gap-8 lg:gap-12 md:py-6">
-          {/* 左欄（桌機）：EXPLORE 散落字塊 */}
-          <div className="order-2 flex items-center justify-center md:order-1 md:col-span-6 md:justify-start">
+        <div className="relative z-20 mx-auto my-auto grid w-full max-w-[1280px] flex-1 items-center gap-3 sm:gap-6 md:grid-cols-12 md:gap-8 lg:gap-12 py-2 md:py-6">
+          {/* 左欄（桌機）：EXPLORE 散落字塊（電腦版往右移；手機版放大且往上拉近） */}
+          <div className="order-2 flex items-center justify-center md:order-1 md:col-span-6 md:justify-start md:pl-8 lg:pl-16 xl:pl-20">
             {/* 7 個圖樣字的原版交疊起點定位錨框 */}
             <div
               aria-label="Explore"
-              className="relative mx-auto w-full max-w-[13.5rem] select-none sm:max-w-[17rem] md:mx-0 md:max-w-[21rem] lg:max-w-[23rem]"
+              className="relative mx-auto w-full max-w-[16.8rem] -translate-y-2 select-none sm:max-w-[18.5rem] sm:-translate-y-1 md:mx-0 md:max-w-[21rem] md:translate-y-0 lg:max-w-[23rem]"
             >
               <div className="relative aspect-[4/4.85] w-full">
                 {SCATTER_POS.map((pos, i) => (
