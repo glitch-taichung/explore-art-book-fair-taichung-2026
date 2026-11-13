@@ -1,5 +1,7 @@
 export default function Marquee() {
   const items = [
+    '12/12 ⋯ 12/13',
+    '臺中綠美圖・遮蔭廣場',
     '⤵︎ 保 ↖︎ 持 ↘︎ 好 ↪︎ 奇 ⤵︎',
     '在紙頁之間',
     '思考、',

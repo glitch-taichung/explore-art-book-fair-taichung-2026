@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react'
-import wordmarkH from '../../assets/brand/wordmark_horizontal.png'
-import wordmarkSub from '../../assets/brand/wordmark_sub.png'
+import wordmarkCover from '../../assets/brand/wordmark_cover.svg'
+import cultureSlate from '../../assets/brand/logo-culture_bureau_slate.png'
+import tplSlate from '../../assets/brand/logo-tpl_horizontal_slate.png'
+import glitchSlate from '../../assets/brand/logo-glitch_slate.svg'
 import { EXPLORE_TILES, ExploreTile, ExploreTextLogotype } from '../ui/ExploreLogotype'
 import Marquee from '../ui/Marquee'
 
@@ -379,25 +381,69 @@ export default function Hero({ event }) {
 
       {/* =====================================================================
           第一屏：進站扉頁 (#top)
-          - 純背景色 (#eceeef)，移除主視覺網狀與色彩圖樣
-          - 保留：一週年館慶標準字置於主視覺上方、城市中的閱讀風景、EXPLORE 7 個散落字塊
-          - 手機版全置中、精確緊湊間距確保進站第一屏可見「進入書展現場 ↓」
+          - 純背景色 (#eceeef)
+          - 頂部：指導單位、主辦單位、策劃單位（手機等距展開，電腦靠右）
+          - 中央：
+            - 電腦版左側為 EXPLORE 7 個散落字塊，右側為「城市裡的閱讀風景 Reading in the City」
+            - 手機版上方為「城市裡的閱讀風景 Reading in the City」，下方為 EXPLORE 7 個散落字塊
+          - 底部：進入書展現場 ↓（手機置中，電腦靠右與右上 Logo 右緣對齊）
          ===================================================================== */}
       <section
         id="top"
         aria-label="扉頁"
         className="relative flex min-h-dvh flex-col justify-between overflow-hidden bg-[#eceeef] px-4 py-4 text-ink sm:px-12 sm:py-8"
       >
+        {/* 頂部單位列：指導單位、主辦單位、策劃單位（順序不變，文字與 Logo 均為標準字色 #5d7a90） */}
+        <header className="relative z-20 mx-auto w-full max-w-[1280px] shrink-0 pt-2 sm:pt-4">
+          <div className="flex items-center justify-between gap-x-2 sm:justify-end sm:gap-x-6 lg:gap-x-8">
+            {/* 指導單位 */}
+            <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+              <span className="text-[9px] sm:text-[11px] font-extralight tracking-widest text-[#5d7a90] shrink-0">
+                指導單位
+              </span>
+              <img
+                src={cultureSlate}
+                alt="臺中市政府文化局"
+                className="h-3.5 sm:h-5 lg:h-5.5 w-auto object-contain"
+              />
+            </div>
+
+            {/* 主辦單位 */}
+            <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+              <span className="text-[9px] sm:text-[11px] font-extralight tracking-widest text-[#5d7a90] shrink-0">
+                主辦單位
+              </span>
+              <img
+                src={tplSlate}
+                alt="臺中市立圖書館"
+                className="h-3.5 sm:h-5 lg:h-5.5 w-auto object-contain"
+              />
+            </div>
+
+            {/* 策劃單位 */}
+            <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+              <span className="text-[9px] sm:text-[11px] font-extralight tracking-widest text-[#5d7a90] shrink-0">
+                策劃單位
+              </span>
+              <img
+                src={glitchSlate}
+                alt="毛刺 Glitch"
+                className="h-3.5 sm:h-5 lg:h-5.5 w-auto object-contain"
+              />
+            </div>
+          </div>
+        </header>
+
         {/* 主內容區：
-            電腦版兩欄（左：EXPLORE 散落字塊；右：一週年館慶標準字置於主視覺上方）
-            手機版單欄垂直（上：一週年館慶 ＋ 城市裡的閱讀風景；下：EXPLORE 散落字塊，均水平置中） */}
-        <div className="relative z-20 mx-auto my-auto grid w-full max-w-[1280px] flex-1 items-center gap-4 py-2 lg:grid-cols-12 lg:gap-12 lg:py-6">
-          {/* 左欄（桌機）：EXPLORE 散落字塊（電腦版維持喜愛之佈局，手機版置中） */}
-          <div className="order-2 flex items-center justify-center lg:order-1 lg:col-span-6 lg:justify-start xl:col-span-6">
+            電腦版兩欄（左：EXPLORE 散落字塊；右：標準字 城市裡的閱讀風景 Reading in the City）
+            手機版單欄垂直（上：標準字；下：EXPLORE 散落字塊，均水平置中） */}
+        <div className="relative z-20 mx-auto my-auto grid w-full max-w-[1280px] flex-1 items-center gap-6 py-4 md:grid-cols-12 md:gap-8 lg:gap-12 md:py-6">
+          {/* 左欄（桌機）：EXPLORE 散落字塊 */}
+          <div className="order-2 flex items-center justify-center md:order-1 md:col-span-6 md:justify-start">
             {/* 7 個圖樣字的原版交疊起點定位錨框 */}
             <div
               aria-label="Explore"
-              className="relative mx-auto w-full max-w-[15rem] select-none sm:max-w-[18.5rem] lg:mx-0 lg:max-w-[23rem]"
+              className="relative mx-auto w-full max-w-[13.5rem] select-none sm:max-w-[17rem] md:mx-0 md:max-w-[21rem] lg:max-w-[23rem]"
             >
               <div className="relative aspect-[4/4.85] w-full">
                 {SCATTER_POS.map((pos, i) => (
@@ -419,19 +465,14 @@ export default function Hero({ event }) {
             </div>
           </div>
 
-          {/* 右欄（桌機）：一週年館慶標準字置於主視覺標準字上方，比例對齊附圖 */}
-          <div className="order-1 flex flex-col items-center justify-center text-center lg:order-2 lg:col-span-6 lg:items-start lg:pl-6 lg:text-left xl:col-span-6">
-            <div className="w-full max-w-[22rem] sm:max-w-[26rem] lg:max-w-[34rem] xl:max-w-[38rem]">
+          {/* 右欄（桌機）：扉頁用標準字 */}
+          <div className="order-1 flex flex-col items-center justify-center text-center md:order-2 md:col-span-6 md:items-start md:pl-4 lg:pl-6 md:text-left">
+            <div className="w-full max-w-[18rem] sm:max-w-[22rem] md:max-w-[28rem] lg:max-w-[34rem] xl:max-w-[38rem]">
               <img
-                src={wordmarkSub}
-                alt="臺中綠美圖一週年館慶活動"
-                className="mb-2 w-full h-auto object-contain sm:mb-3"
-              />
-              <img
-                src={wordmarkH}
+                src={wordmarkCover}
                 alt="城市裡的閱讀風景 Reading in the City"
-                width="2240"
-                height="860"
+                width="719"
+                height="139"
                 fetchPriority="high"
                 className="w-full h-auto object-contain"
               />
@@ -439,24 +480,11 @@ export default function Hero({ event }) {
           </div>
         </div>
 
-        {/* 底部導覽：時間地點置於進入書展現場上方，置中對齊 */}
-        <div className="relative z-20 mx-auto mt-auto flex w-full flex-col items-center justify-center pt-2 pb-2 text-center">
-          <div className="mb-2 w-full space-y-0.5 text-center font-normal text-ink">
-            <p className="w-full text-center text-[0.88rem] font-normal whitespace-nowrap sm:text-title">
-              <span>12/12 ⋯ 12/13</span>
-              <span className="ml-2">臺中綠美圖・遮蔭廣場</span>
-            </p>
-            <p
-              lang="en"
-              className="w-full text-center text-[0.72rem] font-normal whitespace-nowrap tracking-tight sm:text-title sm:tracking-normal"
-            >
-              Taichung Green Museumbrary・Shaded Plaza
-            </p>
-          </div>
-
+        {/* 底部引導：進入書展現場 ↓（手機版置中，電腦版靠右並與右上 Logo 右緣精確切齊） */}
+        <div className="relative z-20 mx-auto mt-auto flex w-full max-w-[1280px] shrink-0 items-center justify-center pt-2 pb-3 text-center md:justify-end md:pb-6 md:text-right">
           <a
             href="#home"
-            className="inline-block text-center text-[0.92rem] font-normal text-ink underline underline-offset-8 transition-opacity hover:opacity-70 sm:text-title"
+            className="inline-block text-[0.92rem] font-normal text-[#5d7a90] underline decoration-[#5d7a90] underline-offset-8 transition-opacity hover:opacity-70 sm:text-title"
           >
             進入書展現場 ↓
           </a>
