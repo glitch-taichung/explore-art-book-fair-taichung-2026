@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glitch-taichung.github.io/explore-art-book-fair-taichung-2026/sitemap.xml
