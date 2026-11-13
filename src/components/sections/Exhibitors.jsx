@@ -14,12 +14,16 @@ export default function Exhibitors({ openId, onOpen }) {
   const [hoverId, setHoverId] = useState(null)
   const previewRef = useRef(null)
 
-  // 頁面滾動時立即清除 hover 預覽，徹底消除 Logo 跟隨游標漂浮問題
+  // 頁面滾動或抽屜狀態改變時立即清除 hover，確保關閉抽屜後背景攤商列表恢復純白全亮，絕不殘留半透明灰階狀態
   useEffect(() => {
     const onScroll = () => setHoverId(null)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    setHoverId(null)
+  }, [openId])
 
   const hoveredVendor = exhibitorList.find((e) => e.id === hoverId) || null
   const openedVendor = exhibitorList.find((e) => e.id === openId) || null
@@ -37,8 +41,9 @@ export default function Exhibitors({ openId, onOpen }) {
     <section
       id="exhibitor"
       aria-label="書展夥伴"
-      className="md:snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-white px-6 py-28 sm:px-12"
+      className="snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-white px-6 py-28 sm:px-12"
       onMouseMove={handleMouseMove}
+      onMouseLeave={() => setHoverId(null)}
     >
       <span id="exhibitors" className="sr-only" />
       <div className="mx-auto max-w-[1280px]">
@@ -74,10 +79,21 @@ export default function Exhibitors({ openId, onOpen }) {
                     <li key={e.id}>
                       <button
                         type="button"
-                        onClick={() => onOpen(e.id)}
-                        onMouseEnter={() => setHoverId(e.id)}
+                        onClick={() => {
+                          setHoverId(null)
+                          onOpen(e.id)
+                        }}
+                        onMouseEnter={() => {
+                          if (typeof window !== 'undefined' && window.matchMedia('(hover: hover)').matches) {
+                            setHoverId(e.id)
+                          }
+                        }}
                         onMouseLeave={() => setHoverId(null)}
-                        onFocus={() => setHoverId(e.id)}
+                        onFocus={() => {
+                          if (typeof window !== 'undefined' && window.matchMedia('(hover: hover)').matches) {
+                            setHoverId(e.id)
+                          }
+                        }}
                         onBlur={() => setHoverId(null)}
                         className="flex w-full min-w-0 cursor-pointer flex-col items-start gap-y-1 py-2.5 text-left transition-opacity duration-200 sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-8"
                         style={{

@@ -38,15 +38,10 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
   overflow-x: clip;
   font-family: var(--font-sans);
   font-weight: 400;
-}
-
-@media (min-width: 768px) {
-  html {
-    scroll-snap-type: y proximity;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

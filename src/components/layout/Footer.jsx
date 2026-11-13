@@ -26,7 +26,7 @@ export default function Footer({ event }) {
   }
 
   return (
-    <footer className="md:snap-end overflow-x-clip bg-white px-6 py-16 text-cap sm:px-12">
+    <footer className="snap-end overflow-x-clip bg-white px-6 py-16 text-cap sm:px-12">
       <div className="mx-auto max-w-[1280px]">
         {/* 合作單位：無分隔頂線，三枚 Logo 同高置中對齊 */}
         <div className="grid gap-8 sm:grid-cols-3">

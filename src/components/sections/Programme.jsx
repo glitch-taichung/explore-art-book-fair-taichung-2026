@@ -997,7 +997,7 @@ export default function Programme({ onSelectProgram }) {
     <section
       id="programme"
       aria-label="活動日程"
-      className="md:snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-cool-light px-6 py-24 sm:px-12"
+      className="snap-start scroll-mt-12 min-h-dvh overflow-x-clip bg-cool-light px-6 py-24 sm:px-12"
     >
       <div className="mx-auto max-w-[1280px]">
         <h2 className="mb-10 text-display font-bold lg:mb-14">

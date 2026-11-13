@@ -604,14 +604,14 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
       <div
         aria-hidden="true"
         onClick={onClose}
-        className="fixed inset-0 z-[58] cursor-pointer bg-black/15 transition-opacity md:bg-transparent"
+        className="fixed inset-0 z-[58] cursor-pointer bg-transparent transition-opacity"
       />
 
       <aside
         role="dialog"
         aria-label={vendor.name}
         ref={scrollRef}
-        className="drawer-in fixed inset-y-0 right-0 left-0 z-[60] overflow-x-hidden overflow-y-auto scroll-smooth border-l border-ink/15 bg-white font-sans text-ink md:left-[calc(max(1.5rem,(100vw-1280px)/2)+16.5rem)] md:snap-y md:snap-mandatory"
+        className="drawer-in fixed inset-y-0 right-0 left-0 z-[60] overflow-x-hidden overflow-y-auto scroll-smooth border-l border-ink/15 bg-white font-sans text-ink snap-y snap-proximity md:left-[calc(max(1.5rem,(100vw-1280px)/2)+16.5rem)] md:snap-mandatory"
       >
       {/* 頂部常駐列：Spot 區塊透明無底色；關閉按鈕無遮罩僅保留叉叉 */}
       <div className="pointer-events-none sticky top-0 z-50 flex items-center justify-between px-6 py-4 sm:px-10">
@@ -757,7 +757,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
            =================================================================== */}
         <section
           aria-label="攤商視覺主頁"
-          className="relative flex min-h-dvh w-full flex-col justify-between overflow-x-clip bg-white px-6 pt-20 pb-14 sm:px-10 md:snap-start"
+          className="relative flex min-h-dvh w-full flex-col justify-between overflow-x-clip bg-white px-6 pt-20 pb-14 sm:px-10 snap-start"
         >
           <div className="relative flex min-h-[calc(100dvh-8.5rem)] w-full flex-col justify-between md:w-[54%] md:pr-6">
             {/* 地區與限定日期 */}
@@ -933,7 +933,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
           id="vendor-intro"
           ref={introSecRef}
           aria-label="攤商簡介"
-          className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-[#eef0f2] px-6 py-20 sm:px-10 md:snap-start"
+          className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-[#eef0f2] px-6 py-20 sm:px-10 snap-start"
         >
           <div className="w-full md:w-[54%] md:pr-8">
             {/* 簡介：自然出現的攤商名稱以萊姆綠 (#90d326) 標註，字飛回前保持透明空白，絕無 AI 額外添加文字 */}
@@ -986,7 +986,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                  文字為整體視覺排版素材之一，錯落呼吸感配置，非刻板圖說 */
               <section
                 aria-label="餐點品項當代排版"
-                className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-white px-6 py-20 sm:px-10 md:snap-start"
+                className="flex min-h-dvh w-full flex-col justify-center overflow-x-clip bg-white px-6 py-20 sm:px-10 snap-start"
               >
                 <div className="mx-auto w-full max-w-[1180px]">
                   <FoodStallEditorial vendor={vendor} />
@@ -1005,7 +1005,7 @@ export default function VendorDrawer({ vendor, onClose, onSelectVendor }) {
                     bookSecRefs.current[idx] = el
                   }}
                   aria-label={it.title}
-                  className={`flex min-h-dvh w-full flex-col justify-center overflow-x-clip ${secBg} px-6 py-20 sm:px-10 md:snap-start`}
+                  className={`flex min-h-dvh w-full flex-col justify-center overflow-x-clip ${secBg} px-6 py-20 sm:px-10 snap-start`}
                 >
                   <div className="w-full min-w-0 md:w-[54%] md:pr-8">
                     {/* 電腦版 (md:block)：對齊附圖 1（作者與出版者置於書號與標題上方，離標題更近） */}
